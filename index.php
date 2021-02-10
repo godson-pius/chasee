@@ -14,7 +14,7 @@
                     <div class="row align-items-center">
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <div class="header-content-2">
-                                <h1>Digital Banking Easy to Handle With Mobile</h1>
+                                <h1>Transfer Funds Between Accounts Fast and Reliable</h1>
                                 <p>The advantage of online banking is that you can pay bills superfast and your account is
                                     automatically credited or debited for each dposit and payment</p>
                                 <ul class="section-button">
@@ -50,7 +50,9 @@
         <div class="home-logo-section-2 border-top-mob">
             <div class="container">
                 <div class="section-title">
-                    <p>More than 50k brand trusted by using pay </p>
+                    <p>More than 50k brand trusted by using pay 
+                        More than 100 companies 
+                    </p>
                 </div>
                 <div class="home-logo-content mt-30">
                     <div class="home-logo-item">

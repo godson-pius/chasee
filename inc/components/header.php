@@ -75,18 +75,15 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle active">Home</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="index.html" class="nav-link">Home Page 1</a>
-                                        </li>
+                                    <a href="index.php" class="nav-link  active">Home</a>
+                                    <!-- <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="index.php" class="nav-link active">Home Page 2</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="index-3.html" class="nav-link">Home Page 3</a>
-                                        </li>
-                                    </ul>
+                                        </li> 
+                                    </ul> -->
                                 </li>
                                 <li class="nav-item">
                                     <a href="about-us.html" class="nav-link">About Us</a>
@@ -98,13 +95,28 @@
                                             <a href="faqs.html" class="nav-link">FAQ's</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">Services</a>
+                                            <a href="#" class="nav-link dropdown-toggle">Ways to bank</a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
-                                                    <a href="services.html" class="nav-link">Services</a>
+                                                    <a href="#" class="nav-link">Internet Banking</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="service-details.html" class="nav-link">Service Details</a>
+                                                    <a href="#" class="nav-link">Mobile Banking</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">Chasee Whatsapp Banking</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">QR Payments Banking</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">Face Banking</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">ATM</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">Mobile App</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -118,48 +130,84 @@
                                             <a href="testimonials.html" class="nav-link">Testimonials</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">User</a>
+                                            <a href="#" class="nav-link dropdown-toggle">Ways to bank</a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
-                                                    <a href="authentication.html" class="nav-link">Authentication</a>
+                                                    <a href="services.html" class="nav-link">Internet Banking</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="forget-password.html" class="nav-link">Forget Password</a>
+                                                    <a href="service-details.html" class="nav-link">Mobile Banking</a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="404.html" class="nav-link">404 Error Page</a>
-                                        </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Features</a>
+                                    <a href="#" class="nav-link dropdown-toggle">Products</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="features.html" class="nav-link">Features</a>
+                                            <a href="features.html" class="nav-link">Loans</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="feature-details.html" class="nav-link">Feature Details</a>
+                                            <a href="feature-details.html" class="nav-link">Transfers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="feature-details.html" class="nav-link">Scan to pay</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="feature-details.html" class="nav-link">Electricity and </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pricing.html" class="nav-link">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Blogs</a>
+                                    <a href="#" class="nav-link dropdown-toggle">Cards</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="blogs.html" class="nav-link">Blogs</a>
+                                            <a href="blogs.html" class="nav-link">Debit Cards</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                            <a href="blog-details.html" class="nav-link">Credit Cards</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="blog-details.html" class="nav-link">Prepaid Cards</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="blog-details.html" class="nav-link">Virtual Cards</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="blog-details.html" class="nav-link">Cards Request Portal</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="blog-details.html" class="nav-link">Prepaid Cards</a>
                                         </li>
                                     </ul>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a href="contact-us.html" class="nav-link">Contact Us</a>
+                                            <a href="#" class="nav-link dropdown-toggle">About Us</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="contact-us.php" class="nav-link">Contact Us</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">Customer Feedback</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">Branches & ATM Locator</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">Contact Us</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">Contact Us</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                
+                                
+                                <li class="nav-item">
+                                    <a href="pricing.html" class="nav-link">Sign In</a>
                                 </li>
                             </ul>
                         </div>
@@ -186,7 +234,7 @@
                                 <a href="authentication.html" class="btn1 btn-with-image">
                                     <i class="flaticon-login"></i>
                                     <i class="flaticon-login"></i>
-                                    Sign Up / Login
+                                   Opening an Account
                                 </a>
                             </div>
                         </div>
