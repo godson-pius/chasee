@@ -196,7 +196,15 @@
                                                     <a href="#" class="nav-link">Branches & ATM Locator</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Contact Us</a>
+                                                    <a href="#" class="nav-link dropdown-toggle">Careers</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">Career Development</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">Submit your Resume</a>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">Contact Us</a>
