@@ -1,3 +1,19 @@
+<?php
+    if (!isset($_SESSION['user'])) {
+        blockUrlHackers($_SESSION['user'], "signin.php");
+    } else {
+        $user_id = $_SESSION['user'];
+    }
+
+    $user_details = where("users", "id", $user_id);
+    
+    foreach ($user_details as $user) {
+        extract($user);
+    }
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -5,16 +21,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Dashmix - Bootstrap 4 Admin Template &amp; UI Framework</title>
+    <title><?= $fullname; ?> Dashboard</title>
 
-    <meta name="description" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta name="description" content="User Dashboard created by pixelcave and published on Themeforest">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph Meta -->
-    <meta property="og:title" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework">
+    <meta property="og:title" content="User Dashboard">
     <meta property="og:site_name" content="Dashmix">
-    <meta property="og:description" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta property="og:description" content="User Dashboard created by pixelcave and published on Themeforest">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -144,8 +160,8 @@
                 <div class="content-side content-side-full text-center bg-body-light">
                     <div class="smini-hide">
                         <img class="img-avatar" src="../admin/assets/media/avatars/avatar10.jpg" alt="">
-                        <div class="mt-3 font-w600">Henry Harrison</div>
-                        <a class="link-fx text-muted" href="javascript:void(0)">$ 49.680,00</a>
+                        <div class="mt-3 font-w600"><?= $fullname; ?></div>
+                        <a class="link-fx text-muted" href="javascript:void(0)"><?= $acc_number;?></a>
                     </div>
                 </div>
                 <!-- END Side Actions -->
@@ -408,7 +424,7 @@
                             <div class="bg-primary-darker rounded-top font-w600 text-white text-center p-3">
                                 <img class="img-avatar img-avatar48 img-avatar-thumb" src="../admin/assets/media/avatars/avatar10.jpg" alt="">
                                 <div class="pt-2">
-                                    <a class="text-white font-w600" href="be_pages_generic_profile.html">Henry Harrison</a>
+                                    <a class="text-white font-w600" href="be_pages_generic_profile.html"><?= $fullname; ?></a>
                                 </div>
                             </div>
                             <div class="p-2">

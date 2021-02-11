@@ -7,29 +7,111 @@ function user_register($post) {
     $errors = [];
 
     if (!empty($fullname)) {
-        
+        $fullname = sanitize($fullname);
+    } else {
+        $errors[] = "Enter fullname!";
+    }
+    
+    if (!empty($username)) {
+        $username = sanitize($username);
+    } else {
+        $errors[] = "Enter username!";
+    }
+    
+    if (!empty($email)) {
+        $email = sanitize($email);
+    } else {
+        $errors[] = "Enter email!";
+    }
+    
+    if (!empty($address)) {
+        $address = sanitize($address);
+    } else {
+        $errors[] = "Enter address!";
+    }
+    
+    if (!empty($dob)) {
+        $dob = sanitize($dob);
+    } else {
+        $errors[] = "Enter date of birth!";
+    }
+    
+    if (!empty($acc_type)) {
+        $acc_type = sanitize($acc_type);
+    } else {
+        $errors[] = "Enter account type!";
+    }
+    
+    if (!empty($password)) {
+        $tmp_password = sanitize($password);
+    } else {
+        $errors[] = "Enter password!";
     }
 
-    return true;
-}
+    if (!empty($confirm_pwd)) {
+        $confirm_pwd = sanitize($confirm_pwd);
+    } else {
+        $errors[] = "Confirm password!";
+    }
+    
+    if (!isset($terms)) {
+        $errors[] = "Confirm password!";
+    }
+
+    if ($tmp_password === $confirm_pwd) {
+        $password = encrypt($tmp_password);
+    } else {
+        $errors[] = "Passwords do not match!";
+    }
+
+
+    if (!$errors) {
+        // generating account number...
+        $account_number = rand(6578900, null) * 1236;
+
+        $sql = "INSERT INTO users (fullname, email, username, address, dob, acc_type, acc_number, password, created_at, updated_at) VALUES ('$fullname', '$email', '$username', '$address', '$dob', '$acc_type', '$account_number', '$password', now(), now())";
+
+        $result = validateQuery($sql);
+        if ($result === true) {
+            return true;
+        } else {
+            $errors[] = "Check form inputs";
+        }
+    } else {
+        return $errors;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} // end of user registration
 
 // User Login
-function studentLogin($post)
+function user_login($post)
 {
     extract($post);
     $errors = [];
 
     //Checking for email...
-    if (!empty($username)) {
-        $tmpUsername = sanitize($username);
-
-        if ($tmpUsername) {
-            $username = $tmpUsername;
-        } else {
-            $errors[] = "Invalid email address!";
-        }
+    if (!empty($email)) {
+        $email = sanitize($email);
     } else {
-        $errors[] = "Please enter your email address!";
+        $errors[] = "Please enter your email!";
     }
 
 
@@ -43,12 +125,12 @@ function studentLogin($post)
 
     //The Sql Statement...
     if (!$errors) {
-        $sql = "SELECT * FROM students WHERE username = '$username'";
+        $sql = "SELECT * FROM users WHERE email = '$email'";
         $result = executeQuery($sql);
         if ($result) {
             $encryptedpassword = $result['password'];
             if (decrypt($encryptedpassword, $password)) {
-                $_SESSION['studentId'] = $result['id'];
+                $_SESSION['user'] = $result['id'];
                 return true;
             }
         }

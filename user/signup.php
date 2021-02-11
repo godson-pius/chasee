@@ -4,14 +4,14 @@
     if (isset($_POST['submit'])) {
         $response = user_register($_POST);
         if ($response === true) {
-            echo "<script>alert('entered')</script>";
-            // redirect_to("signin.php");
+            // echo "<script>alert('entered')</script>";
+            redirect_to("signin.php");
         } else {
-            echo "<script>alert('error')</script>";
-            // $errors = $response;
-            // foreach($errors as $err) {
-            //     echo "<script>alert($err)</script>";
-            // }
+            // echo "<script>alert('error')</script>";
+            $errors = $response;
+            foreach($errors as $err) {
+                echo "<script>alert($err)</script>";
+            }
         }
     }
 
@@ -26,16 +26,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Dashmix - Bootstrap 4 Admin Template &amp; UI Framework</title>
+    <title>Sign Up | Chasee Bank</title>
 
-    <meta name="description" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta name="description" content="Sign Up | Chasee Bank">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph Meta -->
-    <meta property="og:title" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework">
-    <meta property="og:site_name" content="Dashmix">
-    <meta property="og:description" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta property="og:title" content="Sign Up | Chasee Bank">
+    <meta property="og:site_name" content="Chasee">
+    <meta property="og:description" content="Sign Up | Chasee Bank">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -169,7 +169,7 @@
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" name="submit" class="btn btn-block btn-hero-lg btn-hero-success">
-                                                <i class="fa fa-fw fa-plus mr-1"></i> Sign Up
+                                                <i class="fa fa-fw fa-plus mr-1"></i> Create Account
                                             </button>
                                             <p class="mt-3 mb-0 d-lg-flex justify-content-lg-between">
                                                 <a class="btn btn-sm btn-light d-block d-lg-inline-block mb-1" href="signin.php">

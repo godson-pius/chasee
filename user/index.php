@@ -1,4 +1,5 @@
-<?php 
+<?php
+    require_once '../admin/inc/functions/config.php';
 
     $title = "User Dashboard";
     require_once 'inc/header.php';
@@ -19,7 +20,7 @@
                             <div class="row text-center">
                                 <div class="col-md-4 py-3">
                                     <div class="font-size-h1 font-w300 text-black mb-1">
-                                        $49.680
+                                        $<?= $acc_balance; ?>
                                     </div>
                                     <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Balance</a>
                                 </div>
@@ -27,13 +28,13 @@
                                     <div class="font-size-h1 font-w300 text-success mb-1">
                                         +$780
                                     </div>
-                                    <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Income Today</a>
+                                    <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Transfer</a>
                                 </div>
                                 <div class="col-md-4 py-3">
                                     <div class="font-size-h1 font-w300 text-danger mb-1">
                                         -$49
                                     </div>
-                                    <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Expenses Today</a>
+                                    <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Income</a>
                                 </div>
                             </div>
                         </div>

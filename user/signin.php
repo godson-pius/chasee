@@ -1,19 +1,34 @@
+<?php
+    require_once '../admin/inc/functions/config.php';
+
+    if (isset($_POST['submit'])) {
+        $response = user_login($_POST);
+
+        if ($response === true) {
+            redirect_to("index.php");
+        } else {
+            echo "<script>alert('error')</script>";
+        }
+    }
+?>
+
+
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <title>Dashmix - Bootstrap 4 Admin Template &amp; UI Framework</title>
+        <title>Sign In | Chasee Bank</title>
 
-        <meta name="description" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="description" content="Sign In | Chasee Bank created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
         <meta name="robots" content="noindex, nofollow">
 
         <!-- Open Graph Meta -->
-        <meta property="og:title" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework">
-        <meta property="og:site_name" content="Dashmix">
-        <meta property="og:description" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta property="og:title" content="Sign In | Chasee Bank">
+        <meta property="og:site_name" content="chasee">
+        <meta property="og:description" content="Sign In | Chasee Bank">
         <meta property="og:type" content="website">
         <meta property="og:url" content="">
         <meta property="og:image" content="">
@@ -98,7 +113,7 @@
                                 <!-- Header -->
                                 <div class="mb-3 text-center">
                                     <a class="link-fx font-w700 font-size-h1" href="index.html">
-                                        <span class="text-dark">Dash</span><span class="text-primary">mix</span>
+                                        <span class="text-dark">Cha</span><span class="text-primary">see</span>
                                     </a>
                                     <p class="text-uppercase font-w700 font-size-sm text-muted">Sign In</p>
                                 </div>
@@ -109,24 +124,24 @@
                                 <!-- For more info and examples you can check out https://github.com/jzaefferer/jquery-validation -->
                                 <div class="row no-gutters justify-content-center">
                                     <div class="col-sm-8 col-xl-6">
-                                        <form class="js-validation-signin" action="be_pages_auth_all.html" method="POST">
+                                        <form action="" method="POST">
                                             <div class="py-3">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control form-control-lg form-control-alt" id="login-username" name="login-username" placeholder="Username">
+                                                    <input type="email" class="form-control form-control-alt" name="email" placeholder="Email">
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="password" class="form-control form-control-lg form-control-alt" id="login-password" name="login-password" placeholder="Password">
+                                                    <input type="password" class="form-control form-control-alt" name="password" placeholder="Password">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <button type="submit" class="btn btn-block btn-hero-lg btn-hero-primary">
+                                                <button type="submit" name="submit" class="btn btn-block btn-hero-lg btn-hero-primary">
                                                     <i class="fa fa-fw fa-sign-in-alt mr-1"></i> Sign In
                                                 </button>
                                                 <p class="mt-3 mb-0 d-lg-flex justify-content-lg-between">
-                                                    <a class="btn btn-sm btn-light d-block d-lg-inline-block mb-1" href="op_auth_reminder.html">
+                                                    <!-- <a class="btn btn-sm btn-light d-block d-lg-inline-block mb-1" href="op_auth_reminder.html">
                                                         <i class="fa fa-exclamation-triangle text-muted mr-1"></i> Forgot password
-                                                    </a>
-                                                    <a class="btn btn-sm btn-light d-block d-lg-inline-block mb-1" href="op_auth_signup.html">
+                                                    </a> -->
+                                                    <a class="btn btn-sm btn-light d-block d-lg-inline-block mb-1" href="signup.php">
                                                         <i class="fa fa-plus text-muted mr-1"></i> New Account
                                                     </a>
                                                 </p>

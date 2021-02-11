@@ -83,6 +83,17 @@ function fetch($table) {
     }
 }
 
+function fetch_transactions($type, $user_id) {
+    $sql = "SELECT amount FROM transactions WHERE type = $type AND user_id = $user_id";
+    $result = returnQuery($sql);
+
+    if ($result) {
+        return $result;
+    } else {
+        return false;
+    }
+}
+
 function fetchAll($table, $preferredOrder = null, $limit1 = null, $limit2 = null) {
 
     if (!is_null($limit1) && !is_null($limit2) && !is_null($preferredOrder)) {
@@ -239,16 +250,6 @@ function searchTotal($field, $whereValue, $input) {
     return false;
 }
 
-function selectInterestedProps() {
-    $sql = "SELECT property_id FROM clients";
-    $result = returnQuery($sql);
-
-    if (mysqli_num_rows($result) > 0) {
-        return $result;
-    }
-    return false;
-}
-
 function check_duplicate($table, $field, $sanitized_value)
 {
     $sql = "SELECT * FROM $table WHERE $field = '$sanitized_value'";
@@ -294,34 +295,6 @@ function getOtherBooksAsc($table, $where, $value, $order, $limit) {
 
 }
 
-function getOtherBooksDesc($table, $where, $value, $order, $limit) {
-
-    $sql = "SELECT * FROM $table WHERE $where <> '$value' ORDER BY $order DESC LIMIT $limit";
-    $result = returnQuery($sql);
-
-    if (mysqli_num_rows($result) > 0) {
-        return $result;
-    }
-    return false;
-
-}
-
-function getTotalBookExc($table, $optional = null, $optionValue = null) {
-    if (!is_null($optional) && !is_null($optionValue)) {
-        $sql = "SELECT * FROM $table WHERE $optional <> $optionValue";
-    } else {
-        $sql = "SELECT * FROM $table";
-    }
-    $result = returnQuery($sql);
-
-    if ($result) {
-        $total = mysqli_num_rows($result);
-        return $total;
-    } else {
-        return false;
-    }
-
-}
 
 function teacherAction($table, $field, $stats, $col, $id)
 {
