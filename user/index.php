@@ -1,8 +1,18 @@
 <?php
     require_once '../admin/inc/functions/config.php';
-
     $title = "User Dashboard";
     require_once 'inc/header.php';
+
+    $total_transfer = fetch_transactions(1, $user_id);
+    foreach ($total_transfer as $transfer) {
+        
+    }
+    
+    $total_income = fetch_transactions(0, $user_id);
+    foreach ($total_income as $income) {
+        
+    }
+    
 ?>
             <!-- END Header -->
 
@@ -26,15 +36,15 @@
                                 </div>
                                 <div class="col-md-4 py-3">
                                     <div class="font-size-h1 font-w300 text-success mb-1">
-                                        +$780
+                                        $<?= $transfer['total']; ?>
                                     </div>
-                                    <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Transfer</a>
+                                    <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Income</a>
                                 </div>
                                 <div class="col-md-4 py-3">
                                     <div class="font-size-h1 font-w300 text-danger mb-1">
-                                        -$49
+                                        -$<?= $income['total']; ?>
                                     </div>
-                                    <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Income</a>
+                                    <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Transfer</a>
                                 </div>
                             </div>
                         </div>
