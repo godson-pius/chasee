@@ -86,7 +86,7 @@
                                     </ul> -->
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about-us.html" class="nav-link">Accounts</a>
+                                    <a href="user/signup.php" class="nav-link">Accounts</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle">Personal</a>
@@ -121,25 +121,25 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="terms-conditions.html" class="nav-link">E-payments</a>
+                                            <a href="#" class="nav-link">E-payments</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="privacy-policy.html" class="nav-link">Bills and Utility Payments</a>
+                                            <a href="#" class="nav-link">Bills and Utility Payments</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="testimonials.html" class="nav-link">Chasee Foundation</a>
+                                            <a href="#" class="nav-link">Chasee Foundation</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link dropdown-toggle">Money Transfer</a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
-                                                    <a href="services.html" class="nav-link">Transfast</a>
+                                                    <a href="#" class="nav-link">Transfast</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="service-details.html" class="nav-link">Moneygram</a>
+                                                    <a href="#" class="nav-link">Moneygram</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="service-details.html" class="nav-link">Western Union Money Transfer</a>
+                                                    <a href="#" class="nav-link">Western Union Money Transfer</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -149,16 +149,16 @@
                                     <a href="#" class="nav-link dropdown-toggle">Products/Services</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="features.html" class="nav-link"> Best Loans</a>
+                                            <a href="#" class="nav-link"> Best Loans</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="feature-details.html" class="nav-link">Transfers</a>
+                                            <a href="#" class="nav-link">Transfers</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="feature-details.html" class="nav-link">Scan to pay</a>
+                                            <a href="#" class="nav-link">Scan to pay</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="feature-details.html" class="nav-link"> Electronic Banking </a>
+                                            <a href="#" class="nav-link"> Electronic Banking </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -166,31 +166,34 @@
                                     <a href="#" class="nav-link dropdown-toggle">Cards</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="blogs.html" class="nav-link">Debit Cards</a>
+                                            <a href="#" class="nav-link">Debit Cards</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Credit Cards</a>
+                                            <a href="#" class="nav-link">Credit Cards</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Prepaid Cards</a>
+                                            <a href="#" class="nav-link">Prepaid Cards</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Virtual Cards</a>
+                                            <a href="#" class="nav-link">Virtual Cards</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Cards Request Portal</a>
+                                            <a href="#" class="nav-link">Cards Request Portal</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Prepaid Cards</a>
+                                            <a href="#" class="nav-link">Prepaid Cards</a>
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">About Us</a>
+                                            <a href="about-us.php" class="nav-link dropdown-toggle">About Us</a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
                                                     <a href="contact-us.php" class="nav-link">Contact Us</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="service-details.php" class="nav-link">Why Choose Us? </a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">Customer Feedback</a>
@@ -229,7 +232,7 @@
                                 
                                 
                                 <li class="nav-item">
-                                    <a href="pricing.html" class="nav-link">Sign In</a>
+                                    <a href="user/signin.php" class="nav-link">Sign In</a>
                                 </li>
                             </ul>
                         </div>

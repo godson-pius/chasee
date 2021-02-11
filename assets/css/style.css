@@ -109,6 +109,10 @@ body {
     margin-bottom: 25px;
 }
 
+.mb-26 {
+    margin-bottom: 10px;
+}
+
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -5438,7 +5442,7 @@ button:active {
 }
 
 .box-card-icon img {
-    width: 100%;
+    width: 50px;
 }
 
 .box-card-icon span {

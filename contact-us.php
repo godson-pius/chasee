@@ -3,13 +3,13 @@ $title = "Chasee Bank";
 require_once 'inc/components/header.php';
 ?>
 <!-- header -->
-<header class="page-title page-bg" style="background-image: url(assets/images/contact-us-bg.png);">
+<header class="page-title page-bg" style="background-image: url(assets/images/Contact.png);">
     <div class="container">
         <div class="page-title-inner">
             <div class="section-title">
                 <h1>Contact Us</h1>
                 <ul class="page-breadcrumbs">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li>Contact us</li>
                 </ul>
             </div>
@@ -25,11 +25,11 @@ require_once 'inc/components/header.php';
                 <div class="box-card fluid-height">
                     <div class="box-card-inner full-height">
                         <div class="box-card-icon mb-25">
-                            <img src="assets/images/address.png" alt="icon"> <!-- you can use icon instead of img. For using icon you should use span tag like: <span><i class="font-name"></i></span> -->
+                            <img src="assets/images/address.png" width="10" alt="icon"> <!-- you can use icon instead of img. For using icon you should use span tag like: <span><i class="font-name"></i></span> -->
                         </div>
                         <div class="box-card-details">
                             <h3 class="box-card-title mb-20">Address</h3>
-                            <p class="box-card-para">456 Labisto Parkways, CA, United States</p>
+                            <p class="box-card-para">Lagos Island, Nigeria</p>
                         </div>
                     </div>
                 </div>
@@ -38,12 +38,11 @@ require_once 'inc/components/header.php';
                 <div class="box-card fluid-height">
                     <div class="box-card-inner full-height">
                         <div class="box-card-icon mb-25">
-                            <img src="assets/images/email.png" alt="icon"> <!-- you can use icon instead of img. For using icon you should use span tag like: <span><i class="font-name"></i></span> -->
+                            <img src="assets/images/email.png" width="40" alt="icon"> <!-- you can use icon instead of img. For using icon you should use span tag like: <span><i class="font-name"></i></span> -->
                         </div>
                         <div class="box-card-details">
                             <h3 class="box-card-title mb-20">Email</h3>
-                            <p class="box-card-para"><a class="link-us" href="mailto:info@alia.com">info@alia.com</a></p>
-                            <p class="box-card-para"><a class="link-us" href="mailto:support@alia.com">support@alia.com</a></p>
+                            <p class="box-card-para"><a class="link-us" href="mailto:support@alia.com"> Chasee@info.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -52,12 +51,12 @@ require_once 'inc/components/header.php';
                 <div class="box-card fluid-height">
                     <div class="box-card-inner full-height">
                         <div class="box-card-icon mb-25">
-                            <img src="assets/images/contact-phone.png" alt="icon"> <!-- you can use icon instead of img. For using icon you should use span tag like: <span><i class="font-name"></i></span> -->
+                            <img src="assets/images/call.png" alt="icon"> <!-- you can use icon instead of img. For using icon you should use span tag like: <span><i class="font-name"></i></span> -->
                         </div>
                         <div class="box-card-details">
                             <h3 class="box-card-title mb-20">Phone</h3>
-                            <p class="box-card-para"><a class="link-us" href="tel:(+00)67834598">(+00) 678 345 98</a></p>
-                            <p class="box-card-para">+(456) 332-897-234</p>
+                            <p class="box-card-para"><a class="link-us" href="tel: (+00) 800 0046 674"> (+00) 800 0046 674</a></p>
+                           
                         </div>
                     </div>
                 </div>
@@ -161,32 +160,32 @@ require_once 'inc/components/header.php';
     </div>
 </section>
 <!--end contact-comment-section-->
-<!-- home-contact-section -->
-<section class="home-contact-section overflow-hidden blue-gradient pt-100 pb-80">
-    <div class="home-contact-bg-circle">
-        <div class="home-contact-circle-item">
-            <img src="assets/images/lg-circle-1.png" alt="circle">
-        </div>
-        <div class="home-contact-circle-item">
-            <img src="assets/images/lg-circle-1.png" alt="circle">
-        </div>
-    </div>
-    <div class="container">
-        <div class="home-contact-inner">
-            <h2>493 businesses! create your bank account now</h2>
-            <p>What’s next in Aila Bank? <a href="#">Learn More</a></p>
-            <ul class="section-button">
-                <li>
-                    <a href="authentication.html" class="btn1 orange-gradient btn-with-image">
-                        <i class="flaticon-agenda"></i>
-                        <i class="flaticon-agenda"></i>
-                        Create Your Account
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+   <!-- home-contact-section -->
+   <section class="home-contact-section overflow-hidden blue-gradient pt-100 pb-80">
+            <div class="home-contact-bg-circle">
+                <div class="home-contact-circle-item">
+                    <img src="assets/images/lg-circle-1.png" alt="circle">
+                </div>
+                <div class="home-contact-circle-item">
+                    <img src="assets/images/lg-circle-1.png" alt="circle">
+                </div>
+            </div>
+            <div class="container">
+                <div class="home-contact-inner">
+                    <h2>Create your bank account now!</h2>
+                    <p>What’s next in Chasee Bank? <a href="#">Learn more</a></p>
+                    <ul class="section-button">
+                        <li>
+                            <a href="user/signup.php" class="btn1 orange-gradient btn-with-image">
+                                <!-- <i class="flaticon-agenda"></i>
+                                <i class="flaticon-agenda"></i> -->
+                                Create Your Account
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 <!-- .end home-contact-section -->
 <!-- footer -->
 <?php require_once 'inc/components/footer.php'; ?>

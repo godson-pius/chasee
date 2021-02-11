@@ -53,19 +53,19 @@
                 </div>
                 <div class="home-logo-content mt-30">
                     <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-1.png" alt="logo"></a>
+                        <a href="#"><img src="assets/images/google.png" alt="logo"></a>
                     </div>
                     <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-2.png" alt="logo"></a>
+                        <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
                     </div>
                     <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-3.png" alt="logo"></a>
+                        <a href="#"><img src="assets/images/Bella_Naija.png" alt="logo"></a>
                     </div>
                     <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-4.png" alt="logo"></a>
+                        <a href="#"><img src="assets/images/Ebonyi.jpg" alt="logo"></a>
                     </div>
                     <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-5.png" alt="logo"></a>
+                        <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
                     </div>
                 </div>
             </div>
@@ -319,7 +319,7 @@
                         <p>Having any issues with our banking system <br> Speak to our Customer Service online agents. 24/7 willing to get you through ur complains</p>
                         <ul class="section-button">
                             <li>
-                                <a href="contact-us.html" class="btn1 orange-gradient btn-with-image">
+                                <a href="contact-us.php" class="btn1 orange-gradient btn-with-image">
                                     <!-- <i class="flaticon-agenda"></i>
                                     <i class="flaticon-agenda"></i> -->
                                     Contact us
@@ -418,7 +418,7 @@
                         <div class="item">
                             <div class="client-thumbnail-content">
                                 <div class="client-thumbnail-img">
-                                    <img src="assets/images/Client1_Kite.jpg.jpg" alt="carousel">
+                                    <img src="assets/images/Client1_Ese.jpg.jpg" alt="carousel">
                                 </div>
                                 <div class="client-thumbnail-info">
                                     <h3 class="client-caption-title">Mrs Princess Ochyks</h3>
@@ -474,7 +474,6 @@
                                     <div class="download-option">
                                         <ul class="download-option-list">
                                             <li>
-                                            
                                                 <a href="#" class="orange-gradient">
                                                     <img src="assets/images/apple.png" alt="apple">
                                                     <img src="assets/images/apple.png" alt="apple">
@@ -482,8 +481,8 @@
                                             </li>
                                             <li>
                                                 <a href="#" class="blue-gradient">
-                                                    <img src="assets/images/Google Playstore.png" alt="android">
-                                                    <img src="assets/images/Google Playstore.png" alt="IOS">
+                                                    <img src="assets/images/android.png" alt="android">
+                                                    <img src="assets/images/android.png" alt="android">
                                                 </a>
                                             </li>
                                         </ul>
@@ -512,7 +511,7 @@
                     <p>What’s next in Chasee Bank? <a href="#">Learn more</a></p>
                     <ul class="section-button">
                         <li>
-                            <a href="authentication.html" class="btn1 orange-gradient btn-with-image">
+                            <a href="/user/signup.php" class="btn1 orange-gradient btn-with-image">
                                 <!-- <i class="flaticon-agenda"></i>
                                 <i class="flaticon-agenda"></i> -->
                                 Create Your Account

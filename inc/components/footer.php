@@ -8,7 +8,7 @@
                                     <a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a>
                                 </div>
                                 <div class="footer-details">
-                                    <p><strong>Chasee</strong> <br> Chasee is a banking system that keep your day to day transactions safe and secure, fastest and reliable. </p>
+                                    <h4 class="text-white font-weight-bolder">Chace</h4> <br><p> Chasee is a banking system that keep your day to day transactions safe and secure, fastest and reliable. </p>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="footer-lower">
                     <div class="footer-lower-item footer-copyright-text">
-                        <p>Copyright ©2020 Chasee Bank PLC</p>
+                        <p>Copyright ©2020 Chasee Bank PLC </p>
                     </div>
                     <div class="footer-lower-item footer-social-logo">
                         <ul class="footer-social-list">
