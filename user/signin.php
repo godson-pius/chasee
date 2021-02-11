@@ -20,18 +20,18 @@
 
         <!-- Icons -->
         <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-        <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+        <link rel="shortcut icon" href="../admin/assets/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../admin/assets/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../admin/assets/media/favicons/apple-touch-icon-180x180.png">
         <!-- END Icons -->
 
         <!-- Stylesheets -->
         <!-- Fonts and Dashmix framework -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-        <link rel="stylesheet" id="css-main" href="assets/css/dashmix.min.css">
+        <link rel="stylesheet" id="css-main" href="../admin/assets/css/dashmix.min.css">
 
         <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
+        <!-- <link rel="stylesheet" id="css-theme" href="../admin/assets/css/themes/xwork.min.css"> -->
         <!-- END Stylesheets -->
     </head>
     <body>
@@ -90,7 +90,7 @@
             <main id="main-container">
 
                 <!-- Page Content -->
-                <div class="bg-image" style="background-image: url('assets/media/photos/photo22@2x.jpg');">
+                <div class="bg-image" style="background-image: url('../admin/assets/media/photos/photo22@2x.jpg');">
                     <div class="row no-gutters bg-primary-op">
                         <!-- Main Section -->
                         <div class="hero-static col-md-6 d-flex align-items-center bg-white">
@@ -163,32 +163,32 @@
             Dashmix JS Core
 
             Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
-            to handle those dependencies through webpack. Please check out assets/_js/main/bootstrap.js for more info.
+            to handle those dependencies through webpack. Please check out ../admin/assets/_js/main/bootstrap.js for more info.
 
-            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            If you like, you could also include them separately directly from the ../admin/assets/js/core folder in the following
             order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
 
-            assets/js/core/jquery.min.js
-            assets/js/core/bootstrap.bundle.min.js
-            assets/js/core/simplebar.min.js
-            assets/js/core/jquery-scrollLock.min.js
-            assets/js/core/jquery.appear.min.js
-            assets/js/core/js.cookie.min.js
+            ../admin/assets/js/core/jquery.min.js
+            ../admin/assets/js/core/bootstrap.bundle.min.js
+            ../admin/assets/js/core/simplebar.min.js
+            ../admin/assets/js/core/jquery-scrollLock.min.js
+            ../admin/assets/js/core/jquery.appear.min.js
+            ../admin/assets/js/core/js.cookie.min.js
         -->
-        <script src="assets/js/dashmix.core.min.js"></script>
+        <script src="../admin/assets/js/dashmix.core.min.js"></script>
 
         <!--
             Dashmix JS
 
             Custom functionality including Blocks/Layout API as well as other vital and optional helpers
-            webpack is putting everything together at assets/_js/main/app.js
+            webpack is putting everything together at ../admin/assets/_js/main/app.js
         -->
-        <script src="assets/js/dashmix.app.min.js"></script>
+        <script src="../admin/assets/js/dashmix.app.min.js"></script>
 
         <!-- Page JS Plugins -->
-        <script src="assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+        <script src="../admin/assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
 
         <!-- Page JS Code -->
-        <script src="assets/js/pages/op_auth_signin.min.js"></script>
+        <script src="../admin/assets/js/pages/op_auth_signin.min.js"></script>
     </body>
 </html>
