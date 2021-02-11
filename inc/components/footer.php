@@ -8,9 +8,7 @@
                                     <a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a>
                                 </div>
                                 <div class="footer-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adiisicing elit, sed do eiusmod tempor inc
-                                        Neque porro quisquam est qui dolorem aliquam quaerat luptatem. sed do eiusmod tempor
-                                        inc </p>
+                                    <p><strong>Chasee</strong> <br> Chasee is a banking system that keep your day to day transactions safe and secure, fastest and reliable. </p>
                                 </div>
                             </div>
                         </div>
@@ -23,35 +21,40 @@
                                     <li><a href="faqs.html">FAQ's</a></li>
                                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
                                     <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                                    <li><a href="blogs.html">Blogs</a></li>
                                     <li><a href="contact-us.html">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-2">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="footer-content-list footer-content-item">
                                 <div class="footer-content-title">
-                                    <h3>Company</h3>
+                                    <h3>Products and Services</h3>
                                 </div>
-                                <ul class="footer-details footer-list">
+                                <!-- <ul class="footer-details footer-list">
                                     <li><a href="about-us.html">About Us</a></li>
                                     <li><a href="services.html">Services</a></li>
                                     <li><a href="features.html">Features</a></li>
                                     <li><a href="pricing.html">Our Pricing</a></li>
                                     <li><a href="blogs.html">Blogs</a></li>
+                                </ul> -->
+                                <ul class="footer-details footer-list">
+                                    <li><a href="#">Cards</a></li>
+                                    <li><a href="#">Account Opening</a></li>
+                                    <li><a href="#">SME, SMDAN Programs</a></li>
+                                    <li><a href="#">Scholarships</a></li>
+                                    <li><a href="#">Career</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="footer-content-list footer-content-item">
                                 <div class="footer-content-title">
                                     <h3>Address</h3>
                                 </div>
                                 <ul class="footer-details footer-list">
-                                    <li>Address: <span>456 Labisto Parkways, CA, United States</span></li>
-                                    <li>Message: <span><a href="mailto:info@alia.com">info@alia.com</a></span></li>
-                                    <li>Phone: <span><a href="tel:(+00)67834598">(+00) 678 345 98</a></span></li>
-                                    <li>Faq: <span>+(456) 332-897-234</span></li>
+                                    <li>Address: <span>Lagos Island, Nigeria</span></li>
+                                    <li>Message: <span><a href="mailto:info@alia.com">Chasee@info.com</a></span></li>
+                                    <li>Phone: <span><a href="tel:(+00)8000046674">(+00) 800 0046 674</a></span></li>
                                 </ul>
                             </div>
                         </div>
@@ -59,7 +62,7 @@
                 </div>
                 <div class="footer-lower">
                     <div class="footer-lower-item footer-copyright-text">
-                        <p>Copyright ©2020 Design & Developed by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                        <p>Copyright ©2020 Chasee Bank PLC</p>
                     </div>
                     <div class="footer-lower-item footer-social-logo">
                         <ul class="footer-social-list">

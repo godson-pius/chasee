@@ -86,10 +86,10 @@
                                     </ul> -->
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about-us.html" class="nav-link">About Us</a>
+                                    <a href="about-us.html" class="nav-link">Accounts</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Pages</a>
+                                    <a href="#" class="nav-link dropdown-toggle">Personal</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="faqs.html" class="nav-link">FAQ's</a>
@@ -121,32 +121,35 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
+                                            <a href="terms-conditions.html" class="nav-link">E-payments</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                                            <a href="privacy-policy.html" class="nav-link">Bills and Utility Payments</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="testimonials.html" class="nav-link">Testimonials</a>
+                                            <a href="testimonials.html" class="nav-link">Chasee Foundation</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">Ways to bank</a>
+                                            <a href="#" class="nav-link dropdown-toggle">Money Transfer</a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
-                                                    <a href="services.html" class="nav-link">Internet Banking</a>
+                                                    <a href="services.html" class="nav-link">Transfast</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="service-details.html" class="nav-link">Mobile Banking</a>
+                                                    <a href="service-details.html" class="nav-link">Moneygram</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="service-details.html" class="nav-link">Western Union Money Transfer</a>
                                                 </li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Products</a>
+                                    <a href="#" class="nav-link dropdown-toggle">Products/Services</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="features.html" class="nav-link">Loans</a>
+                                            <a href="features.html" class="nav-link"> Best Loans</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="feature-details.html" class="nav-link">Transfers</a>
@@ -155,7 +158,7 @@
                                             <a href="feature-details.html" class="nav-link">Scan to pay</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="feature-details.html" class="nav-link">Electricity and </a>
+                                            <a href="feature-details.html" class="nav-link"> Electronic Banking </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -207,7 +210,18 @@
                                                     </ul>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Contact Us</a>
+                                                    <a href="#" class="nav-link dropdown-toggle">Corporate Governance</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">Board of Directors</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">The Board</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">Code of Governance</a>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                             </ul>
                                         </li>

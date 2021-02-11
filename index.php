@@ -14,24 +14,23 @@
                     <div class="row align-items-center">
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <div class="header-content-2">
-                                <h1>Transfer Funds Between Accounts Fast and Reliable</h1>
-                                <p>The advantage of online banking is that you can pay bills superfast and your account is
-                                    automatically credited or debited for each dposit and payment</p>
+                                <h1>Transfer Funds From Home</h1>
+                                <p>Perform your daily transactions safely and conveniently via our digital chnannels</p>
                                 <ul class="section-button">
                                     <li>
                                         <button class="btn1 orange-gradient btn-with-image">
-                                            <i class="flaticon-login"></i>
-                                            <i class="flaticon-login"></i>
-                                            Get Started
+                                            <!-- <i class="flaticon-login"></i>
+                                            <i class="flaticon-login"></i> -->
+                                           Learn More
                                         </button>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a class="btn1 btn-with-image blue-gradient video-modal" href="http://www.youtube.com/watch?v=aJJoV0xSDqA">
                                             <i class="flaticon-play-button-1"></i>
                                             <i class="flaticon-play-button-1"></i>
                                             Intro Video
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -50,9 +49,7 @@
         <div class="home-logo-section-2 border-top-mob">
             <div class="container">
                 <div class="section-title">
-                    <p>More than 50k brand trusted by using pay 
-                        More than 100 companies 
-                    </p>
+                    <p> More than 20+ Influential Brands around the globe Bank With Us</p>
                 </div>
                 <div class="home-logo-content mt-30">
                     <div class="home-logo-item">
@@ -70,21 +67,6 @@
                     <div class="home-logo-item">
                         <a href="#"><img src="assets/images/logo-5.png" alt="logo"></a>
                     </div>
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-6.png" alt="logo"></a>
-                    </div>
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-7.png" alt="logo"></a>
-                    </div>
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-8.png" alt="logo"></a>
-                    </div>
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-9.png" alt="logo"></a>
-                    </div>
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/logo-10.png" alt="logo"></a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -98,34 +80,33 @@
                         <div class="col-sm-12 col-md-12 col-lg-6 p-0">
                             <div class="home-facility-overview desk-ml-auto pr-20 pl-20 pb-30">
                                 <h3 class="home-about-title">
-                                    A fully integrated suite for Large enterprise
+                                    Get an accounts that suits you
                                 </h3>
-                                <p class="home-about-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                    eiusmod cste et dolore magnam aliquam quaerat voluptatem.</p>
+                                <p class="home-about-para">At chasee, we believe the beauty of life in the little things at Chasee that give us a better expression of ourselves, make us more social and connect emotionally. </p>
                                 <div class="home-about-list">
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        International Payments
+                                        Savings
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Request Features
+                                        Save4me Account
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Premium Support
+                                        Salary Accounts
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Direct Debit
+                                       NYSC Savings Account
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Automated accounting
+                                        Akawoo Account
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Web Design
+                                        Future Savings
                                     </div>
                                 </div>
                                 <div class="home-about-animation">
@@ -159,34 +140,33 @@
                         <div class="col-sm-12 col-md-12 col-lg-6 p-0">
                             <div class="home-facility-overview desk-mr-auto pr-20 pl-20 pb-30">
                                 <h3 class="home-about-title">
-                                    Small to medium-sized businesses
+                                    Chasee E-payments on the Go
                                 </h3>
-                                <p class="home-about-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                    eiusmod cste et dolore magnam aliquam quaerat voluptatem.</p>
+                                <p class="home-about-para">Pay Bills, Buy airtime, transfer and receive cash anywhere and anytime, fast and quick response in seconds.</p>
                                 <div class="home-about-list">
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Deposit Checks Instantly
+                                        DSTV and GOtv 
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        A powerful open API
+                                       Airtime/Data Subscriptions
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Affiliates and partnerships
+                                        PHCN Bills
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Coverage around the world
+                                       School Fees Payment
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Business without borders
+                                        QR Payment 
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Web Design
+                                        Shop Online
                                     </div>
                                 </div>
                             </div>
@@ -197,35 +177,28 @@
                     <div class="row align-items-center m-0">
                         <div class="col-sm-12 col-md-12 col-lg-6 p-0">
                             <div class="home-facility-overview desk-ml-auto pr-20 pl-20 pb-30">
-                                <h3 class="home-about-title">
-                                    Entrepreneurs, and sole traders & Freelancers
-                                </h3>
-                                <p class="home-about-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                    eiusmod cste et dolore magnam aliquam quaerat voluptatem.</p>
+                                <h3 class="home-about-title">Health is Wealth</h3>
+                                <p class="home-about-para">With our Health program, you can now get help from us and other companies to assist you on the health challenge. You are never alone</p>
                                 <div class="home-about-list">
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        International Payments
+                                        Hospital Bills
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Request Features
+                                        Cancer Assists Praogram
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Premium Support
+                                        Mental Health
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Direct Debit
+                                        HIV assists program
                                     </div>
                                     <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
-                                        Automated accounting
-                                    </div>
-                                    <div class="home-about-list-item">
-                                        <img src="assets/images/check.png" alt="checl">
-                                        Web Design
+                                        Corona Virus cases
                                     </div>
                                 </div>
                                 <div class="home-about-animation entrepreneur-animation">
@@ -240,9 +213,9 @@
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6 p-0">
                             <div class="home-facility-item img-right-res pb-30">
-                                <img src="assets/images/home-entreprenour-2.png" alt="facility">
+                                <img src="assets/images/usman-yousaf-MP9W9DtdoBI-unsplash.jpg" alt="facility">
                                 <div class="home-about-animated-img home-animated-table-img home-animated-img-left">
-                                    <img src="assets/images/data-table.png" alt="data-table">
+                                    <img src="assets/images/rsz_doctor-ui.png" alt="data-table">
                                 </div>
                             </div>
                         </div>
@@ -255,17 +228,17 @@
         <section class="counter-section pt-100 pb-70">
             <div class="container">
                 <div class="section-title">
-                    <h2>We always try to evaluate customers Values</h2>
+                    <h2>Over the Years</h2>
                 </div>
                 <!-- counter-content -->
                 <div class="counter-content">
                     <div class="counter-item">
-                        <h3><span class="counter">70</span><span class="counter-text-lg">+</span></h3>
-                        <p>Contributors</p>
+                        <h3><span class="counter">20</span><span class="counter-text-lg">+</span></h3>
+                        <p>Awards</p>
                     </div>
                     <div class="counter-item">
-                        <h3><span class="counter">40</span><span class="counter-text-sm">K</span></h3>
-                        <p>Feedback</p>
+                        <h3><span class="counter">4</span><span class="counter-text-sm">M+</span></h3>
+                        <p>Happy Customers</p>
                         <div class="counter-loader">
                             <span></span>
                             <span></span>
@@ -273,8 +246,8 @@
                         </div>
                     </div>
                     <div class="counter-item">
-                        <h3><span class="counter">1000</span><span class="counter-text-sm">k</span></h3>
-                        <p>Downloaded</p>
+                        <h3><span class="counter">80</span><span class="counter-text-sm">+</span></h3>
+                        <p>Branches</p>
                         <div class="counter-loader">
                             <span></span>
                             <span></span>
@@ -282,8 +255,8 @@
                         </div>
                     </div>
                     <div class="counter-item">
-                        <h3><span class="counter">590</span><span class="counter-text-lg">+</span></h3>
-                        <p>Workers</p>
+                        <h3><span class="counter">700</span><span class="counter-text-lg">+</span></h3>
+                        <p>Scholarships</p>
                         <div class="counter-loader">
                             <span></span>
                             <span></span>
@@ -295,7 +268,7 @@
         </section>
         <!-- .end counter-section -->
         <!-- home-facility-section -->
-        <section class="home-facility-section pt-100 pb-70 border-top-mob">
+        <!-- <section class="home-facility-section pt-100 pb-70 border-top-mob">
             <div class="container">
                 <div class="home-facility-content">
                     <div class="row align-items-center">
@@ -303,7 +276,7 @@
                             <div class="home-facility-item pb-30">
                                 <div class="home-facility-details">
                                     <div class="home-service-start">
-                                        <h2>Payment gateway is easy to fill with our system</h2>
+                                        <h2>Customer Service  </h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod cste et
                                             dolore magnam aliquam quaerat voluptatem.</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -326,7 +299,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>  -->
         <!-- .end home-facility-section -->
         <!-- home-quick-contact-section -->
         <section class="home-quick-contact-section blue-gradient">
@@ -341,23 +314,24 @@
                         </div>
                     </div>
                     <div class="quick-contact-inner">
-                        <h2>What are you thinking? <br> don’t worry! get connected and say hello to us</h2>
-                        <p>*We’re willingly is here to answer your question about aila</p>
+                       
+                        <h2>Customer Service</h2>
+                        <p>Having any issues with our banking system <br> Speak to our Customer Service online agents. 24/7 willing to get you through ur complains</p>
                         <ul class="section-button">
                             <li>
                                 <a href="contact-us.html" class="btn1 orange-gradient btn-with-image">
-                                    <i class="flaticon-agenda"></i>
-                                    <i class="flaticon-agenda"></i>
+                                    <!-- <i class="flaticon-agenda"></i>
+                                    <i class="flaticon-agenda"></i> -->
                                     Contact us
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <button class="btn1 btn-with-image">
                                     <i class="flaticon-approval"></i>
                                     <i class="flaticon-approval"></i>
                                     Free trial
                                 </button>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -369,51 +343,38 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="section-title">
+                            <h2>What People Are Saying About Us</h2>
+                        </div>
                         <div class="client-details-carousel owl-carousel owl-theme">
                             <div class="item">
                                 <div class="home-client-details-2">
-                                    <p class="client-caption-para">Online payment ipsum dolor sit amet, consectetur adi
-                                        pisicing elit sed do eusmod tempor incididunt ut labore et dolore magna aliq enim ad
-                                        minim veniam, quis nostrud exercitation ullamcoonisi aliquip ex ea commodo
-                                        consequat.</p>
+                                    <p class="client-caption-para">I have been a customer of Chasee Bank for many years. I have always been treated with respect and any question I have ever had concerning my accounts has been answered quickly and very professionally.</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="home-client-details-2">
-                                    <p class="client-caption-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.</p>
+                                    <p class="client-caption-para">Special Thanks to the team at the Chasee branch. Very friendly and helpful establishing new accounts and making the process go smoothly. Highly recommend them!.</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="home-client-details-2">
-                                    <p class="client-caption-para">Sed ut perspiciatis unde omnis iste natus error sit
-                                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <p class="client-caption-para">The boutique customer service allows my team to operate more efficiently. Their team truly cares. With all of the implications of Covid 19, it is reassuring to know that I have a bank that understands my businesses and is invested in their success..</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="home-client-details-2">
-                                    <p class="client-caption-para">Online payment ipsum dolor sit amet, consectetur
-                                        adipisicing elit sed do eusmod tempor incididunt ut labore et dolore magna aliq enim
-                                        ad minim veniam, quis nostrud exercitation ullamcoonisi aliquip ex ea commodo
-                                        consequat.</p>
+                                    <p class="client-caption-para">Great banking experience. I opened a new business account at Chasee Bank, it was easy and seamless application process with great and very knowledgeable service help, always friendly, personalized and supportive, responding quickly to all my questions and concerns.</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="home-client-details-2">
-                                    <p class="client-caption-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.</p>
+                                    <p class="client-caption-para"> The bank website is very clear and easy to navigate which makes banking experience smooth and friendly. I look forward to long-term cooperation with the Chasee Bank and based on my experience I highly recommend this bank.</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="home-client-details-2">
-                                    <p class="client-caption-para">Sed ut perspiciatis unde omnis iste natus error sit
-                                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <p class="client-caption-para">I have worked with many banks and have found that working with Chasee was by far the most professional that I have ever had. I would encourage everyone to bank at Chasee.  </p>
                                 </div>
                             </div>
                         </div>
@@ -424,10 +385,10 @@
                         <div class="item">
                             <div class="client-thumbnail-content">
                                 <div class="client-thumbnail-img">
-                                    <img src="assets/images/client-thumb-1.png" alt="carousel">
+                                    <img src="assets/images/Client1 (5).jpg" alt="carousel">
                                 </div>
                                 <div class="client-thumbnail-info">
-                                    <h3 class="client-caption-title">Devit M. kolin</h3>
+                                    <h3 class="client-caption-title">Chinaza Davis</h3>
                                     <h4 class="client-caption-designation">CEO & Founder</h4>
                                 </div>
                             </div>
@@ -435,10 +396,10 @@
                         <div class="item">
                             <div class="client-thumbnail-content">
                                 <div class="client-thumbnail-img">
-                                    <img src="assets/images/client-thumb-2.png" alt="carousel">
+                                    <img src="assets/images/Client1 (2).jpg" alt="carousel">
                                 </div>
                                 <div class="client-thumbnail-info">
-                                    <h3 class="client-caption-title">Michael</h3>
+                                    <h3 class="client-caption-title">Samuel Kelly</h3>
                                     <h4 class="client-caption-designation">Money Loaner</h4>
                                 </div>
                             </div>
@@ -446,21 +407,21 @@
                         <div class="item">
                             <div class="client-thumbnail-content">
                                 <div class="client-thumbnail-img">
-                                    <img src="assets/images/client-thumb-3.png" alt="carousel">
+                                    <img src="assets/images/Client1 (3).jpg" alt="carousel">
                                 </div>
                                 <div class="client-thumbnail-info">
-                                    <h3 class="client-caption-title">Christoper</h3>
-                                    <h4 class="client-caption-designation">Ronin Bank Inc.</h4>
+                                    <h3 class="client-caption-title">Christoper Obinna</h3>
+                                    <h4 class="client-caption-designation">Microsoft Program Manager</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="client-thumbnail-content">
                                 <div class="client-thumbnail-img">
-                                    <img src="assets/images/client-thumb-4.png" alt="carousel">
+                                    <img src="assets/images/Client1_Kite.jpg.jpg" alt="carousel">
                                 </div>
                                 <div class="client-thumbnail-info">
-                                    <h3 class="client-caption-title">Kenneth</h3>
+                                    <h3 class="client-caption-title">Mrs Princess Ochyks</h3>
                                     <h4 class="client-caption-designation">Finance Consultant</h4>
                                 </div>
                             </div>
@@ -468,22 +429,22 @@
                         <div class="item">
                             <div class="client-thumbnail-content">
                                 <div class="client-thumbnail-img">
-                                    <img src="assets/images/client-thumb-5.png" alt="carousel">
+                                    <img src="assets/images/Client1 (4).jpg" alt="carousel">
                                 </div>
                                 <div class="client-thumbnail-info">
-                                    <h3 class="client-caption-title">Edward</h3>
-                                    <h4 class="client-caption-designation">Money founding</h4>
+                                    <h3 class="client-caption-title">Ezra</h3>
+                                    <h4 class="client-caption-designation">Cancer Free</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="client-thumbnail-content">
                                 <div class="client-thumbnail-img">
-                                    <img src="assets/images/client-thumb-6.png" alt="carousel">
+                                    <img src="assets/images/Client1_Ese.jpg.jpg" alt="carousel">
                                 </div>
                                 <div class="client-thumbnail-info">
-                                    <h3 class="client-caption-title">Devit M. kolin</h3>
-                                    <h4 class="client-caption-designation">CTO</h4>
+                                    <h3 class="client-caption-title">Berker Ilary</h3>
+                                    <h4 class="client-caption-designation">Manager, TheDrums Inc.</h4>
                                 </div>
                             </div>
                         </div>
@@ -507,33 +468,13 @@
                         <div class="col-sm-12 col-md-12 col-lg-7">
                             <div class="home-download-item pb-30">
                                 <div class="home-download-details home-service-start">
-                                    <h2>Free app download now <br> get sit back & enjoy</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim numquam eius modi
-                                        tempora incidunt ut labore et dolore magnam</p>
-                                    <div class="download-feature">
-                                        <div class="download-feature-item">
-                                            <div class="download-feature-item-inner">
-                                                <h3>$100,000</h3>
-                                                <p>Guarantee on deposits</p>
-                                            </div>
-                                        </div>
-                                        <div class="download-feature-item">
-                                            <div class="download-feature-item-inner">
-                                                <h3>$0.00 / mo</h3>
-                                                <p>Free account available</p>
-                                            </div>
-                                        </div>
-                                        <div class="download-feature-item">
-                                            <div class="download-feature-item-inner">
-                                                <h3>10 minutes</h3>
-                                                <p>Available Jobs</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h2>Free app download now <br> and enjoy exciting offers</h2>
+                                    <p>Download the mobile app on Google Playstore and on IOS Devices, get unlimited exciting offers for you, pay bills and buy airtime, and Open a <Strong>zero</Strong> account   </p>
+                                    
                                     <div class="download-option">
                                         <ul class="download-option-list">
                                             <li>
+                                            
                                                 <a href="#" class="orange-gradient">
                                                     <img src="assets/images/apple.png" alt="apple">
                                                     <img src="assets/images/apple.png" alt="apple">
@@ -541,8 +482,8 @@
                                             </li>
                                             <li>
                                                 <a href="#" class="blue-gradient">
-                                                    <img src="assets/images/android.png" alt="android">
-                                                    <img src="assets/images/android.png" alt="android">
+                                                    <img src="assets/images/Google Playstore.png" alt="android">
+                                                    <img src="assets/images/Google Playstore.png" alt="IOS">
                                                 </a>
                                             </li>
                                         </ul>
@@ -567,13 +508,13 @@
             </div>
             <div class="container">
                 <div class="home-contact-inner">
-                    <h2>493 businesses! create your bank account now</h2>
-                    <p>What’s next in Aila Bank? <a href="#">Learn more</a></p>
+                    <h2>Create your bank account now!</h2>
+                    <p>What’s next in Chasee Bank? <a href="#">Learn more</a></p>
                     <ul class="section-button">
                         <li>
                             <a href="authentication.html" class="btn1 orange-gradient btn-with-image">
-                                <i class="flaticon-agenda"></i>
-                                <i class="flaticon-agenda"></i>
+                                <!-- <i class="flaticon-agenda"></i>
+                                <i class="flaticon-agenda"></i> -->
                                 Create Your Account
                             </a>
                         </li>
