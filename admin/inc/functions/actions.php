@@ -35,7 +35,7 @@ function adminLogin($post)
         if ($result) {
             $encryptedpassword = $result['password'];
             if (decrypt($encryptedpassword, $password)) {
-                $_SESSION['adminId'] = $result['id'];
+                $_SESSION['admin'] = $result['id'];
                     // if (isset($rememberMe)) {
                     //     setcookie("admin_password", $password, time() + (86400 * 30), "/");
                     //     setcookie("admin_email", $mail, time() + (86400 * 30), "/");

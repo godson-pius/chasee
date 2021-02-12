@@ -135,7 +135,7 @@ foreach ($user_details as $user) {
                 <div class="content-header justify-content-lg-center bg-header-dark">
                     <!-- Logo -->
                     <a class="font-w600 text-white tracking-wide" href="index.html">
-                        Cha<span class="opacity-75">see</span>
+                        Cha<span class="opacity-75">ce</span>
                         <span class="font-w400">Banking</span>
                     </a>
                     <!-- END Logo -->
@@ -170,7 +170,7 @@ foreach ($user_details as $user) {
                 <div class="content-side">
                     <ul class="nav-main">
                         <li class="nav-main-item">
-                            <a class="nav-main-link active" href="db_banking.html">
+                            <a class="nav-main-link active" href="./">
                                 <i class="nav-main-link-icon fa fa-rocket"></i>
                                 <span class="nav-main-link-name">Overview</span>
                             </a>
@@ -232,13 +232,13 @@ foreach ($user_details as $user) {
                                         <span class="nav-main-link-name">Transfers</span>
                                     </a>
                                 </li>
-                                <li class="nav-main-item">
+                                <!-- <li class="nav-main-item">
                                     <a class="nav-main-link" href="">
                                         <span class="nav-main-link-name">Loans</span>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
+                                    <a class="nav-main-link" href="credit.php">
                                         <span class="nav-main-link-name">Credit</span>
                                     </a>
                                 </li>
@@ -247,7 +247,7 @@ foreach ($user_details as $user) {
                         </li>
                         <li class="nav-main-heading">Personal</li>
                         <li class="nav-main-item">
-                            <a class="nav-main-link" href="">
+                            <a class="nav-main-link" href="edit-profile.php">
                                 <i class="nav-main-link-icon fa fa-user-circle"></i>
                                 <span class="nav-main-link-name">Profile</span>
                             </a>
@@ -371,7 +371,7 @@ foreach ($user_details as $user) {
                                     <i class="fa fa-fw fa-cog mr-1"></i> Settings
                                 </a>
                                 <div role="separator" class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="op_auth_signin.html">
+                                <a class="dropdown-item" href="logout.php">
                                     <i class="fa fa-fw fa-arrow-alt-circle-left mr-1"></i> Log Out
                                 </a>
                             </div>

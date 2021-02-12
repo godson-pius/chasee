@@ -3,12 +3,12 @@
     $title = "User Dashboard";
     require_once 'inc/header.php';
 
-    $total_transfer = fetch_transactions(1, $user_id);
+    $total_transfer = fetch_transactions(0, $user_id);
     foreach ($total_transfer as $transfer) {
         
     }
     
-    $total_income = fetch_transactions(0, $user_id);
+    $total_income = fetch_transactions(1, $user_id);
     foreach ($total_income as $income) {
         
     }
@@ -30,19 +30,19 @@
                             <div class="row text-center">
                                 <div class="col-md-4 py-3">
                                     <div class="font-size-h1 font-w300 text-black mb-1">
-                                        $<?= $acc_balance; ?>
+                                        $<?= number_format($acc_balance); ?>
                                     </div>
                                     <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Balance</a>
                                 </div>
                                 <div class="col-md-4 py-3">
                                     <div class="font-size-h1 font-w300 text-success mb-1">
-                                        $<?= $transfer['total']; ?>
+                                        $<?= number_format($transfer['total']); ?>
                                     </div>
                                     <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Income</a>
                                 </div>
                                 <div class="col-md-4 py-3">
                                     <div class="font-size-h1 font-w300 text-danger mb-1">
-                                        -$<?= $income['total']; ?>
+                                        -$<?= number_format($income['total']); ?>
                                     </div>
                                     <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Transfer</a>
                                 </div>
@@ -108,7 +108,7 @@
                                 $arrow = "fa fa-arrow-right text-danger";
                             }
 
-                            $recipents = where("users", "id", $trans['to_user']);
+                            $recipents = where("users", "acc_number", $trans['to_user']);
                             foreach ($recipents as $recipent) { ?>
 
                             <a class="block block-rounded block-link-shadow invisible border-left <?= $class_style; ?> border-3x" data-toggle="appear" href="javascript:void(0)">

@@ -94,6 +94,19 @@ function fetch_transactions($type, $user_id) {
     }
 }
 
+function fetch_all_transactions() {
+    $sql = "SELECT sum(amount) as total FROM transactions";
+    $result = returnQuery($sql);
+
+    if ($result) {
+        foreach ($result as $res) {
+            return $res['total'];
+        }
+    } else {
+        return false;
+    }
+}
+
 function fetchAll($table, $preferredOrder = null, $limit1 = null, $limit2 = null) {
 
     if (!is_null($limit1) && !is_null($limit2) && !is_null($preferredOrder)) {

@@ -2,7 +2,7 @@
     require_once '../admin/inc/functions/config.php';
 
     if (isset($_POST['submit'])) {
-        $response = user_login($_POST);
+        $response = adminLogin($_POST);
 
         if ($response === true) {
             redirect_to("index.php");
@@ -115,7 +115,7 @@
                                     <a class="link-fx font-w700 font-size-h1" href="index.html">
                                         <span class="text-dark">Cha</span><span class="text-primary">ce</span>
                                     </a>
-                                    <p class="text-uppercase font-w700 font-size-sm text-muted">Sign In</p>
+                                    <p class="text-uppercase font-w700 font-size-sm text-muted">Admin Sign In</p>
                                 </div>
                                 <!-- END Header -->
 

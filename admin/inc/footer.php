@@ -1,76 +1,50 @@
-<!-- App Settings FAB -->
-<div id="app-settings">
-  <app-settings layout-active="default" :layout-location="{
-      'default': 'admin-dashboard.html',
-      'fixed': 'fixed-admin-dashboard.html',
-      'fluid': 'fluid-admin-dashboard.html',
-      'mini': 'mini-admin-dashboard.html'
-    }"></app-settings>
+<footer id="page-footer" class="bg-body-light">
+  <div class="content py-0">
+    <div class="row font-size-sm">
+      <div class="col-sm-6 order-sm-2 mb-1 mb-sm-0 text-center text-sm-right">
+        Crafted with <i class="fa fa-heart text-danger"></i> by <a class="font-w600" href="https://1.envato.market/ydb" target="_blank">pixelcave</a>
+      </div>
+      <div class="col-sm-6 order-sm-1 text-center text-sm-left">
+        <a class="font-w600" href="https://1.envato.market/r6y" target="_blank">Dashmix 3.1</a> &copy; <span data-toggle="year-copy"></span>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END Footer -->
 </div>
+<!-- END Page Container -->
 
-<!-- jQuery -->
-<script src="assets/vendor/jquery.min.js"></script>
+<!--
+            Dashmix JS Core
 
-<!-- Bootstrap -->
-<script src="assets/vendor/popper.min.js"></script>
-<script src="assets/vendor/bootstrap.min.js"></script>
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_js/main/bootstrap.js for more info.
 
-<!-- Perfect Scrollbar -->
-<script src="assets/vendor/perfect-scrollbar.min.js"></script>
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
 
-<!-- DOM Factory -->
-<script src="assets/vendor/dom-factory.js"></script>
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+<script src="assets/js/dashmix.core.min.js"></script>
 
-<!-- MDK -->
-<script src="assets/vendor/material-design-kit.js"></script>
+<!--
+            Dashmix JS
 
-<!-- Range Slider -->
-<script src="assets/vendor/ion.rangeSlider.min.js"></script>
-<script src="assets/js/ion-rangeslider.js"></script>
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_js/main/app.js
+        -->
+<script src="assets/js/dashmix.app.min.js"></script>
 
-<!-- App -->
-<script src="assets/js/toggle-check-all.js"></script>
-<script src="assets/js/check-selected-row.js"></script>
-<script src="assets/js/dropdown.js"></script>
-<script src="assets/js/sidebar-mini.js"></script>
-<script src="assets/js/app.js"></script>
+<!-- Page JS Plugins -->
+<script src="assets/js/plugins/chart.js/Chart.bundle.min.js"></script>
 
-<!-- App Settings (safe to remove) -->
-<script src="assets/js/app-settings.js"></script>
-
-
-<!-- Flatpickr -->
-<script src="assets/vendor/flatpickr/flatpickr.min.js"></script>
-<script src="assets/js/flatpickr.js"></script>
-
-<!-- Global Settings -->
-<script src="assets/js/settings.js"></script>
-
-<!-- Chart.js -->
-<script src="assets/vendor/Chart.min.js"></script>
-
-<!-- App Charts JS -->
-<script src="assets/js/charts.js"></script>
-
-<!-- Chart Samples -->
-<script src="assets/js/page.admin-dashboard.js"></script>
-
-<!-- Vector Maps -->
-<script src="assets/vendor/jqvmap/jquery.vmap.min.js"></script>
-<script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
-<script src="assets/js/vector-maps.js"></script>
-
-<!-- My Custom Js -->
-<script src="custom/js/admin.js"></script>
-
-<!-- DataTables js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" crossorigin="anonymous"></script>
-
-<script>
-  $(document).ready(function() {
-    $('#myTable').DataTable();
-  });
-</script>
+<!-- Page JS Code -->
+<script src="assets/js/pages/be_pages_ecom_dashboard.min.js"></script>
 </body>
 
 </html>

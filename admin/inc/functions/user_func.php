@@ -257,3 +257,81 @@ function updateStudentProfile($post)
         return $errors;
     }
 }
+
+function make_transfer($post, $user_id) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($recipent)) {
+        $acc_number = sanitize($recipent);
+    } else {
+        $errors[] = "Enter account number!";
+    }
+    
+    if (!empty($amount)) {
+        $amount = sanitize($amount);
+    } else {
+        $errors[] = "Enter account number!";
+    }
+    
+
+    if (!$errors) {
+        $sql1 = "SELECT * FROM users WHERE id = $user_id";
+        $query1 = returnQuery($sql1);
+
+        if (mysqli_num_rows($query1) > 0) {
+            $details = mysqli_fetch_assoc($query1);
+            $total_balance = $details['acc_balance'];
+
+            if ($amount <= $total_balance) {
+                $sql2 = "INSERT INTO transactions (user_id, type, amount, to_user, created_at) VALUES ($user_id, 1, $amount, $acc_number, now())";
+                $query2 = validateQuery($sql2);
+
+                if ($query2) {
+                    return true;
+                }
+            } else {
+                $balance_err = "Insufficient Balance";
+                return $balance_err;
+            }
+        }
+    } else {
+        return $errors;
+    }
+}
+
+function credit_account($post, $user_id) {
+    extract($post);
+    $err_flag = false;
+    $errors = [];
+
+    if (!empty($amount)) {
+        $amount = sanitize($amount);
+    } else {
+        $err_flag = true;
+        $errors[] = "Amount is empty";
+    }
+
+    if ($err_flag === false) {
+        $ql = "SELECT * FROM users WHERE id = $user_id";
+        $qq = returnQuery($ql);
+
+        if (mysqli_num_rows($qq) > 0) {
+            $details = mysqli_fetch_assoc($qq);
+            $amount_in_db = $details['acc_balance'];
+
+            $update_balance = $amount + $amount_in_db;
+
+            $sql = "UPDATE USERS SET acc_balance = '$update_balance' WHERE id = $user_id";
+            $result = validateQuery($sql);
+
+            if ($result) {
+                return true;
+            } else {
+                $err = "Error! try again";
+            }
+        }
+    } else {
+        return $errors;
+    }
+}
