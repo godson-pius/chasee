@@ -52,134 +52,42 @@
                     <!-- END Quick Overview -->
 
                     <!-- Cards -->
-                    <h2 class="content-heading">
-                        <i class="fa fa-angle-right text-muted mr-1"></i> Cards (3)
-                    </h2>
-                    <div class="row">
-                        <div class="col-xl-4 invisible" data-toggle="appear">
-                            <!-- Card #1 -->
-                            <a class="block block-rounded block-link-shadow" href="javascript:void(0)">
-                                <div class="block-content block-content-full ribbon ribbon-dark ribbon-modern ribbon-info">
-                                    <div class="ribbon-box">$2.000,00</div>
-                                    <div class="py-3 text-center">
-                                        <i class="fa fa-credit-card fa-4x text-gray"></i>
-                                        <p class="font-size-lg text-black mt-3 mb-0">
-                                            Henry Harrison
-                                        </p>
-                                        <p class="text-muted mb-3">
-                                            4309-xxxx-xxxx-7898
-                                        </p>
-                                        <p class="font-size-sm font-w700 text-muted mb-0">
-                                            VISA
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="block-content block-content-full block-content-sm text-center bg-body-light">
-                                    <span class="font-size-sm text-muted">Active through May 2025</span>
-                                </div>
-                            </a>
-                            <!-- END Card #1 -->
-                        </div>
-                        <div class="col-xl-4 invisible" data-toggle="appear">
-                            <!-- Card #2 -->
-                            <a class="block block-rounded block-link-shadow" href="javascript:void(0)">
-                                <div class="block-content block-content-full ribbon ribbon-dark ribbon-modern ribbon-info">
-                                    <div class="ribbon-box">$3.500,00</div>
-                                    <div class="py-3 text-center">
-                                        <i class="fa fa-credit-card fa-4x text-gray"></i>
-                                        <p class="font-size-lg text-black mt-3 mb-0">
-                                            Example LTD
-                                        </p>
-                                        <p class="text-muted mb-3">
-                                            9852-xxxx-xxxx-9852
-                                        </p>
-                                        <p class="font-size-sm font-w700 text-muted mb-0">
-                                            AMERICAN EXPRESS
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="block-content block-content-full block-content-sm text-center bg-body-light">
-                                    <span class="font-size-sm text-muted">Active through October 2028</span>
-                                </div>
-                            </a>
-                            <!-- END Card #2 -->
-                        </div>
-                        <div class="col-xl-4 invisible" data-toggle="appear">
-                            <!-- Card #3 -->
-                            <a class="block block-rounded block-link-shadow" href="javascript:void(0)">
-                                <div class="block-content block-content-full ribbon ribbon-dark ribbon-modern ribbon-info">
-                                    <div class="ribbon-box">$5.000,00</div>
-                                    <div class="py-3 text-center">
-                                        <i class="fa fa-credit-card fa-4x text-gray"></i>
-                                        <p class="font-size-lg text-black mt-3 mb-0">
-                                            Henry Harrison
-                                        </p>
-                                        <p class="text-muted mb-3">
-                                            1020-xxxx-xxxx-6981
-                                        </p>
-                                        <p class="font-size-sm font-w700 text-muted mb-0">
-                                            MasterClub
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="block-content block-content-full block-content-sm text-center bg-body-light">
-                                    <span class="font-size-sm text-muted">Active through July 2027</span>
-                                </div>
-                            </a>
-                            <!-- END Card #3 -->
-                        </div>
-                    </div>
+                    
                     <!-- END Cards -->
 
                     <!-- Bank Accounts -->
                     <h2 class="content-heading">
-                        <i class="fa fa-angle-right text-muted mr-1"></i> Bank Accounts (2)
+                        <i class="fa fa-angle-right text-muted mr-1"></i> Bank Accounts (<?= getTotalQuote("users", "email", $email); ?>)
                     </h2>
                     <div class="row">
-                        <div class="col-lg-6 invisible" data-toggle="appear">
-                            <!-- Bank Account #1 -->
-                            <a class="block block-rounded block-link-shadow" href="javascript:void(0)">
-                                <div class="block-content block-content-full d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <p class="font-size-lg font-w600 mb-0">
-                                            US 632-9854-<span class="text-default">485</span>
-                                        </p>
-                                        <p class="text-muted mb-0">
-                                            $8.982,00
-                                        </p>
+                    <?php
+                        $accounts = whereQuote("users", "email", $email);
+                        foreach ($accounts as $account) { ?>
+
+                            <div class="col-lg-6 invisible" data-toggle="appear">
+                                <!-- Bank Account #1 -->
+                                <a class="block block-rounded block-link-shadow" href="javascript:void(0)">
+                                    <div class="block-content block-content-full d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <p class="font-size-lg font-w600 mb-0">
+                                                <span class="text-default"><?= $account['acc_number']; ?></span>
+                                            </p>
+                                            <p class="text-muted mb-0">
+                                                $<?= $account['acc_balance']; ?>
+                                            </p>
+                                        </div>
+                                        <div class="ml-3">
+                                            <i class="fa fa-piggy-bank fa-2x text-gray"></i>
+                                        </div>
                                     </div>
-                                    <div class="ml-3">
-                                        <i class="fa fa-piggy-bank fa-2x text-gray"></i>
+                                    <div class="block-content block-content-full block-content-sm text-center bg-body-light">
+                                        <span class="font-size-sm text-muted">Chasee Bank</span>
                                     </div>
-                                </div>
-                                <div class="block-content block-content-full block-content-sm text-center bg-body-light">
-                                    <span class="font-size-sm text-muted">$1.200,00 in monthly charges</span>
-                                </div>
-                            </a>
-                            <!-- END Bank Account #1 -->
-                        </div>
-                        <div class="col-lg-6 invisible" data-toggle="appear">
-                            <!-- Bank Account #2 -->
-                            <a class="block block-rounded block-link-shadow" href="javascript:void(0)">
-                                <div class="block-content block-content-full d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <p class="font-size-lg font-w600 mb-0">
-                                            US 632-5525-<span class="text-default">796</span>
-                                        </p>
-                                        <p class="text-muted mb-0">
-                                            $40.698,00
-                                        </p>
-                                    </div>
-                                    <div class="ml-3">
-                                        <i class="fa fa-piggy-bank fa-2x text-gray"></i>
-                                    </div>
-                                </div>
-                                <div class="block-content block-content-full block-content-sm text-center bg-body-light">
-                                    <span class="font-size-sm text-muted">$2.350,00 in monthly charges</span>
-                                </div>
-                            </a>
-                            <!-- END Bank Account #2 -->
-                        </div>
+                                </a>
+                                <!-- END Bank Account #1 -->
+                            </div>
+                        <?php } ?>
+
                     </div>
                     <!-- END Bank Accounts -->
 
@@ -187,78 +95,42 @@
                     <h2 class="content-heading">
                         <i class="fa fa-angle-right text-muted mr-1"></i> Latest Transactions
                     </h2>
-                    <a class="block block-rounded block-link-shadow invisible border-left border-success border-3x" data-toggle="appear" href="javascript:void(0)">
-                        <div class="block-content block-content-full d-flex align-items-center justify-content-between">
-                            <div>
-                                <p class="font-size-lg font-w600 mb-0">
-                                    +$250,00
-                                </p>
-                                <p class="text-muted mb-0">
-                                    xxx-485 Account
-                                </p>
-                            </div>
-                            <div class="ml-3">
-                                <i class="fa fa-arrow-left text-success"></i>
-                            </div>
-                        </div>
-                        <div class="block-content block-content-full block-content-sm bg-body-light">
-                            <span class="font-size-sm text-muted">From <strong>Company Inc</strong> at <strong>June 10, 2018 - 10:06</strong></span>
-                        </div>
-                    </a>
-                    <a class="block block-rounded block-link-shadow invisible border-left border-danger border-3x" data-toggle="appear" href="javascript:void(0)">
-                        <div class="block-content block-content-full d-flex align-items-center justify-content-between">
-                            <div>
-                                <p class="font-size-lg font-w600 mb-0">
-                                    -$540,00
-                                </p>
-                                <p class="text-muted mb-0">
-                                    xxx-7898 VISA
-                                </p>
-                            </div>
-                            <div class="ml-3">
-                                <i class="fa fa-arrow-right text-danger"></i>
-                            </div>
-                        </div>
-                        <div class="block-content block-content-full block-content-sm bg-body-light">
-                            <span class="font-size-sm text-muted">From <strong>Company Inc</strong> at <strong>June 5, 2018 - 08:46</strong></span>
-                        </div>
-                    </a>
-                    <a class="block block-rounded block-link-shadow invisible border-left border-success border-3x" data-toggle="appear" href="javascript:void(0)">
-                        <div class="block-content block-content-full d-flex align-items-center justify-content-between">
-                            <div>
-                                <p class="font-size-lg font-w600 mb-0">
-                                    +$120,00
-                                </p>
-                                <p class="text-muted mb-0">
-                                    xxx-485 Account
-                                </p>
-                            </div>
-                            <div class="ml-3">
-                                <i class="fa fa-arrow-left text-success"></i>
-                            </div>
-                        </div>
-                        <div class="block-content block-content-full block-content-sm bg-body-light">
-                            <span class="font-size-sm text-muted">From <strong>Company Inc</strong> at <strong>May 25, 2018 - 12:25</strong></span>
-                        </div>
-                    </a>
-                    <a class="block block-rounded block-link-shadow invisible border-left border-success border-3x" data-toggle="appear" href="javascript:void(0)">
-                        <div class="block-content block-content-full d-flex align-items-center justify-content-between">
-                            <div>
-                                <p class="font-size-lg font-w600 mb-0">
-                                    +$698,00
-                                </p>
-                                <p class="text-muted mb-0">
-                                    xxx-796 Account
-                                </p>
-                            </div>
-                            <div class="ml-3">
-                                <i class="fa fa-arrow-left text-success"></i>
-                            </div>
-                        </div>
-                        <div class="block-content block-content-full block-content-sm bg-body-light">
-                            <span class="font-size-sm text-muted">From <strong>Company Inc</strong> at <strong>May 23, 2018 - 14:23</strong></span>
-                        </div>
-                    </a>
+                    <?php
+                        $transc = fetchAllWhere("transactions", "user_id", $user_id, "id", 0, 10);
+                        foreach ($transc as $trans) { 
+                            if ($trans['type'] == 0) {
+                                $class_style = "border-success";
+                                $symbol = "+";
+                                $arrow = "fa fa-arrow-left text-success";
+                            } else if ($trans['type'] == 1) {
+                                $class_style = "border-danger";
+                                $symbol = "-";
+                                $arrow = "fa fa-arrow-right text-danger";
+                            }
+
+                            $recipents = where("users", "id", $trans['to_user']);
+                            foreach ($recipents as $recipent) { ?>
+
+                            <a class="block block-rounded block-link-shadow invisible border-left <?= $class_style; ?> border-3x" data-toggle="appear" href="javascript:void(0)">
+                                <div class="block-content block-content-full d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="font-size-lg font-w600 mb-0">
+                                            <?= $symbol . $trans['amount']; ?>
+                                        </p>
+                                        <p class="text-muted mb-0">
+                                            <?= $recipent['acc_number']; ?> (<?= $recipent['username']; ?>)
+                                        </p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <i class="<?= $arrow; ?>"></i>
+                                    </div>
+                                </div>
+                                <div class="block-content block-content-full block-content-sm bg-body-light">
+                                    <span class="font-size-sm text-muted">From <strong>Company Inc</strong> at <strong>June 10, 2018 - 10:06</strong></span>
+                                </div>
+                            </a>
+                        <?php } } ?>
+                   
                     <!-- END Latest Transactions -->
 
                     <!-- View More -->

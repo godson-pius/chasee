@@ -138,6 +138,18 @@ function fetchAllWhere($table, $where, $whereValue, $orderBy, $limit = null, $li
     }
 }
 
+function get_transactions($table, $where, $where2, $whereValue, $whereValue2, $orderBy, $limit = null, $limit2 = null) {
+
+    $sql = "SELECT * FROM $table WHERE $where = $whereValue OR $where2 = $whereValue2 ORDER BY $orderBy DESC LIMIT $limit, $limit2";
+    $result = returnQuery($sql);
+
+    if ($result) {
+        return $result;
+    } else {
+        return false;
+    }
+}
+
 function where($table, $where, $whereValue, $limit = null) {
     if (!is_null($limit)) {
         $sql = "SELECT * FROM $table WHERE $where = $whereValue LIMIT $limit";
@@ -187,6 +199,22 @@ function whereQuote($table, $where, $whereValue, $limit = null) {
 function getTotal($table, $optional = null, $optionValue = null) {
     if (!is_null($optional) && !is_null($optionValue)) {
         $sql = "SELECT * FROM $table WHERE $optional = $optionValue";
+    } else {
+        $sql = "SELECT * FROM $table";
+    }
+    $result = returnQuery($sql);
+
+    if ($result) {
+        $total = mysqli_num_rows($result);
+        return $total;
+    } else {
+        return false;
+    }
+
+}
+function getTotalQuote($table, $optional = null, $optionValue = null) {
+    if (!is_null($optional) && !is_null($optionValue)) {
+        $sql = "SELECT * FROM $table WHERE $optional = '$optionValue'";
     } else {
         $sql = "SELECT * FROM $table";
     }

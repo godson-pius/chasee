@@ -86,19 +86,6 @@ function user_register($post) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 } // end of user registration
 
 // User Login

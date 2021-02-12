@@ -1,15 +1,15 @@
 <?php
-    if (!isset($_SESSION['user'])) {
-        blockUrlHackers($_SESSION['user'], "signin.php");
-    } else {
-        $user_id = $_SESSION['user'];
-    }
+if (!isset($_SESSION['user'])) {
+    blockUrlHackers($_SESSION['user'], "signin.php");
+} else {
+    $user_id = $_SESSION['user'];
+}
 
-    $user_details = where("users", "id", $user_id);
-    
-    foreach ($user_details as $user) {
-        extract($user);
-    }
+$user_details = where("users", "id", $user_id);
+
+foreach ($user_details as $user) {
+    extract($user);
+}
 
 ?>
 
@@ -161,7 +161,7 @@
                     <div class="smini-hide">
                         <img class="img-avatar" src="../admin/assets/media/avatars/avatar10.jpg" alt="">
                         <div class="mt-3 font-w600"><?= $fullname; ?></div>
-                        <a class="link-fx text-muted" href="javascript:void(0)"><?= $acc_number;?></a>
+                        <a class="link-fx text-muted" href="javascript:void(0)"><?= $acc_number; ?></a>
                     </div>
                 </div>
                 <!-- END Side Actions -->
@@ -184,7 +184,7 @@
                             <ul class="nav-main-submenu">
                                 <li class="nav-main-item">
                                     <a class="nav-main-link" href="">
-                                        <span class="nav-main-link-name">Active</span>
+                                        <span class="nav-main-link-name text-success">Active</span>
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
@@ -193,7 +193,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
+                                    <a class="nav-main-link" href="signup.php">
                                         <i class="nav-main-link-icon fa fa-plus-circle"></i>
                                         <span class="nav-main-link-name">New Account</span>
                                     </a>
@@ -203,64 +203,24 @@
                         <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon fa fa-money-check"></i>
-                                <span class="nav-main-link-name">Cards</span>
+                                <span class="nav-main-link-name">Transactions</span>
                             </a>
                             <ul class="nav-main-submenu">
                                 <li class="nav-main-item">
                                     <a class="nav-main-link" href="">
                                         <span class="nav-main-link-name">Approved</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-success">3</span>
+                                        <span class="nav-main-link-badge badge badge-pill badge-success"><?= getTotal("transactions", "approved", 1); ?></span>
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
                                     <a class="nav-main-link" href="">
                                         <span class="nav-main-link-name">Pending</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-warning">1</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <span class="nav-main-link-name">Manage</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon fa fa-plus-circle"></i>
-                                        <span class="nav-main-link-name">New Card</span>
+                                        <span class="nav-main-link-badge badge badge-pill badge-warning"><?= getTotal("transactions", "approved", 0); ?></span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-main-item">
-                            <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
-                                <i class="nav-main-link-icon fa fa-money-bill"></i>
-                                <span class="nav-main-link-name">Payments</span>
-                            </a>
-                            <ul class="nav-main-submenu">
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <span class="nav-main-link-name">Scheduled</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-success">2</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <span class="nav-main-link-name">Recurring</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <span class="nav-main-link-name">Manage</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <i class="nav-main-link-icon fa fa-plus-circle"></i>
-                                        <span class="nav-main-link-name">New Payment</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+
                         <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon fa fa-money-bill-wave-alt"></i>
@@ -268,7 +228,7 @@
                             </a>
                             <ul class="nav-main-submenu">
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
+                                    <a class="nav-main-link" href="transfer.php">
                                         <span class="nav-main-link-name">Transfers</span>
                                     </a>
                                 </li>
@@ -282,16 +242,7 @@
                                         <span class="nav-main-link-name">Credit</span>
                                     </a>
                                 </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <span class="nav-main-link-name">Bonds</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
-                                        <span class="nav-main-link-name">Stocks</span>
-                                    </a>
-                                </li>
+
                             </ul>
                         </li>
                         <li class="nav-main-heading">Personal</li>
@@ -301,29 +252,17 @@
                                 <span class="nav-main-link-name">Profile</span>
                             </a>
                         </li>
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="">
-                                <i class="nav-main-link-icon fa fa-envelope"></i>
-                                <span class="nav-main-link-name">Messages</span>
-                                <span class="nav-main-link-badge badge badge-pill badge-success">3</span>
-                            </a>
-                        </li>
+
                         <li class="nav-main-item">
                             <a class="nav-main-link" href="">
                                 <i class="nav-main-link-icon fa fa-cog"></i>
                                 <span class="nav-main-link-name">Settings</span>
                             </a>
                         </li>
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="">
-                                <i class="nav-main-link-icon fa fa-lock"></i>
-                                <span class="nav-main-link-name">Security</span>
-                                <span class="nav-main-link-badge badge badge-pill badge-danger">1</span>
-                            </a>
-                        </li>
+
                         <li class="nav-main-heading">Dashboards</li>
                         <li class="nav-main-item">
-                            <a class="nav-main-link" href="be_pages_dashboard_all.html">
+                            <a class="nav-main-link" href="../">
                                 <i class="nav-main-link-icon fa fa-arrow-left"></i>
                                 <span class="nav-main-link-name">Go Back</span>
                             </a>
