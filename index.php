@@ -15,7 +15,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <div class="header-content-2">
                                 <h1>Transfer Funds From Home</h1>
-                                <p>Perform your daily transactions safely and conveniently via our digital chnannels</p>
+                                <p>Perform your daily transactions safely and conveniently via our digital channels</p>
                                 <ul class="section-button">
                                     <li>
                                         <button class="btn1 orange-gradient btn-with-image">
