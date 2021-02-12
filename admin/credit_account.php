@@ -1,18 +1,14 @@
 <?php
-require_once '../admin/inc/functions/config.php';
-$title = "User Dashboard";
+require_once 'inc/functions/config.php';
 require_once 'inc/header.php';
-
-
 
 if (isset($_POST['submit'])) {
     if (isset($_SESSION['user'])) {
         $id = $_SESSION['user'];
     }
-
-    $response = make_transfer($_POST, $id);
+    $response = credit_user_account($_POST);
     if ($response === true) {
-        echo "<script>alert('Transfer Successful!')</script>";
+        echo "<script>alert('Account have been created!')</script>";
     } else {
         $errors = $response;
         if (is_array($errors)) {
@@ -35,7 +31,7 @@ if (isset($_POST['submit'])) {
     <div class="content">
         <!-- Quick Overview -->
         <h2 class="content-heading">
-            <i class="fa fa-angle-right text-muted mr-1"></i> Quick Transfer
+            <i class="fa fa-angle-right text-muted mr-1"></i> Credit Account
         </h2>
 
         <div class="row">
@@ -60,7 +56,7 @@ if (isset($_POST['submit'])) {
                                     <i class="fa fa-dollar-sign"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control text-center" name="amount" placeholder="Amount">
+                            <input type="text" amount class="form-control text-center" id="example-group2-input3" name="amount" placeholder="Amount">
                             <div class="input-group-append">
                                 <span class="input-group-text">.00</span>
                             </div>
@@ -85,4 +81,5 @@ if (isset($_POST['submit'])) {
 
 <!-- Footer -->
 <?php require_once 'inc/footer.php'; ?>
+<script src="js/delete_user.js"></script>
 <script src="js/get_recipent.js"></script>

@@ -225,6 +225,23 @@ function getTotal($table, $optional = null, $optionValue = null) {
     }
 
 }
+
+function getTotalAnd($table, $optional = null, $optionValue = null, $user, $userValue) {
+    if (!is_null($optional) && !is_null($optionValue)) {
+        $sql = "SELECT * FROM $table WHERE $optional = $optionValue AND $user = $userValue";
+    } else {
+        $sql = "SELECT * FROM $table";
+    }
+    $result = returnQuery($sql);
+
+    if ($result) {
+        $total = mysqli_num_rows($result);
+        return $total;
+    } else {
+        return false;
+    }
+
+}
 function getTotalQuote($table, $optional = null, $optionValue = null) {
     if (!is_null($optional) && !is_null($optionValue)) {
         $sql = "SELECT * FROM $table WHERE $optional = '$optionValue'";

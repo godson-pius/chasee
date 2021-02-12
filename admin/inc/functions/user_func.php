@@ -117,8 +117,14 @@ function user_login($post)
         if ($result) {
             $encryptedpassword = $result['password'];
             if (decrypt($encryptedpassword, $password)) {
-                $_SESSION['user'] = $result['id'];
-                return true;
+                if ($result['access'] == 1) {
+                    $_SESSION['user'] = $result['id'];
+                    return true;    
+                } else {
+                    $acc_blocked_err = "Your account have been blocked!";
+                    return $acc_blocked_err;
+                }
+                
             }
         }
         $errors[] = "Invalid Login Details!";
@@ -261,30 +267,33 @@ function updateStudentProfile($post)
 function make_transfer($post, $user_id) {
     extract($post);
     $errors = [];
+    $err_flag = false;
 
     if (!empty($recipent)) {
         $acc_number = sanitize($recipent);
     } else {
+        $err_flag = true;
         $errors[] = "Enter account number!";
     }
     
     if (!empty($amount)) {
         $amount = sanitize($amount);
     } else {
+        $err_flag = true;
         $errors[] = "Enter account number!";
     }
     
 
-    if (!$errors) {
+    if ($err_flag === false) {
         $sql1 = "SELECT * FROM users WHERE id = $user_id";
-        $query1 = returnQuery($sql1);
+        $query1 = executeQuery($sql1);
 
-        if (mysqli_num_rows($query1) > 0) {
-            $details = mysqli_fetch_assoc($query1);
+        if ($query1) {
+            $details = $query1;
             $total_balance = $details['acc_balance'];
 
             if ($amount <= $total_balance) {
-                $sql2 = "INSERT INTO transactions (user_id, type, amount, to_user, created_at) VALUES ($user_id, 1, $amount, $acc_number, now())";
+                $sql2 = "INSERT INTO transactions (user_id, type, amount, to_user, created_at) VALUES ($user_id, 1, $amount, '$acc_number', now())";
                 $query2 = validateQuery($sql2);
 
                 if ($query2) {
@@ -294,11 +303,15 @@ function make_transfer($post, $user_id) {
                 $balance_err = "Insufficient Balance";
                 return $balance_err;
             }
+        } else {
+            $err_user = "Error from getting users";
+            return $err_user;
         }
     } else {
         return $errors;
     }
 }
+
 
 function credit_account($post, $user_id) {
     extract($post);

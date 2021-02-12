@@ -7,7 +7,15 @@
         if ($response === true) {
             redirect_to("index.php");
         } else {
-            echo "<script>alert('error')</script>";
+            $errors = $response;
+            if (is_array($errors)) {
+                foreach ($errors as $err) {
+                    echo "<script>alert('$err')</script>";
+                }
+            } else {
+                echo "<script>alert('$errors')</script>";
+            }
+            
         }
     }
 ?>
@@ -208,3 +216,11 @@
         <script src="../admin/assets/js/pages/op_auth_signin.min.js"></script>
     </body>
 </html>
+
+<?php
+    if (isset($_GET['msg'])) {
+        $msg = $_GET['msg'];
+    echo "<script>alert('$msg')</script>";
+    }
+
+?>

@@ -71,7 +71,7 @@ foreach ($admin_details as $admin) {
                         <!-- User Info -->
                         <div class="ml-2">
                             <a class="text-white font-w600" href="be_pages_generic_profile.html"></a>
-                            <div class="text-white-75 font-size-sm">Full Stack Developer</div>
+                            <div class="text-white-75 font-size-sm"><?= $fullnmae; ?></div>
                         </div>
                         <!-- END User Info -->
 
@@ -147,7 +147,7 @@ foreach ($admin_details as $admin) {
                 <div class="content-side">
                     <ul class="nav-main">
                         <li class="nav-main-item">
-                            <a class="nav-main-link" href="be_pages_dashboard.html">
+                            <a class="nav-main-link" href="./">
                                 <i class="nav-main-link-icon fa fa-location-arrow"></i>
                                 <span class="nav-main-link-name">Dashboard</span>
                             </a>
@@ -161,7 +161,7 @@ foreach ($admin_details as $admin) {
                             </a>
                             <ul class="nav-main-submenu">
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_blocks_styles.html">
+                                    <a class="nav-main-link" href="users.php">
                                         <span class="nav-main-link-name">All Users</span>
                                     </a>
                                 </li>
@@ -175,12 +175,12 @@ foreach ($admin_details as $admin) {
                             </a>
                             <ul class="nav-main-submenu">
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_widgets_tiles.html">
+                                    <a class="nav-main-link" href="confirm.php">
                                         <span class="nav-main-link-name">Confirm Transactions</span>
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_widgets_stats.html">
+                                    <a class="nav-main-link" href="credit_account.php">
                                         <span class="nav-main-link-name">Credit Account</span>
                                     </a>
                                 </li>
@@ -226,16 +226,16 @@ foreach ($admin_details as $admin) {
                 <div>
                     <!-- Toggle Sidebar -->
                     <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
-                    <button type="button" class="btn btn-dual" data-toggle="layout" data-action="sidebar_toggle">
+                    <!-- <button type="button" class="btn btn-dual" data-toggle="layout" data-action="sidebar_toggle">
                         <i class="fa fa-fw fa-bars"></i>
-                    </button>
+                    </button> -->
                     <!-- END Toggle Sidebar -->
 
                     <!-- Open Search Section -->
                     <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                    <button type="button" class="btn btn-dual" data-toggle="layout" data-action="header_search_on">
+                    <!-- <button type="button" class="btn btn-dual" data-toggle="layout" data-action="header_search_on">
                         <i class="fa fa-fw fa-search"></i> <span class="ml-1 d-none d-sm-inline-block">Search</span>
-                    </button>
+                    </button> -->
                     <!-- END Open Search Section -->
                 </div>
                 <!-- END Left Section -->
@@ -254,7 +254,7 @@ foreach ($admin_details as $admin) {
                                 User Options
                             </div>
                             <div class="p-2">
-                                <a class="dropdown-item" href="be_pages_generic_profile.html">
+                                <!-- <a class="dropdown-item" href="be_pages_generic_profile.html">
                                     <i class="far fa-fw fa-user mr-1"></i> Profile
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_inbox.html">
@@ -263,18 +263,18 @@ foreach ($admin_details as $admin) {
                                 </a>
                                 <a class="dropdown-item" href="be_pages_generic_invoice.html">
                                     <i class="far fa-fw fa-file-alt mr-1"></i> Invoices
-                                </a>
+                                </a> -->
                                 <div role="separator" class="dropdown-divider"></div>
 
                                 <!-- Toggle Side Overlay -->
                                 <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                                <a class="dropdown-item" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_toggle">
+                                <!-- <a class="dropdown-item" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_toggle">
                                     <i class="far fa-fw fa-building mr-1"></i> Settings
-                                </a>
+                                </a> -->
                                 <!-- END Side Overlay -->
 
                                 <div role="separator" class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="op_auth_signin.html">
+                                <a class="dropdown-item" href="logout.php">
                                     <i class="far fa-fw fa-arrow-alt-circle-left mr-1"></i> Sign Out
                                 </a>
                             </div>
@@ -284,10 +284,10 @@ foreach ($admin_details as $admin) {
 
                     <!-- Notifications Dropdown -->
                     <div class="dropdown d-inline-block">
-                        <button type="button" class="btn btn-dual" id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <!-- <button type="button" class="btn btn-dual" id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-fw fa-bell"></i>
                             <span class="badge badge-secondary badge-pill">5</span>
-                        </button>
+                        </button> -->
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0" aria-labelledby="page-header-notifications-dropdown">
                             <div class="bg-primary rounded-top font-w600 text-white text-center p-3">
                                 Notifications

@@ -70,6 +70,10 @@
                                                 $all_transactions = fetch("transactions");
                                                 foreach ($all_transactions as $transactions) {
                                                     extract($transactions);
+
+                                                $get_users = where("users", "id", $user_id, 11);
+                                                foreach ($get_users as $users) {
+                                                    
                                                     if ($type == 0) {
                                                         $class = "badge badge-success";
                                                         $message = "Received";
@@ -79,8 +83,7 @@
                                                     }
                                                     
 
-                                                    $get_users = where("users", "id", $user_id, 11);
-                                                    foreach ($get_users as $users) { ?>
+                                                     ?>
 
                                                         <tr>
                                                             <td class="font-w600 text-center" style="width: 100px;">

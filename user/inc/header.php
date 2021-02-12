@@ -9,6 +9,10 @@ $user_details = where("users", "id", $user_id);
 
 foreach ($user_details as $user) {
     extract($user);
+
+    if ($access == 0) {
+        redirect_to("signin.php?msg=Your account have been blocked!");
+    }
 }
 
 ?>
@@ -209,13 +213,13 @@ foreach ($user_details as $user) {
                                 <li class="nav-main-item">
                                     <a class="nav-main-link" href="">
                                         <span class="nav-main-link-name">Approved</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-success"><?= getTotal("transactions", "approved", 1); ?></span>
+                                        <span class="nav-main-link-badge badge badge-pill badge-success"><?= getTotalAnd("transactions", "approved", 1,"user_id", $user_id); ?></span>
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
                                     <a class="nav-main-link" href="">
                                         <span class="nav-main-link-name">Pending</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-warning"><?= getTotal("transactions", "approved", 0); ?></span>
+                                        <span class="nav-main-link-badge badge badge-pill badge-warning"><?= getTotalAnd("transactions", "approved", 0, "user_id", $user_id); ?></span>
                                     </a>
                                 </li>
                             </ul>
@@ -283,16 +287,12 @@ foreach ($user_details as $user) {
                 <div>
                     <!-- Toggle Sidebar -->
                     <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
-                    <button type="button" class="btn btn-dual" data-toggle="layout" data-action="sidebar_toggle">
-                        <i class="fa fa-fw fa-stream fa-flip-horizontal"></i>
-                    </button>
+                    
                     <!-- END Toggle Sidebar -->
 
                     <!-- Open Search Section -->
                     <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                    <button type="button" class="btn btn-dual" data-toggle="layout" data-action="header_search_on">
-                        <i class="fa fa-fw fa-search"></i> <span class="ml-1 d-none d-sm-inline-block">Search..</span>
-                    </button>
+                    
                     <!-- END Open Search Section -->
                 </div>
                 <!-- END Left Section -->
@@ -301,11 +301,11 @@ foreach ($user_details as $user) {
                 <div>
                     <!-- Notifications Dropdown -->
                     <div class="dropdown d-inline-block">
-                        <button type="button" class="btn btn-dual" id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <!-- <button type="button" class="btn btn-dual" id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="far fa-fw fa-flag"></i>
                             <span class="badge badge-success badge-pill">3</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0" aria-labelledby="page-header-notifications-dropdown">
+                        </button> -->
+                        <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0" aria-labelledby="page-header-notifications-dropdown">
                             <div class="bg-primary-darker rounded-top font-w600 text-white text-center p-3">
                                 Notifications
                             </div>
@@ -349,7 +349,7 @@ foreach ($user_details as $user) {
                                     <i class="fa fa-fw fa-eye mr-1"></i> View All
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- END Notifications Dropdown -->
 
@@ -368,7 +368,7 @@ foreach ($user_details as $user) {
                             </div>
                             <div class="p-2">
                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="fa fa-fw fa-cog mr-1"></i> Settings
+                                    <!-- <i class="fa fa-fw fa-cog mr-1"></i> Settings -->
                                 </a>
                                 <div role="separator" class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="logout.php">

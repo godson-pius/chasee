@@ -240,3 +240,46 @@ function AddAdmin($post) {
         return $errors;
     }
 }
+
+
+function credit_user_account($post) {
+    extract($post);
+    $err_flag = false;
+    $errors = [];
+
+    if (!empty($recipent)) {
+        $acc_number = sanitize($recipent);
+    } else {
+        $errors[] = "Enter account number!";
+    }
+
+    if (!empty($amount)) {
+        $amount = sanitize($amount);
+    } else {
+        $err_flag = true;
+        $errors[] = "Amount is empty";
+    }
+
+    if ($err_flag === false) {
+        $ql = "SELECT * FROM users WHERE acc_number = $acc_number";
+        $qq = returnQuery($ql);
+
+        if (mysqli_num_rows($qq) > 0) {
+            $details = mysqli_fetch_assoc($qq);
+            $amount_in_db = $details['acc_balance'];
+
+            $update_balance = $amount + $amount_in_db;
+
+            $sql = "UPDATE users SET acc_balance = '$update_balance' WHERE acc_number = $acc_number";
+            $result = validateQuery($sql);
+
+            if ($result) {
+                return true;
+            } else {
+                $err = "Error! try again";
+            }
+        }
+    } else {
+        return $errors;
+    }
+}
