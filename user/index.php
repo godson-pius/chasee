@@ -81,7 +81,7 @@
                                         </div>
                                     </div>
                                     <div class="block-content block-content-full block-content-sm text-center bg-body-light">
-                                        <span class="font-size-sm text-muted">Chasee Bank</span>
+                                        <span class="font-size-sm text-muted">Chaxze Bank</span>
                                     </div>
                                 </a>
                                 <!-- END Bank Account #1 -->

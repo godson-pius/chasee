@@ -26,16 +26,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Sign Up | Chasee Bank</title>
+    <title>Sign Up | Chaxze Bank</title>
 
-    <meta name="description" content="Sign Up | Chasee Bank">
+    <meta name="description" content="Sign Up | Chaxze Bank">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph Meta -->
-    <meta property="og:title" content="Sign Up | Chasee Bank">
-    <meta property="og:site_name" content="Chasee">
-    <meta property="og:description" content="Sign Up | Chasee Bank">
+    <meta property="og:title" content="Sign Up | Chaxze Bank">
+    <meta property="og:site_name" content="Chaxze">
+    <meta property="og:description" content="Sign Up | Chaxze Bank">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -121,7 +121,7 @@
                             <!-- Header -->
                             <div class="mb-3 text-center">
                                 <a class="link-fx text-success font-w700 font-size-h1" href="index.html">
-                                    <span class="text-dark">Cha</span><span class="text-success">see</span>
+                                    <span class="text-dark">Cha</span><span class="text-success">xze</span>
                                 </a>
                                 <p class="text-uppercase font-w700 font-size-sm text-muted">Create New Account</p>
                             </div>

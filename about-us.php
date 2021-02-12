@@ -1,5 +1,5 @@
 <?php
-$title = "About | Chasee Bank";
+$title = "About | Chaxze Bank";
 require_once 'inc/components/header.php';
 ?>
 <!-- header -->
@@ -220,7 +220,7 @@ require_once 'inc/components/header.php';
             <div class="container">
                 <div class="home-contact-inner">
                     <h2>Create your bank account now!</h2>
-                    <p>What’s next in Chasee Bank? <a href="#">Learn more</a></p>
+                    <p>What’s next in Chaxze Bank? <a href="#">Learn more</a></p>
                     <ul class="section-button">
                         <li>
                             <a href="/user/signup.php" class="btn1 orange-gradient btn-with-image">

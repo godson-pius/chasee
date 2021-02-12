@@ -61,8 +61,8 @@
         <div class="navbar-area">
             <!-- mobile menu -->
             <div class="mobile-nav">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/logo.png" alt="logo">
+                <a href="index.php" class="logo">
+                    <img src="assets/images/chazelogo.png" alt="logo">
                 </a>
             </div>
             <!-- desktop menu -->
@@ -70,7 +70,7 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.png" alt="logo">
+                            <img src="assets/images/chazelogo.png" width="10" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
@@ -104,7 +104,7 @@
                                                     <a href="#" class="nav-link">Mobile Banking</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Chasee Whatsapp Banking</a>
+                                                    <a href="#" class="nav-link">ChaxzeBank Whatsapp Banking</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">QR Payments Banking</a>
@@ -127,7 +127,7 @@
                                             <a href="#" class="nav-link">Bills and Utility Payments</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Chasee Foundation</a>
+                                            <a href="#" class="nav-link">ChaxzeBank Foundation</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link dropdown-toggle">Money Transfer</a>

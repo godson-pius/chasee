@@ -5,10 +5,10 @@
                         <div class="col-sm-12 col-md-12 col-lg-4">
                             <div class="footer-content-item">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a>
+                                    <a href="index.php"><img src="assets/images/chazelogo.png" alt="logo"></a>
                                 </div>
                                 <div class="footer-details">
-                                    <h4 class="text-white font-weight-bolder">Chace</h4> <br><p> Chasee is a banking system that keep your day to day transactions safe and secure, fastest and reliable. </p>
+                                    <h4 class="text-white font-weight-bolder">ChaxzeBank</h4> <br><p> ChaxzeBank is a banking system that keep your day to day transactions safe and secure, fastest and reliable. </p>
                                 </div>
                             </div>
                         </div>
@@ -18,10 +18,10 @@
                                     <h3>Support</h3>
                                 </div>
                                 <ul class="footer-details footer-list">
-                                    <li><a href="faqs.html">FAQ's</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li><a href="faqs.php">FAQ's</a></li>
+                                    <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                                    <li><a href="terms-conditions.php">Terms & Conditions</a></li>
+                                    <li><a href="contact-us.php">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                 </div>
                                 <ul class="footer-details footer-list">
                                     <li>Address: <span>Lagos Island, Nigeria</span></li>
-                                    <li>Message: <span><a href="mailto:info@alia.com">Chasee@info.com</a></span></li>
+                                    <li>Message: <span><a href="mailto:info@alia.com">ChaxzeBank@info.com</a></span></li>
                                     <li>Phone: <span><a href="tel:(+00)8000046674">(+00) 800 0046 674</a></span></li>
                                 </ul>
                             </div>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="footer-lower">
                     <div class="footer-lower-item footer-copyright-text">
-                        <p>Copyright ©2020 Chasee Bank PLC </p>
+                        <p>Copyright ©2020 ChaxzeBank Bank PLC </p>
                     </div>
                     <div class="footer-lower-item footer-social-logo">
                         <ul class="footer-social-list">
