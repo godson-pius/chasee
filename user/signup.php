@@ -158,7 +158,12 @@
                                             </div>
                                             <div class="form-group">
                                                 <select name="acc_type" class="form-control form-control form-control-alt">
-                                                    <option value="ty">Savings</option>
+                                                    <?php 
+                                                        $acct_type = fetch("account_type");
+                                                        foreach ($acct_type as $aty) {
+                                                            extract($aty); ?>
+                                                            <option value="<?= $type; ?>"><?= $type; ?></option>
+                                                    <?php } ?>
                                                 </select>
                                             </div>
                                             <div class="form-group">

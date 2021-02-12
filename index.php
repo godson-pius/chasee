@@ -58,12 +58,12 @@
                     <div class="home-logo-item">
                         <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
                     </div>
-                    <div class="home-logo-item">
+                    <!-- <div class="home-logo-item">
                         <a href="#"><img src="assets/images/Bella_Naija.png" alt="logo"></a>
-                    </div>
-                    <div class="home-logo-item">
+                    </div> -->
+                    <!-- <div class="home-logo-item">
                         <a href="#"><img src="assets/images/Ebonyi.jpg" alt="logo"></a>
-                    </div>
+                    </div> -->
                     <div class="home-logo-item">
                         <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
                     </div>

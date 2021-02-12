@@ -8,7 +8,8 @@
                                     <a href="index.php"><img src="assets/images/chazelogo.png" alt="logo"></a>
                                 </div>
                                 <div class="footer-details">
-                                    <h4 class="text-white font-weight-bolder">ChaxzeBank</h4> <br><p> ChaxzeBank is a banking system that keep your day to day transactions safe and secure, fastest and reliable. </p>
+                                    <h4 class="text-white font-weight-bolder">ChaxzeBank</h4> <br>
+                                    <p> ChaxzeBank is a banking system that keep your day to day transactions safe and secure, fastest and reliable. </p>
                                 </div>
                             </div>
                         </div>
@@ -52,9 +53,9 @@
                                     <h3>Address</h3>
                                 </div>
                                 <ul class="footer-details footer-list">
-                                    <li>Address: <span>Lagos Island, Nigeria</span></li>
-                                    <li>Message: <span><a href="mailto:info@alia.com">ChaxzeBank@info.com</a></span></li>
-                                    <li>Phone: <span><a href="tel:(+00)8000046674">(+00) 800 0046 674</a></span></li>
+                                    <li>Address: <span>California</span></li>
+                                    <li>Message: <span><a href="chaxzebank@gmail.com">chaxzebank@gmail.com</a></span></li>
+                                    <li>Phone: <span><a href="tel:+17198889911">+171 988 899 11</a></span></li>
                                 </ul>
                             </div>
                         </div>
