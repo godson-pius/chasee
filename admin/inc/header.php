@@ -114,7 +114,7 @@ foreach ($admin_details as $admin) {
                             D<span class="opacity-75">x</span>
                         </span>
                         <span class="smini-hidden">
-                            Cha<span class="opacity-75">ce</span>
+                            Cha<span class="opacity-75">xze</span>
                         </span>
                     </a>
                     <!-- END Logo -->
