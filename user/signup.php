@@ -4,13 +4,20 @@
     if (isset($_POST['submit'])) {
         $response = user_register($_POST);
         if ($response === true) {
-            // echo "<script>alert('entered')</script>";
+        // echo "<script>alert('entered')</script>";
+
+        $to = $_POST['email'];
+        $subject = "Welcome to Chaxze Bank";
+        $txt = "Hello! \nWelcome to Chaxze Bank. The bank that servers all customers equally on a daily basis.\nWe are glad you're here";
+        $headers = "From: chaxze.com";
+
+        mail($to, $subject, $txt, $headers);
             redirect_to("signin.php");
         } else {
             // echo "<script>alert('error')</script>";
             $errors = $response;
             foreach($errors as $err) {
-                echo "<script>alert($err)</script>";
+                echo "<script>alert('$err')</script>";
             }
         }
     }
