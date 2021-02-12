@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Aila">
-    <meta name="keywords" content="HTML,CSS,JavaScript">
-    <meta name="author" content="HiBootstrap">
+    <meta name="description" content="Chaxze Bank is a banking site delivering the community access to 100% banking 24/7">
+    <meta name="keywords" content="Bank, Chaxze, ChaxzeBank, International Bank, community bank">
+    <meta name="author" content="Chaxze Bank">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?= $title; ?></title>
-    <link rel="icon" href="assets/images/tab.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="assets/images/chazelogo2.png" type="image/png" sizes="16x16">
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
@@ -259,7 +259,7 @@
                                 <a href="authentication.html" class="btn1 btn-with-image">
                                     <i class="flaticon-login"></i>
                                     <i class="flaticon-login"></i>
-                                   Opening an Account
+                                   Open an Account
                                 </a>
                             </div>
                         </div>

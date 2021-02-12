@@ -5,7 +5,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-4">
                             <div class="footer-content-item">
                                 <div class="footer-logo">
-                                    <a href="index.php"><img src="assets/images/chazelogo.png" alt="logo"></a>
+                                    <a href="index.php"><img src="assets/images/chazelogo2.png" alt="logo"></a>
                                 </div>
                                 <div class="footer-details">
                                     <h4 class="text-white font-weight-bolder">ChaxzeBank</h4> <br>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="footer-lower">
                     <div class="footer-lower-item footer-copyright-text">
-                        <p>Copyright ©2020 ChaxzeBank Bank PLC </p>
+                        <p>Copyright ©2021 ChaxzeBank Bank PLC </p>
                     </div>
                     <div class="footer-lower-item footer-social-logo">
                         <ul class="footer-social-list">

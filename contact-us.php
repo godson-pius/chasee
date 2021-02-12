@@ -1,5 +1,5 @@
 <?php
-$title = "Chasee Bank";
+$title = "Chaxze Bank";
 require_once 'inc/components/header.php';
 ?>
 <!-- header -->

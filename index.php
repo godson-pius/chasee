@@ -1,5 +1,5 @@
 <?php
-    $title = "Chasee Bank";
+    $title = "Chaxze Bank";
     require_once 'inc/components/header.php';
 ?>
         <!-- header -->
@@ -432,8 +432,8 @@
                                     <img src="assets/images/Client1 (4).jpg" alt="carousel">
                                 </div>
                                 <div class="client-thumbnail-info">
-                                    <h3 class="client-caption-title">Ezra</h3>
-                                    <h4 class="client-caption-designation">Cancer Free</h4>
+                                    <h3 class="client-caption-title">Benny Chigozie</h3>
+                                    <h4 class="client-caption-designation">Chaxze Foundation beneficiary</h4>
                                 </div>
                             </div>
                         </div>
@@ -469,7 +469,7 @@
                             <div class="home-download-item pb-30">
                                 <div class="home-download-details home-service-start">
                                     <h2>Free app download now <br> and enjoy exciting offers</h2>
-                                    <p>Download the mobile app on Google Playstore and on IOS Devices, get unlimited exciting offers for you, pay bills and buy airtime, and Open a <Strong>zero</Strong> account   </p>
+                                    <p>Download the mobile app on Google Playstore and on IOS Devices, get unlimited exciting offers for you, pay bills and buy airtime, and Open a <Strong>Zero</Strong> account   </p>
                                     
                                     <div class="download-option">
                                         <ul class="download-option-list">
@@ -508,10 +508,10 @@
             <div class="container">
                 <div class="home-contact-inner">
                     <h2>Create your bank account now!</h2>
-                    <p>What’s next in Chasee Bank? <a href="#">Learn more</a></p>
+                    <p>What’s next in Chaxze Bank? <a href="user/about-us.php">Learn more</a></p>
                     <ul class="section-button">
                         <li>
-                            <a href="/user/signup.php" class="btn1 orange-gradient btn-with-image">
+                            <a href="user/signup.php" class="btn1 orange-gradient btn-with-image">
                                 <!-- <i class="flaticon-agenda"></i>
                                 <i class="flaticon-agenda"></i> -->
                                 Create Your Account
