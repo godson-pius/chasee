@@ -72,7 +72,7 @@ require_once 'inc/components/header.php';
                                     <img src="assets/images/jason-grove-B4kmaRADNAc-unsplash.jpg" alt="worker">
                                 </div>
                                 <div class="worker-content-layout">
-                                    <h3 class="client-caption-title">John doe</h3>
+                                    <h3 class="client-caption-title">Johnson Curly</h3>
                                     <h4 class="client-caption-designation">CTO</h4>
                                     <ul class="worker-social-link">
                                         <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
@@ -89,8 +89,8 @@ require_once 'inc/components/header.php';
                                     <img src="assets/images/hannah-nicollet-JQ2D4I-2eyw-unsplash.jpg" alt="worker">
                                 </div>
                                 <div class="worker-content-layout">
-                                    <h3 class="client-caption-title">Alex maxwell</h3>
-                                    <h4 class="client-caption-designation">DDO</h4>
+                                    <h3 class="client-caption-title">Alex Maxwell</h3>
+                                    <h4 class="client-caption-designation">Database Administrator</h4>
                                     <ul class="worker-social-link">
                                         <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
                                         <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
@@ -106,7 +106,7 @@ require_once 'inc/components/header.php';
                                     <img src="assets/images/ashley-byrd-AyOC81h1CGw-unsplash.jpg" alt="worker">
                                 </div>
                                 <div class="worker-content-layout">
-                                    <h3 class="client-caption-title">Robert johnson</h3>
+                                    <h3 class="client-caption-title">Zoe Robertson</h3>
                                     <h4 class="client-caption-designation">Software Engineer</h4>
                                     <ul class="worker-social-link">
                                         <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
@@ -123,7 +123,7 @@ require_once 'inc/components/header.php';
                                     <img src="assets/images/igor-starkov-m80961lrvfA-unsplash.jpg" alt="worker">
                                 </div>
                                 <div class="worker-content-layout">
-                                    <h3 class="client-caption-title">Devit m. kolin</h3>
+                                    <h3 class="client-caption-title">Devit Kolin</h3>
                                     <h4 class="client-caption-designation">Analysis Engineer</h4>
                                     <ul class="worker-social-link">
                                         <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
@@ -144,22 +144,21 @@ require_once 'inc/components/header.php';
 <!-- about-logo-section -->
 <div class="counter-middle-section about-logo-section">
     <div class="container">
-
-        <div class="home-logo-content mt-30">
+    <div class="home-logo-content mt-30">
             <div class="home-logo-item">
                 <a href="#"><img src="assets/images/google.png" alt="logo"></a>
             </div>
             <div class="home-logo-item">
                 <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
             </div>
-            <!-- <div class="home-logo-item">
-                <a href="#"><img src="assets/images/Bella_Naija.png" alt="logo"></a>
-            </div>
             <div class="home-logo-item">
-                <a href="#"><img src="assets/images/Ebonyi.jpg" alt="logo"></a>
-            </div> -->
+                        <a href="#"><img src="assets/images/facebook.png" width="20" alt="logo"></a>
+                    </div>
             <div class="home-logo-item">
-                <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
+                        <a href="#"><img src="assets/images/shell.png" alt="logo"></a>
+                    </div>
+            <div class="home-logo-item">
+                <a href="#"><img src="assets/images/amazon.png" alt="logo"></a>
             </div>
         </div>
     </div>

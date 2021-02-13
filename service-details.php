@@ -1,9 +1,9 @@
 <?php
-$title = "Chasee Bank";
+$title = "Chaxze Bank";
 require_once 'inc/components/header.php';
 ?>
 <!-- header -->
-<header class="page-title page-bg" style="background-image: url(assets/images/service-det-bg.png);">
+<header class="page-title page-bg" style="background-image: url(assets/images/Services-details.png);">
     <div class="container">
         <div class="page-title-inner">
             <div class="section-title">
@@ -72,78 +72,7 @@ require_once 'inc/components/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 order-1 order-lg-2">
-                <div class="blog-sidebar">
-                    <div class="blog-sidebar-item">
-                        <div class="blog-sidebar-item-header">
-                            <h3 class="sub-section-title">Search</h3>
-                        </div>
-                        <div class="blog-sidebar-item-details blog-search-area">
-                            <div class="input-area">
-                                <input type="text" class="input-full" placeholder="Search...">
-                                <button class="btn-with-image orange-gradient btn1">
-                                    <img src="assets/images/search.png" alt="logo">
-                                    <img src="assets/images/search.png" alt="logo">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-sidebar-item">
-                        <div class="blog-sidebar-item-header">
-                            <h3 class="sub-section-title">Categories</h3>
-                        </div>
-                        <div class="blog-sidebar-item-details blog-category-details">
-                            <div class="blog-category-item">
-                                <h4 class="blog-category-name"><a href="#">Savings</a></h4>
-                                <div class="blog-cateogory-divider"></div>
-                                <h5 class="blog-category-number">(1)</h5>
-                            </div>
-                            <div class="blog-category-item">
-                                <h4 class="blog-category-name"><a href="#">Insurance</a></h4>
-                                <div class="blog-cateogory-divider"></div>
-                                <h5 class="blog-category-number">(4)</h5>
-                            </div>
-                            <div class="blog-category-item">
-                                <h4 class="blog-category-name"><a href="#">Loan</a></h4>
-                                <div class="blog-cateogory-divider"></div>
-                                <h5 class="blog-category-number">(3)</h5>
-                            </div>
-                            <div class="blog-category-item">
-                                <h4 class="blog-category-name"><a href="#">E-Banking</a></h4>
-                                <div class="blog-cateogory-divider"></div>
-                                <h5 class="blog-category-number">(2)</h5>
-                            </div>
-                            <div class="blog-category-item">
-                                <h4 class="blog-category-name"><a href="#">Customer</a></h4>
-                                <div class="blog-cateogory-divider"></div>
-                                <h5 class="blog-category-number">(6)</h5>
-                            </div>
-                            <div class="blog-category-item">
-                                <h4 class="blog-category-name"><a href="#">Mobile banking</a></h4>
-                                <div class="blog-cateogory-divider"></div>
-                                <h5 class="blog-category-number">(8)</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-sidebar-item">
-                        <div class="blog-sidebar-item-header">
-                            <h3 class="sub-section-title">Tags</h3>
-                        </div>
-                        <div class="blog-sidebar-item-details blog-sidebar-tag-details">
-                            <ul class="blog-sidebar-tag-list">
-                                <li class="blog-sidebar-tag-lg"><a href="#">#Loan</a></li>
-                                <li class="blog-sidebar-tag-lg"><a href="#">#Agent</a></li>
-                                <li class="blog-sidebar-tag-lg"><a href="#">#Web</a></li>
-                                <li class="blog-sidebar-tag-lg"><a href="#">#E-Banking</a></li>
-                                <li class="blog-sidebar-tag-lg"><a href="#">#Savings</a></li>
-                                <li class="blog-sidebar-tag-lg"><a href="#">#Visa</a></li>
-                                <li class="blog-sidebar-tag-sm"><a href="#">#Deposit</a></li>
-                                <li class="blog-sidebar-tag-lg"><a href="#">#Mortgage</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>

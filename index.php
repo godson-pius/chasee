@@ -14,7 +14,7 @@ require_once 'inc/components/header.php';
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="header-content-2">
-                        <h1>Transfer Funds From Home</h1>
+                        <h1>Transfer Funds anywhere, anytime</h1>
                         <p>Perform your daily transactions safely and conveniently via our digital channels</p>
                         <ul class="section-button">
                             <li>
@@ -49,7 +49,7 @@ require_once 'inc/components/header.php';
 <div class="home-logo-section-2 border-top-mob">
     <div class="container">
         <div class="section-title">
-            <p> More than 20+ Influential Brands around the globe Bank With Us</p>
+            <p> More than 20+ Influential Brands around the globe that Bank With Us and support our foundation</p>
         </div>
         <div class="home-logo-content mt-30">
             <div class="home-logo-item">
@@ -58,14 +58,14 @@ require_once 'inc/components/header.php';
             <div class="home-logo-item">
                 <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
             </div>
-            <!-- <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/Bella_Naija.png" alt="logo"></a>
-                    </div> -->
-            <!-- <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/Ebonyi.jpg" alt="logo"></a>
-                    </div> -->
             <div class="home-logo-item">
-                <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
+                        <a href="#"><img src="assets/images/facebook.png" width="20" alt="logo"></a>
+                    </div>
+            <div class="home-logo-item">
+                        <a href="#"><img src="assets/images/shell.png" alt="logo"></a>
+                    </div>
+            <div class="home-logo-item">
+                <a href="#"><img src="assets/images/amazon.png" alt="logo"></a>
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@ require_once 'inc/components/header.php';
                             </div>
                             <div class="home-about-list-item">
                                 <img src="assets/images/check.png" alt="checl">
-                                Checking Account
+                                Rent Savings Account
                             </div>
                             <!-- <div class="home-about-list-item">
                                         <img src="assets/images/check.png" alt="checl">
@@ -354,12 +354,12 @@ require_once 'inc/components/header.php';
                     </div>
                     <div class="item">
                         <div class="home-client-details-2">
-                            <p class="client-caption-para">Special Thanks to the team at the Chaxze branch. Very friendly and helpful establishing new accounts and making the process go smoothly. Highly recommend them!.</p>
+                            <p class="client-caption-para">Special Thanks to the team at the Chaxze bank. Very friendly and helpful establishing new accounts and making the process go smoothly. Highly recommend them!.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="home-client-details-2">
-                            <p class="client-caption-para">The boutique customer service allows my team to operate more efficiently. Their team truly cares. With all of the implications of Covid 19, it is reassuring to know that I have a bank that understands my businesses and is invested in their success..</p>
+                            <p class="client-caption-para">The customer service allows my team to operate more efficiently. Their team truly cares. With all of the implications of Covid 19, it is reassuring to know that I have a bank that understands my businesses and is invested in their success..</p>
                         </div>
                     </div>
                     <div class="item">
@@ -421,7 +421,7 @@ require_once 'inc/components/header.php';
                             <img src="assets/images/Client1_Ese.jpg.jpg" alt="carousel">
                         </div>
                         <div class="client-thumbnail-info">
-                            <h3 class="client-caption-title">Mrs Princess Ochyks</h3>
+                            <h3 class="client-caption-title">Zoe Timberland</h3>
                             <h4 class="client-caption-designation">Customer</h4>
                         </div>
                     </div>
@@ -440,11 +440,11 @@ require_once 'inc/components/header.php';
                 <div class="item">
                     <div class="client-thumbnail-content">
                         <div class="client-thumbnail-img">
-                            <img src="assets/images/Client1_Ese.jpg.jpg" alt="carousel">
+                            <img src="assets/images/Ochuko.jpg" alt="carousel">
                         </div>
                         <div class="client-thumbnail-info">
-                            <h3 class="client-caption-title">Berker Ilary</h3>
-                            <h4 class="client-caption-designation">Customer.</h4>
+                            <h3 class="client-caption-title">Berker Benson</h3>
+                            <h4 class="client-caption-designation">Motivational Speaker, SpeakUp BLM</h4>
                         </div>
                     </div>
                 </div>

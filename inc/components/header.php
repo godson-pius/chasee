@@ -193,7 +193,7 @@
                                                     <a href="contact-us.php" class="nav-link">Contact Us</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="service-details.php" class="nav-link">Why Choose Us? </a>
+                                                    <a href="#" class="nav-link">Why Choose Us? </a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">Customer Feedback</a>
