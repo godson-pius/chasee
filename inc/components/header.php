@@ -9,7 +9,7 @@
     <meta name="author" content="Chaxze Bank">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?= $title; ?></title>
-    <link rel="icon" href="assets/images/chazelogo2.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="assets/images/ChaxzeBank_white2Icon.png" type="image/png" sizes="16x16">
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
@@ -62,7 +62,7 @@
             <!-- mobile menu -->
             <div class="mobile-nav">
                 <a href="index.php" class="logo">
-                    <img src="assets/images/chazelogo.png" alt="logo">
+                    <img src="assets/images/ChaxzeBank_Black3.png" alt="logo">
                 </a>
             </div>
             <!-- desktop menu -->
@@ -70,7 +70,7 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/chazelogo.png" width="10" alt="logo">
+                            <img src="assets/images/ChaxzeBank_Black3.png" width="10" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">

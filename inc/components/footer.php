@@ -5,7 +5,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-4">
                             <div class="footer-content-item">
                                 <div class="footer-logo">
-                                    <a href="index.php"><img src="assets/images/chazelogo2.png" alt="logo"></a>
+                                    <a href="index.php"><img src="assets/images/ChaxzeBank_white2.png" alt="logo"></a>
                                 </div>
                                 <div class="footer-details">
                                     <h4 class="text-white font-weight-bolder">ChaxzeBank</h4> <br>

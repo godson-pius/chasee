@@ -21,8 +21,8 @@
 
         <title>Sign In | Chaxze Bank</title>
 
-        <meta name="description" content="Sign In | Chaxze Bank created by pixelcave and published on Themeforest">
-        <meta name="author" content="pixelcave">
+        <meta name="description" content="Sign In | Chaxze Bank">
+        <meta name="author" content="Chaxze Bank">
         <meta name="robots" content="noindex, nofollow">
 
         <!-- Open Graph Meta -->
@@ -30,7 +30,7 @@
         <meta property="og:site_name" content="Chaxze">
         <meta property="og:description" content="Sign In | Chaxze Bank">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="">
+        <meta property="og:url" content="https://wwww.chaxze.com">
         <meta property="og:image" content="">
 
         <!-- Icons -->
@@ -105,7 +105,7 @@
             <main id="main-container">
 
                 <!-- Page Content -->
-                <div class="bg-image" style="background-image: url('../admin/assets/media/photos/photo22@2x.jpg');">
+                <div class="bg-image" style="background-image: url('../admin/assets/media/photos/Client1_Ese.jpg.jpg'); background-position: center; background-size: cover">
                     <div class="row no-gutters bg-primary-op">
                         <!-- Main Section -->
                         <div class="hero-static col-md-6 d-flex align-items-center bg-white">
@@ -160,8 +160,8 @@
                                 <p class="display-4 font-w700 text-white mb-3">
                                     Welcome to Chaxze Bank 
                                 </p>
-                                <p>The bank that servers all customers equally on a daily basis</p>
-                                <p class="font-size-lg font-w600 text-white-75 mb-0">
+                                <p class="text-white">The bank that serves all customers equally on a daily basis</p>
+                                <p class="font-size-lg font-w600 text-white-75 mb-0 mt-10">
                                     Copyright &copy; <span data-toggle="year-copy"></span>
                                 </p>
                             </div>
