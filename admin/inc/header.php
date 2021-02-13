@@ -226,9 +226,9 @@ foreach ($admin_details as $admin) {
                 <div>
                     <!-- Toggle Sidebar -->
                     <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
-                    <!-- <button type="button" class="btn btn-dual" data-toggle="layout" data-action="sidebar_toggle">
+                    <button type="button" class="btn btn-dual" data-toggle="layout" data-action="sidebar_toggle">
                         <i class="fa fa-fw fa-bars"></i>
-                    </button> -->
+                    </button>
                     <!-- END Toggle Sidebar -->
 
                     <!-- Open Search Section -->
