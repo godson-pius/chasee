@@ -3,7 +3,7 @@ $title = "Privacy Plicy | Chaxze Bank";
 require_once 'inc/components/header.php';
 ?>
 <!-- header -->
-<header class="page-title page-bg" style="background-image: url(assets/images/terms.png);">
+<header class="page-title page-bg" style="background-image: url(assets/images/privacy.jpg); background-position: center;">
     <div class="container">
         <div class="page-title-inner">
             <div class="section-title">
