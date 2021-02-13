@@ -35,7 +35,6 @@ foreach ($total_income as $income) {
                     <div class="col-md-4 py-3">
                         <div class="font-size-h1 font-w300 text-success mb-1">
                             $<?= number_format($transfer['total']); ?>
-                            <?= phpinfo(); ?>
                         </div>
                         <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Income</a>
                     </div>
