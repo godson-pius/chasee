@@ -96,14 +96,6 @@ require_once 'inc/components/header.php';
                                 <img src="assets/images/check.png" alt="checl">
                                 Rent Savings Account
                             </div>
-                            <!-- <div class="home-about-list-item">
-                                        <img src="assets/images/check.png" alt="checl">
-                                       NYSC Savings Account
-                                    </div> -->
-                            <!-- <div class="home-about-list-item">
-                                        <img src="assets/images/check.png" alt="checl">
-                                        Akawoo Account
-                                    </div> -->
                             <div class="home-about-list-item">
                                 <img src="assets/images/check.png" alt="checl">
                                 Future Savings
@@ -121,7 +113,7 @@ require_once 'inc/components/header.php';
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 p-0">
                     <div class="home-facility-item img-right-res pb-30">
-                        <img src="assets/images/home-enterprise-2.png" alt="facility">
+                        <img src="assets/images/home-enterprise-3.png" alt="facility">
                     </div>
                 </div>
             </div>
