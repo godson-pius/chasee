@@ -6,9 +6,9 @@ require_once 'inc/header.php';
 
 
 if (isset($_POST['submit'])) {
-    if (isset($_SESSION['user'])) {
-        $id = $_SESSION['user'];
-    }
+    // if (isset($_SESSION['user'])) {
+    //     $id = $_SESSION['user'];
+    // }
 
 
     $response = credit_account($_POST, $id);
