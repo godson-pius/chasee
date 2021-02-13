@@ -33,11 +33,11 @@ require_once 'inc/components/header.php';
                     <div class="about-page-item pb-30">
                         <div class="home-service-start">
                             <h2>Make online transaction with our card system</h2>
-                            <p>Most banks offer a mobile app that allows you to more easily take advantage of online banking on your phone. 
-                            Online banking allows you to access your account history and transactions from anywhere. You can quickly transfer money between accounts when you do it online. It's more convenient than going to a bank in person or using an automated phone service, which requires you to provide information when prompted. Many budgeting apps—such as Mint and PocketGuard—can be synced with your online banking information. That feature makes sticking to your budget much easier.
+                            <p>Most banks offer a mobile app that allows you to more easily take advantage of online banking on your phone.
+                                Online banking allows you to access your account history and transactions from anywhere. You can quickly transfer money between accounts when you do it online. It's more convenient than going to a bank in person or using an automated phone service, which requires you to provide information when prompted. Many budgeting apps—such as Mint and PocketGuard—can be synced with your online banking information. That feature makes sticking to your budget much easier.
                             </p>
-                            <a class="btn1 orange-gradient btn-with-image video-modal" href= "index.php">
-                               Learn More
+                            <a class="btn1 orange-gradient btn-with-image video-modal" href="index.php">
+                                Learn More
                             </a>
                         </div>
                     </div>
@@ -60,7 +60,8 @@ require_once 'inc/components/header.php';
                 <div class="col-sm-12 col-md-12 col-lg-5 pb-30">
                     <div class="home-service-start">
                         <h2>Dedicated Team Support Helping You</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusul dolor sit amet, consecteturadipisci sed quia non numquam eius modi tempora m dolor sit amet consectetu</p>
+                        <p>We work hard to protect your information and money
+                            When you bank with us, you’re trusting us with your money. So we take that responsibility to heart. We use a variety of security tools to keep your information safe.</p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
@@ -89,7 +90,7 @@ require_once 'inc/components/header.php';
                                 </div>
                                 <div class="worker-content-layout">
                                     <h3 class="client-caption-title">Alex maxwell</h3>
-                                    <h4 class="client-caption-designation">CEO & Founder</h4>
+                                    <h4 class="client-caption-designation">DDO</h4>
                                     <ul class="worker-social-link">
                                         <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
                                         <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
@@ -144,23 +145,23 @@ require_once 'inc/components/header.php';
 <div class="counter-middle-section about-logo-section">
     <div class="container">
 
-                <div class="home-logo-content mt-30">
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/google.png" alt="logo"></a>
-                    </div>
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
-                    </div>
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/Bella_Naija.png" alt="logo"></a>
-                    </div>
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/Ebonyi.jpg" alt="logo"></a>
-                    </div>
-                    <div class="home-logo-item">
-                        <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
-                    </div>
-                </div>
+        <div class="home-logo-content mt-30">
+            <div class="home-logo-item">
+                <a href="#"><img src="assets/images/google.png" alt="logo"></a>
+            </div>
+            <div class="home-logo-item">
+                <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
+            </div>
+            <!-- <div class="home-logo-item">
+                <a href="#"><img src="assets/images/Bella_Naija.png" alt="logo"></a>
+            </div>
+            <div class="home-logo-item">
+                <a href="#"><img src="assets/images/Ebonyi.jpg" alt="logo"></a>
+            </div> -->
+            <div class="home-logo-item">
+                <a href="#"><img src="assets/images/Microsoft.png" alt="logo"></a>
+            </div>
+        </div>
     </div>
 </div>
 <!-- .end about-logo-section -->
@@ -179,9 +180,9 @@ require_once 'inc/components/header.php';
                 <div class="col-sm-12 col-md-12 col-lg-6 order-lg-1">
                     <div class="home-download-item pb-30">
                         <div class="home-download-details home-service-start pr-20">
-                        <h2>Free app download now <br> and enjoy exciting offers</h2>
+                            <h2>Free app download now <br> and enjoy exciting offers</h2>
                             <p>Download the mobile app on Google Playstore and on IOS Devices, get unlimited exciting offers for you, pay bills and buy airtime, and Open a <Strong>Zero</Strong> account
-                        </p>
+                            </p>
                             <div class="download-option">
                                 <p>Download the app</p>
                                 <ul class="download-option-list">
@@ -207,32 +208,32 @@ require_once 'inc/components/header.php';
     </div>
 </section>
 <!-- .end about-download-section-->
-        <!-- home-contact-section -->
-        <section class="home-contact-section overflow-hidden blue-gradient pt-100 pb-80">
-            <div class="home-contact-bg-circle">
-                <div class="home-contact-circle-item">
-                    <img src="assets/images/lg-circle-1.png" alt="circle">
-                </div>
-                <div class="home-contact-circle-item">
-                    <img src="assets/images/lg-circle-1.png" alt="circle">
-                </div>
-            </div>
-            <div class="container">
-                <div class="home-contact-inner">
-                    <h2>Create your bank account now!</h2>
-                    <p>What’s next in Chaxze Bank? <a href="#">Learn more</a></p>
-                    <ul class="section-button">
-                        <li>
-                            <a href="/user/signup.php" class="btn1 orange-gradient btn-with-image">
-                                <!-- <i class="flaticon-agenda"></i>
+<!-- home-contact-section -->
+<section class="home-contact-section overflow-hidden blue-gradient pt-100 pb-80">
+    <div class="home-contact-bg-circle">
+        <div class="home-contact-circle-item">
+            <img src="assets/images/lg-circle-1.png" alt="circle">
+        </div>
+        <div class="home-contact-circle-item">
+            <img src="assets/images/lg-circle-1.png" alt="circle">
+        </div>
+    </div>
+    <div class="container">
+        <div class="home-contact-inner">
+            <h2>Create your bank account now!</h2>
+            <p>What’s next in Chaxze Bank? <a href="#">Learn more</a></p>
+            <ul class="section-button">
+                <li>
+                    <a href="/user/signup.php" class="btn1 orange-gradient btn-with-image">
+                        <!-- <i class="flaticon-agenda"></i>
                                 <i class="flaticon-agenda"></i> -->
-                                Create Your Account
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- .end home-contact-section -->
+                        Create Your Account
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- .end home-contact-section -->
 <!-- footer -->
 <?php require_once 'inc/components/footer.php'; ?>
