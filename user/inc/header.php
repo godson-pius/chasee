@@ -213,7 +213,7 @@ foreach ($user_details as $user) {
                                 <li class="nav-main-item">
                                     <a class="nav-main-link" href="">
                                         <span class="nav-main-link-name">Approved</span>
-                                        <span class="nav-main-link-badge badge badge-pill badge-success"><?= getTotalAnd("transactions", "approved", 1,"user_id", $user_id); ?></span>
+                                        <span class="nav-main-link-badge badge badge-pill badge-success"><?= getTotalAnd("transactions", "approved", 1, "user_id", $user_id); ?></span>
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
@@ -287,12 +287,16 @@ foreach ($user_details as $user) {
                 <div>
                     <!-- Toggle Sidebar -->
                     <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
-                    
+                    <button type="button" class="btn btn-dual" data-toggle="layout" data-action="sidebar_toggle">
+                        <i class="fa fa-fw fa-stream fa-flip-horizontal"></i>
+                    </button>
                     <!-- END Toggle Sidebar -->
 
                     <!-- Open Search Section -->
                     <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                    
+                    <!-- <button type="button" class="btn btn-dual" data-toggle="layout" data-action="header_search_on">
+                        <i class="fa fa-fw fa-search"></i> <span class="ml-1 d-none d-sm-inline-block">Search..</span>
+                    </button> -->
                     <!-- END Open Search Section -->
                 </div>
                 <!-- END Left Section -->
