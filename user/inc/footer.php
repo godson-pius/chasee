@@ -3,7 +3,7 @@
                     <div class="row font-size-sm">
 
                         <div class="col-sm-6 order-sm-1 text-center text-sm-left">
-                            <a class="font-w600" href="https://1.envato.market/r6y" target="_blank">Chace</a> &copy; <span data-toggle="year-copy"></span>
+                            <a class="font-w600" href="https://chaxze.com" target="_blank">Chaxze</a> &copy; <span data-toggle="year-copy"></span>
                         </div>
                     </div>
                 </div>
