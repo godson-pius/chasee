@@ -71,7 +71,7 @@ foreach ($admin_details as $admin) {
                         <!-- User Info -->
                         <div class="ml-2">
                             <a class="text-white font-w600" href="be_pages_generic_profile.html"></a>
-                            <div class="text-white-75 font-size-sm"><?= $fullnmae; ?></div>
+                            <div class="text-white-75 font-size-sm"><?= $fullname; ?></div>
                         </div>
                         <!-- END User Info -->
 
@@ -202,9 +202,9 @@ foreach ($admin_details as $admin) {
                                 </li>
                                 
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="signup.php">
+                                    <!-- <a class="nav-main-link" href="signup.php">
                                         <span class="nav-main-link-name">Add Admin</span>
-                                    </a>
+                                    </a> -->
                                 </li>
                         
                             </ul>
@@ -277,6 +277,9 @@ foreach ($admin_details as $admin) {
                                 <a class="dropdown-item" href="logout.php">
                                     <i class="far fa-fw fa-arrow-alt-circle-left mr-1"></i> Sign Out
                                 </a>
+                                <!-- <a class="dropdown-item" href="logout.php">
+                                    <i class="far fa-fw fa-arrow-alt-circle-left mr-1"></i> Settings
+                                </a> -->
                             </div>
                         </div>
                     </div>
