@@ -29,7 +29,7 @@ require_once 'inc/components/header.php';
                         </div>
                         <div class="box-card-details">
                             <h3 class="box-card-title mb-20">Address</h3>
-                            <p class="box-card-para">Lagos Island, Nigeria</p>
+                            <p class="box-card-para">100 San Pedro street Los Angeles California</p>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ require_once 'inc/components/header.php';
                         </div>
                         <div class="box-card-details">
                             <h3 class="box-card-title mb-20">Email</h3>
-                            <p class="box-card-para"><a class="link-us" href="mailto:support@alia.com"> ChaxzeBank@info.com</a></p>
+                            <p class="box-card-para"><a class="link-us" href="mailto:support@alia.com"> chaxzebank@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -55,8 +55,8 @@ require_once 'inc/components/header.php';
                         </div>
                         <div class="box-card-details">
                             <h3 class="box-card-title mb-20">Phone</h3>
-                            <p class="box-card-para"><a class="link-us" href="tel: (+00) 800 0046 674"> (+00) 800 0046 674</a></p>
-                           
+                            <p class="box-card-para"><a class="link-us" href="tel: +171 988 899 11"> +171 988 899 11</a></p>
+
                         </div>
                     </div>
                 </div>
@@ -160,32 +160,32 @@ require_once 'inc/components/header.php';
     </div>
 </section>
 <!--end contact-comment-section-->
-   <!-- home-contact-section -->
-   <section class="home-contact-section overflow-hidden blue-gradient pt-100 pb-80">
-            <div class="home-contact-bg-circle">
-                <div class="home-contact-circle-item">
-                    <img src="assets/images/lg-circle-1.png" alt="circle">
-                </div>
-                <div class="home-contact-circle-item">
-                    <img src="assets/images/lg-circle-1.png" alt="circle">
-                </div>
-            </div>
-            <div class="container">
-                <div class="home-contact-inner">
-                    <h2>Create your bank account now!</h2>
-                    <p>What’s next in Chaxze Bank? <a href="#">Learn more</a></p>
-                    <ul class="section-button">
-                        <li>
-                            <a href="user/signup.php" class="btn1 orange-gradient btn-with-image">
-                                <!-- <i class="flaticon-agenda"></i>
+<!-- home-contact-section -->
+<section class="home-contact-section overflow-hidden blue-gradient pt-100 pb-80">
+    <div class="home-contact-bg-circle">
+        <div class="home-contact-circle-item">
+            <img src="assets/images/lg-circle-1.png" alt="circle">
+        </div>
+        <div class="home-contact-circle-item">
+            <img src="assets/images/lg-circle-1.png" alt="circle">
+        </div>
+    </div>
+    <div class="container">
+        <div class="home-contact-inner">
+            <h2>Create your bank account now!</h2>
+            <p>What’s next in Chaxze Bank? <a href="#">Learn more</a></p>
+            <ul class="section-button">
+                <li>
+                    <a href="user/signup.php" class="btn1 orange-gradient btn-with-image">
+                        <!-- <i class="flaticon-agenda"></i>
                                 <i class="flaticon-agenda"></i> -->
-                                Create Your Account
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                        Create Your Account
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 <!-- .end home-contact-section -->
 <!-- footer -->
 <?php require_once 'inc/components/footer.php'; ?>

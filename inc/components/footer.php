@@ -53,7 +53,7 @@
                                     <h3>Address</h3>
                                 </div>
                                 <ul class="footer-details footer-list">
-                                    <li>Address: <span>California</span></li>
+                                    <li>Address: <span>100 San Pedro street Los Angeles California</span></li>
                                     <li>Message: <span><a href="chaxzebank@gmail.com">chaxzebank@gmail.com</a></span></li>
                                     <li>Phone: <span><a href="tel:+17198889911">+171 988 899 11</a></span></li>
                                 </ul>
