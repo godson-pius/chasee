@@ -89,99 +89,99 @@
                                     <a href="user/signup.php" class="nav-link">Accounts</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Personal</a>
+                                    <a href="user/index" class="nav-link dropdown-toggle">Personal</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="faqs.html" class="nav-link">FAQ's</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">Ways to bank</a>
+                                            <a href="user/index" class="nav-link dropdown-toggle">Ways to bank</a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Internet Banking</a>
+                                                    <a href="user/index" class="nav-link">Internet Banking</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Mobile Banking</a>
+                                                    <a href="user/index" class="nav-link">Mobile Banking</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">ChaxzeBank Whatsapp Banking</a>
+                                                    <a href="user/index" class="nav-link">ChaxzeBank Whatsapp Banking</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">QR Payments Banking</a>
+                                                    <a href="user/index" class="nav-link">QR Payments Banking</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Face Banking</a>
+                                                    <a href="user/index" class="nav-link">Face Banking</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">ATM</a>
+                                                    <a href="user/index" class="nav-link">ATM</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Mobile App</a>
+                                                    <a href="user/index" class="nav-link">Mobile App</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">E-payments</a>
+                                            <a href="user/index" class="nav-link">E-payments</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Bills and Utility Payments</a>
+                                            <a href="user/index" class="nav-link">Bills and Utility Payments</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">ChaxzeBank Foundation</a>
+                                            <a href="user/index" class="nav-link">ChaxzeBank Foundation</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">Money Transfer</a>
+                                            <a href="user/index" class="nav-link dropdown-toggle">Money Transfer</a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Transfast</a>
+                                                    <a href="user/index" class="nav-link">Transfast</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Moneygram</a>
+                                                    <a href="user/index" class="nav-link">Moneygram</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link">Western Union Money Transfer</a>
+                                                    <a href="user/index" class="nav-link">Western Union Money Transfer</a>
                                                 </li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Products/Services</a>
+                                    <a href="user/index" class="nav-link dropdown-toggle">Products/Services</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link"> Best Loans</a>
+                                            <a href="user/index" class="nav-link"> Best Loans</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Transfers</a>
+                                            <a href="user/index" class="nav-link">Transfers</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Scan to pay</a>
+                                            <a href="user/index" class="nav-link">Scan to pay</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link"> Electronic Banking </a>
+                                            <a href="user/index" class="nav-link"> Electronic Banking </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Cards</a>
+                                    <a href="user/index" class="nav-link dropdown-toggle">Cards</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Debit Cards</a>
+                                            <a href="user/index" class="nav-link">Debit Cards</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Credit Cards</a>
+                                            <a href="user/index" class="nav-link">Credit Cards</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Prepaid Cards</a>
+                                            <a href="user/index" class="nav-link">Prepaid Cards</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Virtual Cards</a>
+                                            <a href="user/index" class="nav-link">Virtual Cards</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Cards Request Portal</a>
+                                            <a href="user/index" class="nav-link">Cards Request Portal</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Prepaid Cards</a>
+                                            <a href="user/index" class="nav-link">Prepaid Cards</a>
                                         </li>
                                     </ul>
                                 </li>
