@@ -327,10 +327,10 @@ function credit_account($post, $user_id) {
 
     if ($err_flag === false) {
         $ql = "SELECT * FROM users WHERE id = $user_id";
-        $qq = returnQuery($ql);
+        $qq = executeQuery($ql);
 
-        if (mysqli_num_rows($qq) > 0) {
-            $details = mysqli_fetch_assoc($qq);
+        if ($qq) {
+            $details = $qq;
             $amount_in_db = $details['acc_balance'];
 
             $update_balance = $amount + $amount_in_db;
