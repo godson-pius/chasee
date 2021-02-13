@@ -325,7 +325,7 @@ function credit_account($post, $user_id) {
         $errors[] = "Amount is empty";
     }
 
-    if ($err_flag === false) {
+    if (!$errors) {
         $ql = "SELECT * FROM users WHERE id = $user_id";
         $qq = executeQuery($ql);
 
