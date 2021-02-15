@@ -141,7 +141,7 @@ function credit_user_account($post) {
     }
 }
 
-function setPassword($post) {
+function setPassword($post, $id) {
     extract($post);
     $err_flag = false;
     $errors = [];
@@ -155,7 +155,36 @@ function setPassword($post) {
     }
 
     if ($err_flag === false) {
-        $sql = "UPDATE admins SET password = '$password'";
+        $sql = "UPDATE admins SET password = '$password' WHERE id = $id";
+        $query = validateQuery($sql);
+
+        if ($query) {
+            return true;
+        } else {
+            $errors[] = "Error! Please Try Again";
+        }
+    } else {
+        return $errors;
+    }
+}
+
+
+function backdate($post, $trans_id) {
+    extract($post);
+    $err_flag = false;
+    $errors = [];
+
+    if (!empty($date)) {
+        $tmp_date = sanitize($date);
+        $current_time = date("H:i:s");
+        $date = $tmp_date . " " . $current_time;
+    } else {
+        $err_flag = true;
+        $errors[] = "Please put a date!";
+    }
+
+    if ($err_flag === false) {
+        $sql = "UPDATE transactions SET created_at = '$date' WHERE id = $trans_id";
         $query = validateQuery($sql);
 
         if ($query) {

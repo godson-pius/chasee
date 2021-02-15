@@ -2,24 +2,28 @@
 require_once 'inc/functions/config.php';
 require_once 'inc/header.php';
 
-if (isset($_POST['submit'])) {
-    if (isset($_SESSION['admin'])) {
-        $id = $_SESSION['admin'];
-    }
-    $response = setPassword($_POST, $id);
-    if ($response === true) {
-        echo "<script>alert('Password have been updated!')</script>";
-    } else {
-        $errors = $response;
-        if (is_array($errors)) {
-            foreach ($errors as $err) {
-                echo "<script>alert('$err')</script>";
-            }
+if (isset($_GET['id'])) {
+    $transaction_id = $_GET['id'];
+
+    if (isset($_POST['submit'])) {
+        
+        $response = backdate($_POST, $transaction_id);
+        if ($response === true) {
+            echo "<script>alert('Backdate was successfull!')</script>";
         } else {
-            echo "<script>alert('$errors')</script>";
+            $errors = $response;
+            if (is_array($errors)) {
+                foreach ($errors as $err) {
+                    echo "<script>alert('$err')</script>";
+                }
+            } else {
+                echo "<script>alert('$errors')</script>";
+            }
         }
     }
 }
+
+
 
 ?>
 <!-- END Header -->
@@ -31,7 +35,7 @@ if (isset($_POST['submit'])) {
     <div class="content">
         <!-- Quick Overview -->
         <h2 class="content-heading">
-            <i class="fa fa-angle-right text-muted mr-1"></i> Settings
+            <i class="fa fa-angle-right text-muted mr-1"></i> Backdate Transaction
         </h2>
 
         <div class="row">
@@ -45,14 +49,14 @@ if (isset($_POST['submit'])) {
                                     <i class="far fa-gear"></i>
                                 </span>
                             </div>
-                            <input type="password" name="password" class="form-control" placeholder="Change Password">
+                            <input type="date" name="date" class="form-control" placeholder="Backdate Transaction">
                         </div>
                     </div>
                     <hr>
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-append">
-                                <button type="submit" name="submit" class="btn btn-alt-success">Change Password</button>
+                                <button type="submit" name="submit" class="btn btn-alt-success">Backdate Transaction</button>
                             </div>
                         </div>
                     </div>

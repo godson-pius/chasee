@@ -75,11 +75,11 @@
                                                 foreach ($get_users as $users) {
                                                     
                                                     if ($type == 0) {
-                                                        $class = "badge badge-success";
-                                                        $message = "Received";
+                                                        $class = "btn btn-sm btn-success";
+                                                        $message = "Received from";
                                                     } else if ($type == 1) {
-                                                        $class = "badge badge-danger";
-                                                        $message = "Delivered";
+                                                        $class = "btn btn-sm btn-danger";
+                                                        $message = "Delivered to";
                                                     }
                                                     
 
@@ -87,15 +87,20 @@
 
                                                         <tr>
                                                             <td class="font-w600 text-center" style="width: 100px;">
-                                                                <a href="be_pages_ecom_order.html"><?= $users['acc_number']; ?></a>
+                                                                <a href="users"><?= $users['acc_number']; ?></a>
                                                             </td>
                                                             <td class="d-none d-sm-table-cell">
-                                                                <a href="be_pages_ecom_customer.html"><?= $users['fullname']; ?></a>
+                                                                <a href="users"><?= $users['fullname']; ?></a>
                                                             </td>
                                                             <td>
                                                                 <span class="<?= $class; ?>"><?= $message; ?></span>
                                                             </td>
+                                                            <td class="font-w600 text-center" style="width: 100px;">
+                                                                <a href="users"><?= $to_user; ?></a>
+                                                            </td>
                                                             <td class="font-w600 text-right">$<?= $amount; ?></td>
+                                                            <td class="font-w600 text-right"><a href="backdate"><strong><?= date("M d, Y - h:i", strtotime($created_at)); ?></a></td>
+                                                            <td class="font-w600 text-right"><a href="backdate?id=<?= $id; ?>" class="shadow btn btn-sm btn-primary">Backdate Transaction</a></td>
                                                         </tr>
                                             <?php } } ?>
                                         </tbody>
