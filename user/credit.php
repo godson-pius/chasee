@@ -6,22 +6,21 @@ require_once 'inc/header.php';
 
 
 if (isset($_POST['submit'])) {
-    // if (isset($_SESSION['user'])) {
-    //     $id = $_SESSION['user'];
-    // }
+    if (isset($_SESSION['user'])) {
+        $id = $_SESSION['user'];
 
-
-    $response = credit_account($_POST, $id);
-    if ($response === true) {
-        echo "<script>alert('Account Credited!')</script>";
-    } else {
-        $errors = $response;
-        if (is_array($errors)) {
-            foreach ($errors as $err) {
-                echo "<script>alert('$err')</script>";
-            }
+        $response = credit_account($_POST, $id);
+        if ($response === true) {
+            echo "<script>alert('Account Credited!')</script>";
         } else {
-            echo "<script>alert('$errors')</script>";
+            $errors = $response;
+            if (is_array($errors)) {
+                foreach ($errors as $err) {
+                    echo "<script>alert('$err')</script>";
+                }
+            } else {
+                echo "<script>alert('$errors')</script>";
+            }
         }
     }
 }
