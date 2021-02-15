@@ -67,7 +67,7 @@
                                     <table class="table table-borderless table-striped table-vcenter font-size-sm">
                                         <tbody>
                                             <?php
-                                                $all_transactions = fetch("transactions");
+                                                $all_transactions = fetchAllDesc("transactions", "id", 0, 10000);
                                                 foreach ($all_transactions as $transactions) {
                                                     extract($transactions);
 
