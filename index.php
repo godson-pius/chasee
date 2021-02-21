@@ -435,8 +435,8 @@ require_once 'inc/components/header.php';
                             <img src="assets/images/hannah-nicollet-JQ2D4I-2eyw-unsplash.jpg" alt="carousel">
                         </div>
                         <div class="client-thumbnail-info">
-                            <h3 class="client-caption-title">Berker Benson</h3>
-                            <h4 class="client-caption-designation">Motivational Speaker, SpeakUp BLM</h4>
+                            <h3 class="client-caption-title">Berker Bensons</h3>
+                            <h4 class="client-caption-designation">Customer</h4>
                         </div>
                     </div>
                 </div>
