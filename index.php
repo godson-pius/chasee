@@ -377,10 +377,10 @@ require_once 'inc/components/header.php';
                 <div class="item">
                     <div class="client-thumbnail-content">
                         <div class="client-thumbnail-img">
-                            <img src="assets/images/Client1 (5).jpg" alt="carousel">
+                            <img src="assets/images/Eric Jenna.jpg" alt="carousel">
                         </div>
                         <div class="client-thumbnail-info">
-                            <h3 class="client-caption-title">Chinaza Davis</h3>
+                            <h3 class="client-caption-title">Erica Jenna</h3>
                             <h4 class="client-caption-designation">Customer</h4>
                         </div>
                     </div>
@@ -402,7 +402,7 @@ require_once 'inc/components/header.php';
                             <img src="assets/images/Client1 (3).jpg" alt="carousel">
                         </div>
                         <div class="client-thumbnail-info">
-                            <h3 class="client-caption-title">Christoper Obinna</h3>
+                            <h3 class="client-caption-title">Christoper Blake</h3>
                             <h4 class="client-caption-designation">Customer</h4>
                         </div>
                     </div>
@@ -421,10 +421,10 @@ require_once 'inc/components/header.php';
                 <div class="item">
                     <div class="client-thumbnail-content">
                         <div class="client-thumbnail-img">
-                            <img src="assets/images/Client1 (4).jpg" alt="carousel">
+                            <img src="assets/images/stephanie Livingstone.jpg" alt="carousel">
                         </div>
                         <div class="client-thumbnail-info">
-                            <h3 class="client-caption-title">Benny Chigozie</h3>
+                            <h3 class="client-caption-title">Benny Zack</h3>
                             <h4 class="client-caption-designation">Chaxze Foundation beneficiary</h4>
                         </div>
                     </div>
@@ -432,7 +432,7 @@ require_once 'inc/components/header.php';
                 <div class="item">
                     <div class="client-thumbnail-content">
                         <div class="client-thumbnail-img">
-                            <img src="assets/images/Ochuko.jpg" alt="carousel">
+                            <img src="assets/images/hannah-nicollet-JQ2D4I-2eyw-unsplash.jpg" alt="carousel">
                         </div>
                         <div class="client-thumbnail-info">
                             <h3 class="client-caption-title">Berker Benson</h3>
