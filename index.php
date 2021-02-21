@@ -424,7 +424,7 @@ require_once 'inc/components/header.php';
                             <img src="assets/images/stephanie Livingstone.jpg" alt="carousel">
                         </div>
                         <div class="client-thumbnail-info">
-                            <h3 class="client-caption-title">Benny Zack</h3>
+                            <h3 class="client-caption-title">Benny Zacks</h3>
                             <h4 class="client-caption-designation">Chaxze Foundation beneficiary</h4>
                         </div>
                     </div>
