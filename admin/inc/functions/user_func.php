@@ -332,6 +332,7 @@ function credit_account($post, $user_id) {
         if ($qq) {
             $details = $qq;
             $amount_in_db = $details['acc_balance'];
+            $acc_number = $details['acc_number'];
 
             $update_balance = $amount + $amount_in_db;
 
@@ -339,10 +340,15 @@ function credit_account($post, $user_id) {
             $result = validateQuery($sql);
 
             if ($result) {
-                return true;
-            } else {
-                $err = "Error! try again";
-            }
+                $sql2 = "INSERT INTO transactions (user_id, type, amount, to_user, approved, created_at) VALUES ($user_id, 0, $amount, $acc_number, 1, now())";
+                $query2 = validateQuery($sql2);
+
+                if ($query2) {
+                    return true;
+                } else {
+                    $err = "Error! try again";
+                }
+            } 
         }
     } else {
         return $errors;

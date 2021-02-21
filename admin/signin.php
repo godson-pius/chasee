@@ -7,7 +7,14 @@
         if ($response === true) {
             redirect_to("index.php");
         } else {
-            echo "<script>alert('error')</script>";
+            $errors = $response;
+            if (is_array($errors)) {
+                foreach ($errors as $err) {
+                    echo "<script>alert('$err')</script>";
+                }
+            } else {
+                echo "<script>alert('$errors')</script>";
+            }
         }
     }
 ?>

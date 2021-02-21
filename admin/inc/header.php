@@ -277,9 +277,9 @@ foreach ($admin_details as $admin) {
                                 <a class="dropdown-item" href="logout.php">
                                     <i class="far fa-fw fa-arrow-alt-circle-left mr-1"></i> Sign Out
                                 </a>
-                                <!-- <a class="dropdown-item" href="logout.php">
-                                    <i class="far fa-fw fa-arrow-alt-circle-left mr-1"></i> Settings
-                                </a> -->
+                                <a class="dropdown-item" href="settings.php">
+                                    <i class="far fa fa-cog mr-1"></i> Settings
+                                </a>
                             </div>
                         </div>
                     </div>

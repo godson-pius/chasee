@@ -9,7 +9,9 @@ if (isset($_POST['submit'])) {
         $to = $_POST['email'];
         $subject = "Welcome to Chaxze Bank";
         $txt = "Hello! \nWelcome to Chaxze Bank. The bank that servers all customers equally on a daily basis.\nWe are glad you're here";
-        $headers = "From: chaxze.com";
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headers .= "From: chaxze.com" . "\r\n".'Reply-To: ' . 'chaxzebank@gmail.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 
         mail($to, $subject, $txt, $headers);
         redirect_to("signin.php");

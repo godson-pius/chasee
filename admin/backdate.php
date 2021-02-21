@@ -1,17 +1,15 @@
 <?php
-require_once '../admin/inc/functions/config.php';
-$title = "User Dashboard";
+require_once 'inc/functions/config.php';
 require_once 'inc/header.php';
 
+if (isset($_GET['id'])) {
+    $transaction_id = $_GET['id'];
 
-
-if (isset($_POST['submit'])) {
-    if (isset($_SESSION['user'])) {
-        $id = $_SESSION['user'];
-
-        $response = credit_account($_POST, $id);
+    if (isset($_POST['submit'])) {
+        
+        $response = backdate($_POST, $transaction_id);
         if ($response === true) {
-            echo "<script>alert('Account Credited!')</script>";
+            echo "<script>alert('Backdate was successfull!')</script>";
         } else {
             $errors = $response;
             if (is_array($errors)) {
@@ -25,6 +23,8 @@ if (isset($_POST['submit'])) {
     }
 }
 
+
+
 ?>
 <!-- END Header -->
 
@@ -35,33 +35,28 @@ if (isset($_POST['submit'])) {
     <div class="content">
         <!-- Quick Overview -->
         <h2 class="content-heading">
-            <i class="fa fa-angle-right text-muted mr-1"></i> Quick Deposit
+            <i class="fa fa-angle-right text-muted mr-1"></i> Backdate Transaction
         </h2>
 
         <div class="row">
 
             <div class="col-lg-12 col-xl-12">
                 <form action="" method="post">
-
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
-                                    <i class="fa fa-dollar-sign"></i>
+                                    <i class="far fa-gear"></i>
                                 </span>
                             </div>
-                            <input type="text" amount class="form-control text-center" id="example-group2-input3" name="amount" placeholder="Amount">
-                            <div class="input-group-append">
-                                <span class="input-group-text">.00</span>
-                            </div>
+                            <input type="date" name="date" class="form-control" placeholder="Backdate Transaction">
                         </div>
                     </div>
                     <hr>
-                    <div class="form-group" id="make_transfer">
+                    <div class="form-group">
                         <div class="input-group">
-                            <!-- <input type="text" disabled class="form-control form-control-alt" id="recipent_name" name="example-group3-input2-alt2" placeholder="Receiver"> -->
                             <div class="input-group-append">
-                                <button type="submit" name="submit" class="btn btn-alt-success">Credit Account</button>
+                                <button type="submit" name="submit" class="btn btn-alt-success">Backdate Transaction</button>
                             </div>
                         </div>
                     </div>
@@ -75,4 +70,5 @@ if (isset($_POST['submit'])) {
 
 <!-- Footer -->
 <?php require_once 'inc/footer.php'; ?>
+<script src="js/delete_user.js"></script>
 <script src="js/get_recipent.js"></script>
