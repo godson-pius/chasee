@@ -26,18 +26,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <title>Sign In | Chaxze Bank</title>
+        <title>Sign In | BCA Mellon Bank</title>
 
-        <meta name="description" content="Sign In | Chaxze Bank">
-        <meta name="author" content="Chaxze Bank">
+        <meta name="description" content="Sign In | BCA Mellon Bank">
+        <meta name="author" content="BCA Mellon Bank">
         <meta name="robots" content="noindex, nofollow">
 
         <!-- Open Graph Meta -->
-        <meta property="og:title" content="Sign In | Chaxze Bank">
-        <meta property="og:site_name" content="Chaxze">
-        <meta property="og:description" content="Sign In | Chaxze Bank">
+        <meta property="og:title" content="Sign In | BCA Mellon Bank">
+        <meta property="og:site_name" content="BCA Mellon">
+        <meta property="og:description" content="Sign In | BCA Mellon Bank">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://wwww.chaxze.com">
+        <meta property="og:url" content="https://wwww.BCA Mellon.com">
         <meta property="og:image" content="">
 
         <!-- Icons -->
@@ -165,7 +165,7 @@
                         <div class="hero-static col-md-6 d-none d-md-flex align-items-md-center justify-content-md-center text-md-center">
                             <div class="p-3">
                                 <p class="display-4 font-w700 text-white mb-3">
-                                    Welcome to Chaxze Bank 
+                                    Welcome to BCA Mellon Bank 
                                 </p>
                                 <p class="text-white">The bank that serves all customers equally on a daily basis</p>
                                 <p class="font-size-lg font-w600 text-white-75 mb-0 mt-10">

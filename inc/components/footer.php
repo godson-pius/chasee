@@ -5,11 +5,11 @@
                         <div class="col-sm-12 col-md-12 col-lg-4">
                             <div class="footer-content-item">
                                 <div class="footer-logo">
-                                    <a href="index.php"><img src="assets/images/ChaxzeBank_white2.png" alt="logo"></a>
+                                    <a href="index.php"><img src="assets/images/BCA MellonBank_white2.png" alt="logo"></a>
                                 </div>
                                 <div class="footer-details">
-                                    <h4 class="text-white font-weight-bolder">ChaxzeBank</h4> <br>
-                                    <p> ChaxzeBank is a banking system that keep your day to day transactions safe and secure, fastest and reliable. </p>
+                                    <h4 class="text-white font-weight-bolder">BCA MellonBank</h4> <br>
+                                    <p> BCA MellonBank is a banking system that keep your day to day transactions safe and secure, fastest and reliable. </p>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                                 </div>
                                 <ul class="footer-details footer-list">
                                     <li>Address: <span>100 San Pedro street Los Angeles California</span></li>
-                                    <li>Message: <span><a href="chaxzebank@gmail.com">chaxzebank@gmail.com</a></span></li>
+                                    <li>Message: <span><a href="BCA Mellonbank@gmail.com">BCA Mellonbank@gmail.com</a></span></li>
                                     <li>Phone: <span><a href="tel:+17198889911">+171 988 899 11</a></span></li>
                                 </ul>
                             </div>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="footer-lower">
                     <div class="footer-lower-item footer-copyright-text">
-                        <p>Copyright ©2021 ChaxzeBank Bank PLC </p>
+                        <p>Copyright ©2021 BCA MellonBank Bank PLC </p>
                     </div>
                     <div class="footer-lower-item footer-social-logo">
                         <ul class="footer-social-list">

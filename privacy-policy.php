@@ -1,5 +1,5 @@
 <?php
-$title = "Privacy Plicy | Chaxze Bank";
+$title = "Privacy Plicy | BCA Mellon Bank";
 require_once 'inc/components/header.php';
 ?>
 <!-- header -->
@@ -24,7 +24,7 @@ require_once 'inc/components/header.php';
             <h3 class="sub-section-title">Our Privacy Policy</h3>
             <p>We protect your privacy
                 We follow a clear set of guidelines each time we talk with you about your accounts or share your information with others. Find out about our privacy practices:</p>
-            <h3 class="sub-section-title">Chaxze Policy</h3>
+            <h3 class="sub-section-title">BCA Mellon Policy</h3>
             <ul class="terms-privacy-list">
                 <li>
                     <p><strong>01.</strong>We work hard to protect your information and money

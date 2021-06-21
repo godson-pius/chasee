@@ -1,5 +1,5 @@
 <?php
-$title = "Chaxze Bank";
+$title = "BCA Mellon Bank";
 require_once 'inc/components/header.php';
 ?>
 <!-- header -->
@@ -82,7 +82,7 @@ require_once 'inc/components/header.php';
                         <h3 class="home-about-title">
                             Get an accounts that suits you
                         </h3>
-                        <p class="home-about-para">At chaxze, we believe the beauty of life in the little things at Chaxze that give us a better expression of ourselves, make us more social and connect emotionally. </p>
+                        <p class="home-about-para">At BCA Mellon, we believe the beauty of life in the little things at BCA Mellon that give us a better expression of ourselves, make us more social and connect emotionally. </p>
                         <div class="home-about-list">
                             <div class="home-about-list-item">
                                 <img src="assets/images/check.png" alt="checl">
@@ -132,7 +132,7 @@ require_once 'inc/components/header.php';
                 <div class="col-sm-12 col-md-12 col-lg-6 p-0">
                     <div class="home-facility-overview desk-mr-auto pr-20 pl-20 pb-30">
                         <h3 class="home-about-title">
-                            Chaxze E-payments on the Go
+                            BCA Mellon E-payments on the Go
                         </h3>
                         <p class="home-about-para">Pay Bills, Buy airtime, transfer and receive cash anywhere and anytime, fast and quick response in seconds.</p>
                         <div class="home-about-list">
@@ -341,12 +341,12 @@ require_once 'inc/components/header.php';
                 <div class="client-details-carousel owl-carousel owl-theme">
                     <div class="item">
                         <div class="home-client-details-2">
-                            <p class="client-caption-para">I have been a customer of Chaxze Bank for many years. I have always been treated with respect and any question I have ever had concerning my accounts has been answered quickly and very professionally.</p>
+                            <p class="client-caption-para">I have been a customer of BCA Mellon Bank for many years. I have always been treated with respect and any question I have ever had concerning my accounts has been answered quickly and very professionally.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="home-client-details-2">
-                            <p class="client-caption-para">Special Thanks to the team at the Chaxze bank. Very friendly and helpful establishing new accounts and making the process go smoothly. Highly recommend them!.</p>
+                            <p class="client-caption-para">Special Thanks to the team at the BCA Mellon bank. Very friendly and helpful establishing new accounts and making the process go smoothly. Highly recommend them!.</p>
                         </div>
                     </div>
                     <div class="item">
@@ -356,17 +356,17 @@ require_once 'inc/components/header.php';
                     </div>
                     <div class="item">
                         <div class="home-client-details-2">
-                            <p class="client-caption-para">Great banking experience. I opened a new business account at Chaxze Bank, it was easy and seamless application process with great and very knowledgeable service help, always friendly, personalized and supportive, responding quickly to all my questions and concerns.</p>
+                            <p class="client-caption-para">Great banking experience. I opened a new business account at BCA Mellon Bank, it was easy and seamless application process with great and very knowledgeable service help, always friendly, personalized and supportive, responding quickly to all my questions and concerns.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="home-client-details-2">
-                            <p class="client-caption-para"> The bank website is very clear and easy to navigate which makes banking experience smooth and friendly. I look forward to long-term cooperation with the Chaxze Bank and based on my experience I highly recommend this bank.</p>
+                            <p class="client-caption-para"> The bank website is very clear and easy to navigate which makes banking experience smooth and friendly. I look forward to long-term cooperation with the BCA Mellon Bank and based on my experience I highly recommend this bank.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="home-client-details-2">
-                            <p class="client-caption-para">I have worked with many banks and have found that working with Chaxze was by far the most professional that I have ever had. I would encourage everyone to bank at Chaxze. </p>
+                            <p class="client-caption-para">I have worked with many banks and have found that working with BCA Mellon was by far the most professional that I have ever had. I would encourage everyone to bank at BCA Mellon. </p>
                         </div>
                     </div>
                 </div>
@@ -425,7 +425,7 @@ require_once 'inc/components/header.php';
                         </div>
                         <div class="client-thumbnail-info">
                             <h3 class="client-caption-title">Benny Zacks</h3>
-                            <h4 class="client-caption-designation">Chaxze Foundation beneficiary</h4>
+                            <h4 class="client-caption-designation">BCA Mellon Foundation beneficiary</h4>
                         </div>
                     </div>
                 </div>
@@ -500,7 +500,7 @@ require_once 'inc/components/header.php';
     <div class="container">
         <div class="home-contact-inner">
             <h2>Create your bank account now!</h2>
-            <p>What’s next in Chaxze Bank? <a href="user/about-us.php">Learn more</a></p>
+            <p>What’s next in BCA Mellon Bank? <a href="user/about-us.php">Learn more</a></p>
             <ul class="section-button">
                 <li>
                     <a href="user/signup.php" class="btn1 orange-gradient btn-with-image">

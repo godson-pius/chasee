@@ -1,5 +1,5 @@
 <?php
-$title = "Chaxze Bank";
+$title = "BCA Mellon Bank";
 require_once 'inc/components/header.php';
 ?>
 <!-- header -->
@@ -42,7 +42,7 @@ require_once 'inc/components/header.php';
                         </div>
                         <div class="box-card-details">
                             <h3 class="box-card-title mb-20">Email</h3>
-                            <p class="box-card-para"><a class="link-us" href="mailto:support@alia.com"> chaxzebank@gmail.com</a></p>
+                            <p class="box-card-para"><a class="link-us" href="mailto:support@alia.com"> BCA Mellonbank@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@ require_once 'inc/components/header.php';
     <div class="container">
         <div class="home-contact-inner">
             <h2>Create your bank account now!</h2>
-            <p>What’s next in Chaxze Bank? <a href="#">Learn more</a></p>
+            <p>What’s next in BCA Mellon Bank? <a href="#">Learn more</a></p>
             <ul class="section-button">
                 <li>
                     <a href="user/signup.php" class="btn1 orange-gradient btn-with-image">

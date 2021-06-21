@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Chaxze Bank is a banking site delivering the community access to 100% banking 24/7">
-    <meta name="keywords" content="Bank, Chaxze, ChaxzeBank, International Bank, community bank">
-    <meta name="author" content="Chaxze Bank">
+    <meta name="description" content="BCA Mellon Bank is a banking site delivering the community access to 100% banking 24/7">
+    <meta name="keywords" content="Bank, BCA Mellon, BCA MellonBank, International Bank, community bank">
+    <meta name="author" content="BCA Mellon Bank">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?= $title; ?></title>
-    <link rel="icon" href="assets/images/ChaxzeBank_white2Icon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="assets/images/BCA MellonBank_white2Icon.png" type="image/png" sizes="16x16">
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
@@ -62,7 +62,7 @@
             <!-- mobile menu -->
             <div class="mobile-nav">
                 <a href="index.php" class="logo">
-                    <img src="assets/images/ChaxzeBank_Black3.png" alt="logo">
+                    <img src="assets/images/BCA MellonBank_Black3.png" alt="logo">
                 </a>
             </div>
             <!-- desktop menu -->
@@ -70,7 +70,7 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index.php">
-                            <img src="assets/images/ChaxzeBank_Black3.png" width="10" alt="logo">
+                            <img src="assets/images/BCA MellonBank_Black3.png" width="10" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
@@ -104,7 +104,7 @@
                                                     <a href="user/index" class="nav-link">Mobile Banking</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="user/index" class="nav-link">ChaxzeBank Whatsapp Banking</a>
+                                                    <a href="user/index" class="nav-link">BCA MellonBank Whatsapp Banking</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="user/index" class="nav-link">QR Payments Banking</a>
@@ -127,7 +127,7 @@
                                             <a href="user/index" class="nav-link">Bills and Utility Payments</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="user/index" class="nav-link">ChaxzeBank Foundation</a>
+                                            <a href="user/index" class="nav-link">BCA MellonBank Foundation</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="user/index" class="nav-link dropdown-toggle">Money Transfer</a>
