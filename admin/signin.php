@@ -120,7 +120,7 @@
                                 <!-- Header -->
                                 <div class="mb-3 text-center">
                                     <a class="link-fx font-w700 font-size-h1" href="index.html">
-                                        <span class="text-dark">Cha</span><span class="text-primary">xze</span>
+                                        <span class="text-dark">BCA</span><span class="text-primary">Mellon</span>
                                     </a>
                                     <p class="text-uppercase font-w700 font-size-sm text-muted">Admin Sign In</p>
                                 </div>
