@@ -27,16 +27,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <title>Sign In | ChaxzeBank Bank</title>
+        <title>Sign In | BCA MellonBank Bank</title>
 
-        <meta name="description" content="Sign In | Chaxze Bank created by pixelcave and published on Themeforest">
+        <meta name="description" content="Sign In | BCA Mellon Bank created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
         <meta name="robots" content="noindex, nofollow">
 
         <!-- Open Graph Meta -->
-        <meta property="og:title" content="Sign In | Chaxze Bank">
-        <meta property="og:site_name" content="Chaxze">
-        <meta property="og:description" content="Sign In | Chaxze Bank">
+        <meta property="og:title" content="Sign In | BCA Mellon Bank">
+        <meta property="og:site_name" content="BCA Mellon">
+        <meta property="og:description" content="Sign In | BCA Mellon Bank">
         <meta property="og:type" content="website">
         <meta property="og:url" content="">
         <meta property="og:image" content="">
@@ -121,7 +121,7 @@
                                 <!-- Header -->
                                 <div class="mb-3 text-center">
                                     <a class="link-fx font-w700 font-size-h1" href="index.html">
-                                        <span class="text-dark">Cha</span><span class="text-primary">xze</span>
+                                        <span class="text-dark">BCA</span><span class="text-primary">Mellon</span>
                                     </a>
                                     <p class="text-uppercase font-w700 font-size-sm text-muted">Sign In</p>
                                 </div>
@@ -166,7 +166,7 @@
                         <div class="hero-static col-md-6 d-none d-md-flex align-items-md-center justify-content-md-center text-md-center">
                             <div class="p-3">
                                 <p class="display-4 font-w700 text-white mb-3">
-                                Welcome to Chaxze Bank 
+                                Welcome to BCA Mellon Bank 
                                 </p>
                                 <p class="text-white">The bank that servers all customers equally on a daily basis</p>
                                 <p class="font-size-lg font-w600 text-white-75 mb-0">

@@ -61,7 +61,7 @@
         <div class="navbar-area">
             <!-- mobile menu -->
             <div class="mobile-nav">
-                <a href="index.php" class="logo">
+                <a href="index" class="logo">
                     <img src="assets/images/BCA MellonBank_Black3.png" alt="logo">
                 </a>
             </div>
@@ -86,7 +86,7 @@
                                     </ul> -->
                                 </li>
                                 <li class="nav-item">
-                                    <a href="user/signup.php" class="nav-link">Accounts</a>
+                                    <a href="user/signup" class="nav-link">Accounts</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="user/index" class="nav-link dropdown-toggle">Personal</a>
@@ -187,10 +187,10 @@
                                 </li>
 
                                 <li class="nav-item">
-                                            <a href="about-us.php" class="nav-link dropdown-toggle">About Us</a>
+                                            <a href="about-us" class="nav-link dropdown-toggle">About Us</a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
-                                                    <a href="contact-us.php" class="nav-link">Contact Us</a>
+                                                    <a href="contact-us" class="nav-link">Contact Us</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">Why Choose Us? </a>

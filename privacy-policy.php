@@ -49,11 +49,11 @@ require_once 'inc/components/header.php';
     </div>
     <div class="container">
         <div class="home-contact-inner">
-            <h2>493 businesses! create your bank account now</h2>
-            <p>What’s next in Aila Bank? <a href="#">Learn More</a></p>
+            <h2>493 businesses! create your account now</h2>
+            <p>What’s next in BCA mellon Bank? <a href="#">Learn More</a></p>
             <ul class="section-button">
                 <li>
-                    <a href="authentication.html" class="btn1 orange-gradient btn-with-image">
+                    <a href="user/signup" class="btn1 orange-gradient btn-with-image">
                         <i class="flaticon-agenda"></i>
                         <i class="flaticon-agenda"></i>
                         Create Your Account

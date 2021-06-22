@@ -5,7 +5,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-4">
                             <div class="footer-content-item">
                                 <div class="footer-logo">
-                                    <a href="index.php"><img src="assets/images/BCA MellonBank_white2.png" alt="logo"></a>
+                                    <a href="index"><img src="assets/images/BCA MellonBank_white2.png" alt="logo"></a>
                                 </div>
                                 <div class="footer-details">
                                     <h4 class="text-white font-weight-bolder">BCA MellonBank</h4> <br>
@@ -19,10 +19,10 @@
                                     <h3>Support</h3>
                                 </div>
                                 <ul class="footer-details footer-list">
-                                    <li><a href="faqs.php">FAQ's</a></li>
-                                    <li><a href="privacy-policy.php">Privacy Policy</a></li>
-                                    <li><a href="terms-conditions.php">Terms & Conditions</a></li>
-                                    <li><a href="contact-us.php">Contact Us</a></li>
+                                    <li><a href="faqs">FAQ's</a></li>
+                                    <li><a href="privacy-policy">Privacy Policy</a></li>
+                                    <li><a href="terms-conditions">Terms & Conditions</a></li>
+                                    <li><a href="contact-us">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
