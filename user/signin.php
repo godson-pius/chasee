@@ -168,7 +168,7 @@
                                 <p class="display-4 font-w700 text-white mb-3">
                                 Welcome to BCA Mellon Bank 
                                 </p>
-                                <p class="text-white">The bank that servers all customers equally on a daily basis</p>
+                                <p class="text-white">Building a better life with banking</p>
                                 <p class="font-size-lg font-w600 text-white-75 mb-0">
                                     Copyright &copy; <span data-toggle="year-copy"></span>
                                 </p>
