@@ -1,10 +1,15 @@
 <?php
 session_start();
 
+// define("HOST", "localhost");
+// define("USER", "bcamtxaw_mellon");
+// define("PASSWORD", "100%%mellon");
+// define("DBNAME", "bcamtxaw_mellon");
+
 define("HOST", "localhost");
-define("USER", "bcamtxaw_mellon");
-define("PASSWORD", "100%%mellon");
-define("DBNAME", "bcamtxaw_mellon");
+define("USER", "root");
+define("PASSWORD", "");
+define("DBNAME", "chasee");
 
 $link = mysqli_connect(HOST, USER, PASSWORD, DBNAME);
 

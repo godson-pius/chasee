@@ -139,7 +139,7 @@ foreach ($user_details as $user) {
                 <div class="content-header justify-content-lg-center bg-header-dark">
                     <!-- Logo -->
                     <a class="font-w600 text-white tracking-wide" href="index.html">
-                        Cha<span class="opacity-75">xze</span>
+                        Swiss<span class="opacity-75"> Apex</span>
                         <span class="font-w400">Banking</span>
                     </a>
                     <!-- END Logo -->
@@ -211,13 +211,13 @@ foreach ($user_details as $user) {
                             </a>
                             <ul class="nav-main-submenu">
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
+                                    <a class="nav-main-link" href="transactions">
                                         <span class="nav-main-link-name">Approved</span>
                                         <span class="nav-main-link-badge badge badge-pill badge-success"><?= getTotalAnd("transactions", "approved", 1, "user_id", $user_id); ?></span>
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="">
+                                    <a class="nav-main-link" href="pending">
                                         <span class="nav-main-link-name">Pending</span>
                                         <span class="nav-main-link-badge badge badge-pill badge-warning"><?= getTotalAnd("transactions", "approved", 0, "user_id", $user_id); ?></span>
                                     </a>
@@ -232,8 +232,18 @@ foreach ($user_details as $user) {
                             </a>
                             <ul class="nav-main-submenu">
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="transfer.php">
-                                        <span class="nav-main-link-name">Transfers</span>
+                                    <a class="nav-main-link" href="transfer">
+                                        <span class="nav-main-link-name">Domestic Transfer</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="inter">
+                                        <span class="nav-main-link-name">Inter Bank Transfer</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="wire">
+                                        <span class="nav-main-link-name">Wire Transfer</span>
                                     </a>
                                 </li>
                                 <!-- <li class="nav-main-item">

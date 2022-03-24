@@ -1,11 +1,4 @@
 <?php
-                                                                // WORLD BRAIN TECHNOLOGY
-//
-// This program was directly written by WORLD BRAIN TECHNOLOGY
-// CEO - Godson Pius
-// Program Director - Godson Pius
-// Department - PHP Department
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 require_once "config.php";

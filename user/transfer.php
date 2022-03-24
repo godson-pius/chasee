@@ -13,6 +13,7 @@ if (isset($_POST['submit'])) {
     $response = make_transfer($_POST, $id);
     if ($response === true) {
         echo "<script>alert('Transfer Successful!')</script>";
+        echo "<script>window.location.href = 'pending'</script>";
     } else {
         $errors = $response;
         if (is_array($errors)) {
@@ -35,7 +36,7 @@ if (isset($_POST['submit'])) {
     <div class="content">
         <!-- Quick Overview -->
         <h2 class="content-heading">
-            <i class="fa fa-angle-right text-muted mr-1"></i> Quick Transfer
+            <i class="fa fa-angle-right text-muted mr-1"></i> Domestic Transfer
         </h2>
 
         <div class="row">
@@ -71,7 +72,7 @@ if (isset($_POST['submit'])) {
                         <div class="input-group">
                             <input type="text" disabled class="form-control form-control-alt" id="recipent_name" name="example-group3-input2-alt2" placeholder="Receiver">
                             <div class="input-group-append">
-                                <button type="submit" name="submit" class="btn btn-alt-success">Make Transfer</button>
+                                <button type="submit" id="tbtn" name="submit" class="btn btn-alt-success">Make Transfer</button>
                             </div>
                         </div>
                     </div>

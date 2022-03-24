@@ -17,6 +17,12 @@ function user_register($post) {
     } else {
         $errors[] = "Enter username!";
     }
+
+    if (!empty($phone)) {
+        $phone = sanitize($phone);
+    } else {
+        $errors[] = "Enter phone number!";
+    }
     
     if (!empty($email)) {
         $email = sanitize($email);
@@ -67,12 +73,44 @@ function user_register($post) {
 
     if (!$errors) {
         // generating account number...
-        $account_number = rand(6578900, null) * 1236;
+        $account_number = generateNumber(10);
+        $account_pin = generateNumber(5);
+        $cot = generateNumber(4);
+        $imf = generateNumber(4);
 
-        $sql = "INSERT INTO users (fullname, email, username, address, dob, acc_type, acc_number, password, created_at, updated_at) VALUES ('$fullname', '$email', '$username', '$address', '$dob', '$acc_type', '$account_number', '$password', now(), now())";
+        $sql = "INSERT INTO users (fullname, email, username, phone, address, dob, acc_type, acc_number, password, acc_pin, cot, imf, created_at, updated_at) VALUES ('$fullname', '$email', '$username', '$phone', '$address', '$dob', '$acc_type', '$account_number', '$password', '$account_pin', '$cot', '$imf', now(), now())";
 
         $result = validateQuery($sql);
         if ($result === true) {
+            $message = "
+                <html>
+                <head>
+                <title>Welcome</title>
+                </head>
+                <body>
+                <div style='padding: 10px; border: 1px 1px 1px solid; border-radius: 10px;'>
+                    <p>Hello! \nWelcome to swissapexfinancial. The bank that serves all customers equally on a daily basis.\nWe are glad you choose us!</p>
+                    <p>Your details are as follows:</p>
+                </div>
+                <table class='table table-bordered table-responsiveness' border='1'>
+                <tr>
+                <th>Account Number</th>
+                <th>Account Pin</th>
+                <th>Account Type</th>
+                </tr>
+                <tr>
+                <td>$account_number</td>
+                <td>$account_pin</td>
+                <td>$acc_type</td>
+                </tr>
+                </table>
+                <p>
+                    <i>Thank you for choosing swiss apex financial</i>
+                </p>
+                </body>
+                </html>
+                ";
+                sendEmail($email, "Welcome to SAF", $message);
             return true;
         } else {
             $errors[] = "Check form inputs";
@@ -95,10 +133,10 @@ function user_login($post)
     $errors = [];
 
     //Checking for email...
-    if (!empty($email)) {
-        $email = sanitize($email);
+    if (!empty($accNum)) {
+        $accNum = sanitize($accNum);
     } else {
-        $errors[] = "Please enter your email!";
+        $errors[] = "Please enter your account number!";
     }
 
 
@@ -112,14 +150,48 @@ function user_login($post)
 
     //The Sql Statement...
     if (!$errors) {
-        $sql = "SELECT * FROM users WHERE email = '$email'";
+        $sql = "SELECT * FROM users WHERE acc_number = '$accNum'";
         $result = executeQuery($sql);
         if ($result) {
             $encryptedpassword = $result['password'];
+            $userEmail = $result['email'];
+            $userName = $result['fullname'];
+            $user_id = $result['id'];
+            $otp = generateNumber(4);
+            $message = "
+                <html>
+                <head>
+                <title>Login Verification</title>
+                </head>
+                <body>
+                <div>
+                    <p>Dear $userName, Your OTP for swissapexfinancial.com is <b>$otp</b> Use this Passcode to complete your Login. Thank you. Secured by swissapexfinancial</p>
+                </div>
+                <table>
+                <tr>
+                <th>Account Number</th>
+                <th>Full Name</th>
+                </tr>
+                <tr>
+                <td>$accNum</td>
+                <td>$userName</td>
+                </tr>
+                </table>
+                </body>
+                </html>
+                ";
             if (decrypt($encryptedpassword, $password)) {
                 if ($result['access'] == 1) {
-                    $_SESSION['user'] = $result['id'];
-                    return true;    
+                    $_SESSION['tmpData'] = $user_id;
+                    if (sendEmail($userEmail, "Login Verification", $message)) {
+
+                        $otpSql = "INSERT INTO passcodes (otp, user_id) VALUES ($otp, $user_id)";
+                        $insertOtp = validateQuery($otpSql);
+
+                        if ($insertOtp) {
+                            return true;
+                        }
+                    }   
                 } else {
                     $acc_blocked_err = "Your account have been blocked!";
                     return $acc_blocked_err;
@@ -130,6 +202,62 @@ function user_login($post)
         $errors[] = "Invalid Login Details!";
     }
     return $errors;
+}
+
+function verifyLogin($post) {
+    extract($post);
+    $errors = [];
+    $user_id = $_SESSION['tmpData'];
+
+    if (!empty($otp)) {
+        $otp = sanitize($otp);
+    } else {
+        $errors[] = "Please enter OTP";
+    }
+
+    if (!$errors) {
+        $sql = "SELECT * FROM passcodes WHERE otp = $otp AND user_id = $user_id AND status = 'null'";
+        $result = executeQuery($sql);
+
+        if ($result) {
+            $updateSql = "UPDATE passcodes SET status = 'used' WHERE otp = $otp AND user_id = $user_id";
+            $updateQuery = validateQuery($updateSql);
+
+            if ($updateQuery) {
+                return true;
+            }
+        } else {
+            return "Invaild OTP provided";
+        }
+    } else {
+        return $errors;
+    }
+}
+
+function confirmPin($post) {
+    extract($post);
+    $errors = [];
+    $user_id = $_SESSION['tmpData'];
+
+    if (!empty($pin)) {
+        $pin = sanitize($pin);
+    } else {
+        $errors[] = "Please provide account pin";
+    }
+
+    if (!$errors) {
+        $sql = "SELECT * FROM users WHERE acc_pin = $pin AND id = $user_id";
+        $result = executeQuery($sql);
+
+        if ($result) {
+            $_SESSION['user'] = $user_id;
+            return true;
+        } else {
+            return "Invaild pin provided";
+        }
+    } else {
+        return $errors;
+    }
 }
 
 function cardLogin($post) {
@@ -312,6 +440,94 @@ function make_transfer($post, $user_id) {
     }
 }
 
+function wire_transfer($post, $user_id) {
+    extract($post);
+    $errors = [];
+    $err_flag = false;
+
+    if (!empty($recipent)) {
+        $acc_number = sanitize($recipent);
+    } else {
+        $err_flag = true;
+        $errors[] = "Enter account number!";
+    }
+    
+    if (!empty($acc_name)) {
+        $acc_name = sanitize($acc_name);
+    } else {
+        $err_flag = true;
+        $errors[] = "Enter account name!";
+    }
+    
+    if (!empty($bank_name)) {
+        $bank_name = sanitize($bank_name);
+    } else {
+        $err_flag = true;
+        $errors[] = "Enter bank name!";
+    }
+
+    if (!empty($type)) {
+        $swift_code = sanitize($swift_code);
+    } else {
+        $err_flag = true;
+        $errors[] = "Enter swift code!";
+    }
+    
+    if (!empty($type)) {
+        $type = sanitize($type);
+    } else {
+        $err_flag = true;
+        $errors[] = "Enter account type!";
+    }
+    
+    if (!empty($amount)) {
+        $amount = sanitize($amount);
+    } else {
+        $err_flag = true;
+        $errors[] = "Enter account number!";
+    }
+    
+    if (!empty($desc)) {
+        $desc = sanitize($desc);
+    } else {
+        $err_flag = true;
+        $errors[] = "Enter description!";
+    }
+    
+
+    if ($err_flag === false) {
+        $sql1 = "SELECT * FROM users WHERE id = $user_id";
+        $query1 = executeQuery($sql1);
+
+        if ($query1) {
+            $details = $query1;
+            $total_balance = $details['acc_balance'];
+
+            if ($amount <= $total_balance) {
+                $sql2 = "INSERT INTO transactions (user_id, type, amount, to_user, created_at) VALUES ($user_id, 1, $amount, '$acc_number', now())";
+                $query2 = validateQuery($sql2);
+
+                if ($query2) {
+                    return true;
+                }
+            } else {
+                $balance_err = "Insufficient Balance";  
+                return $balance_err;
+            }
+            
+        } else {
+            $err_user = "Error from getting users";
+            return $err_user;
+        }
+    } else {
+        return $errors;
+    }
+}
+
+function Test() {
+    
+}
+
 
 function credit_account($post, $user_id) {
     extract($post);
@@ -352,5 +568,16 @@ function credit_account($post, $user_id) {
         }
     } else {
         return $errors;
+    }
+}
+
+function Transactions($user_id, $status) {
+    $sql = "SELECT * FROM transactions WHERE user_id = $user_id AND approved = $status ORDER BY id DESC";
+    $result = returnQuery($sql);
+
+    if ($result) {
+        return $result;
+    } else {
+        return false;
     }
 }

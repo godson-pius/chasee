@@ -124,6 +124,7 @@ function credit_user_account($post) {
         if (mysqli_num_rows($qq) > 0) {
             $details = mysqli_fetch_assoc($qq);
             $amount_in_db = $details['acc_balance'];
+            $userId = $details['user_id'];
 
             $update_balance = $amount + $amount_in_db;
 
@@ -131,7 +132,16 @@ function credit_user_account($post) {
             $result = validateQuery($sql);
 
             if ($result) {
-                return true;
+                $insertTrans = "INSERT INTO 'transactions' (user_id, type, amount, to_user, approved, created_at) VALUES ($userId, 1, $amount, '$acc_number', 1, now())";
+                $insertQuery = validateQuery($insertTrans);
+
+                if ($insertQuery) {
+                    return true;
+                } else {
+                    $err = "Error! trying again";
+                }
+
+                // return true;
             } else {
                 $err = "Error! try again";
             }

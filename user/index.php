@@ -3,11 +3,11 @@ require_once '../admin/inc/functions/config.php';
 $title = "User Dashboard";
 require_once 'inc/header.php';
 
-$total_transfer = fetch_transactions(0, $user_id);
+$total_transfer = fetch_transactions(1, $user_id);
 foreach ($total_transfer as $transfer) {
 }
 
-$total_income = fetch_transactions(1, $user_id);
+$total_income = fetch_transactions(0, $user_id);
 foreach ($total_income as $income) {
 }
 
@@ -34,13 +34,13 @@ foreach ($total_income as $income) {
                     </div>
                     <div class="col-md-4 py-3">
                         <div class="font-size-h1 font-w300 text-success mb-1">
-                            $<?= number_format($transfer['total']); ?>
+                            $<?= number_format($income['total']); ?>
                         </div>
                         <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Income</a>
                     </div>
                     <div class="col-md-4 py-3">
                         <div class="font-size-h1 font-w300 text-danger mb-1">
-                            -$<?= number_format($income['total']); ?>
+                            -$<?= number_format($transfer['total']); ?>
                         </div>
                         <a class="link-fx font-size-sm font-w700 text-uppercase text-muted" href="javascript:void(0)">Total Transfer</a>
                     </div>

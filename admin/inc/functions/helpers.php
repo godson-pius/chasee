@@ -54,6 +54,20 @@ function get_image_path(Array $file = null,  &$err)
     }return false;
 }
 
+function sendEmail($email, $subject, $msg) {
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    
+    $headers .= 'From: <info@swissapexfinancial.com>' . "\r\n";
+
+    $send = mail("$email", "$subject", "$msg", $headers);
+    return $send;
+}
+
+function generateNumber($len) {
+    return rand(pow(10, $len-1), pow(10, $len)-1);
+}
+
 // function checkIfIsset($super_global, $submit, $data_from_db {
 //     if (isset($super_global[$submit])) {
 //         $query_result = $data_from_db();

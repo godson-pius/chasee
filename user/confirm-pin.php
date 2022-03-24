@@ -2,24 +2,19 @@
 require_once '../admin/inc/functions/config.php';
 
 if (isset($_POST['submit'])) {
-    $response = user_register($_POST);
+    $response = confirmPin($_POST);
     if ($response === true) {
         // echo "<script>alert('entered')</script>";
-
-        $to = $_POST['email'];
-        $subject = "Welcome to BCA Mellon Bank";
-        $txt = "Hello! \nWelcome to BCA Mellon Bank. The bank that servers all customers equally on a daily basis.\nWe are glad you're here";
-        $headers = "MIME-Version: 1.0" . "\r\n";
-        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= "From: BCA Mellon.com" . "\r\n".'Reply-To: ' . 'BCA Mellonbank@gmail.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-
-        mail($to, $subject, $txt, $headers);
-        redirect_to("signin.php");
+        redirect_to("index");
     } else {
         // echo "<script>alert('error')</script>";
         $errors = $response;
-        foreach ($errors as $err) {
-            echo "<script>alert('$err')</script>";
+        if (is_array($errors)) {
+            foreach ($errors as $err) {
+                echo "<script>alert('$err')</script>";
+            }
+        } else {
+            echo "<script>alert('$errors')</script>";
         }
     }
 }
@@ -35,16 +30,16 @@ if (isset($_POST['submit'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Sign Up | BCA Mellon Bank</title>
+    <title>Confirm Pin | Swiss Apex Financial</title>
 
-    <meta name="description" content="Sign Up | BCA Mellon Bank">
+    <meta name="description" content="Confirm Pin | Swiss Apex Financial">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph Meta -->
-    <meta property="og:title" content="Sign Up | BCA Mellon Bank">
+    <meta property="og:title" content="Confirm Pin | Swiss Apex Financial">
     <meta property="og:site_name" content="BCA Mellon">
-    <meta property="og:description" content="Sign Up | BCA Mellon Bank">
+    <meta property="og:description" content="Confirm Pin | Swiss Apex Financial">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -67,55 +62,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <!-- Page Container -->
-    <!--
-            Available classes for #page-container:
-
-        GENERIC
-
-            'enable-cookies'                            Remembers active color theme between pages (when set through color theme helper Template._uiHandleTheme())
-
-        SIDEBAR & SIDE OVERLAY
-
-            'sidebar-r'                                 Right Sidebar and left Side Overlay (default is left Sidebar and right Side Overlay)
-            'sidebar-mini'                              Mini hoverable Sidebar (screen width > 991px)
-            'sidebar-o'                                 Visible Sidebar by default (screen width > 991px)
-            'sidebar-o-xs'                              Visible Sidebar by default (screen width < 992px)
-            'sidebar-dark'                              Dark themed sidebar
-
-            'side-overlay-hover'                        Hoverable Side Overlay (screen width > 991px)
-            'side-overlay-o'                            Visible Side Overlay by default
-
-            'enable-page-overlay'                       Enables a visible clickable Page Overlay (closes Side Overlay on click) when Side Overlay opens
-
-            'side-scroll'                               Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (screen width > 991px)
-
-        HEADER
-
-            ''                                          Static Header if no class is added
-            'page-header-fixed'                         Fixed Header
-
-
-        Footer
-
-            ''                                          Static Footer if no class is added
-            'page-footer-fixed'                         Fixed Footer (please have in mind that the footer has a specific height when is fixed)
-
-        HEADER STYLE
-
-            ''                                          Classic Header style if no class is added
-            'page-header-dark'                          Dark themed Header
-            'page-header-glass'                         Light themed Header with transparency by default
-                                                        (absolute position, perfect for light images underneath - solid light background on scroll if the Header is also set as fixed)
-            'page-header-glass page-header-dark'         Dark themed Header with transparency by default
-                                                        (absolute position, perfect for dark images underneath - solid dark background on scroll if the Header is also set as fixed)
-
-        MAIN CONTENT LAYOUT
-
-            ''                                          Full width Main Content if no class is added
-            'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
-            'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
-        -->
+    
     <div id="page-container">
 
         <!-- Main Container -->
@@ -130,72 +77,24 @@ if (isset($_POST['submit'])) {
                             <!-- Header -->
                             <div class="mb-3 text-center">
                                 <a class="link-fx text-success font-w700 font-size-h1" href="index.html">
-                                    <span class="text-dark">BCA</span><span class="text-success">Mellon</span>
+                                    <span class="text-dark">SAF</span><span class="text-success">Bank</span>
                                 </a>
-                                <p class="text-uppercase font-w700 font-size-sm text-muted">Create New Account</p>
+                                <p class="text-uppercase font-w700 font-size-sm text-muted">Enter account pin</p>
                             </div>
-                            <!-- END Header -->
-
-                            <!-- Sign Up Form -->
-                            <!-- jQuery Validation (.js-validation-signup class is initialized in js/pages/op_auth_signup.min.js which was auto compiled from _js/pages/op_auth_signup.js) -->
-                            <!-- For more info and examples you can check out https://github.com/jzaefferer/jquery-validation -->
+                            
                             <div class="row no-gutters justify-content-center">
                                 <div class="col-sm-8 col-xl-6">
                                     <form action="" method="POST">
                                         <div class="py-3">
                                             <div class="form-group">
-                                                <input type="text" class="form-control form-control form-control-alt" name="fullname" placeholder="Full Name">
+                                                <input type="number" class="form-control form-control form-control-alt" name="pin" placeholder="Enter account pin">
                                             </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control form-control form-control-alt" name="username" placeholder="Username">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control form-control form-control-alt" name="phone" placeholder="Phone number">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="email" class="form-control form-control form-control-alt" name="email" placeholder="Email">
-                                            </div>
-                                            <div class="form-group">
-                                                <textarea name="address" class="form-control form-control form-control-alt" placeholder="Address"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="date" title="Date of Birth" class="form-control form-control form-control-alt" name="dob">
-                                            </div>
-                                            <div class="form-group">
-                                                <select name="acc_type" class="form-control form-control form-control-alt">
-                                                    <?php
-                                                    $acct_type = fetch("account_type");
-                                                    foreach ($acct_type as $aty) {
-                                                        extract($aty); ?>
-                                                        <option value="<?= $type; ?>"><?= $type; ?></option>
-                                                    <?php } ?>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="password" class="form-control form-control-lg form-control-alt" name="password" placeholder="Password">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="password" class="form-control form-control-lg form-control-alt" name="confirm_pwd" placeholder="Password Confirm">
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox custom-control-primary">
-                                                    <input type="checkbox" class="custom-control-input" id="signup-terms" name="terms">
-                                                    <label class="custom-control-label" for="signup-terms">I agree to Terms &amp; Conditions</label>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" name="submit" class="btn btn-block btn-hero-lg btn-hero-success">
-                                                <i class="fa fa-fw fa-plus mr-1"></i> Create Account
+                                                <i class="fa fa-fw fa-plus mr-1"></i> Confirm Login
                                             </button>
-                                            <p class="mt-3 mb-0 d-lg-flex justify-content-lg-between">
-                                                <a class="btn btn-sm btn-light d-block d-lg-inline-block mb-1" href="signin.php">
-                                                    <i class="fa fa-sign-in-alt text-muted mr-1"></i> Sign In
-                                                </a>
-                                                <a class="btn btn-sm btn-light d-block d-lg-inline-block mb-1" href="" data-toggle="modal" data-target="#modal-terms">
-                                                    <i class="fa fa-book text-muted mr-1"></i> Read Terms
-                                                </a>
-                                            </p>
                                         </div>
                                     </form>
                                 </div>

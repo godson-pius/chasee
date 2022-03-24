@@ -1,13 +1,11 @@
 <?php
     require_once '../admin/inc/functions/config.php';
 
-    // echo generateNumber(2);
-
     if (isset($_POST['submit'])) {
-        $response = user_login($_POST);
+        $response = verifyLogin($_POST);
 
         if ($response === true) {
-            redirect_to("validate-login");
+            redirect_to("confirm-pin");
         } else {
             $errors = $response;
             if (is_array($errors)) {
@@ -29,7 +27,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <title>Sign In | Swiss Apex Financial</title>
+        <title>Verify Login | Swiss Apex Financial</title>
 
         <meta name="description" content="Sign In | BCA Mellon Bank created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -123,9 +121,9 @@
                                 <!-- Header -->
                                 <div class="mb-3 text-center">
                                     <a class="link-fx font-w700 font-size-h1" href="index.html">
-                                        <span class="text-dark">BCA</span><span class="text-primary">Mellon</span>
+                                        <span class="text-dark">SAF</span><span class="text-primary">Swiss Apex Financial</span>
                                     </a>
-                                    <p class="text-uppercase font-w700 font-size-sm text-muted">Sign In</p>
+                                    <p class="text-uppercase font-w700 font-size-sm text-muted">Verify Login</p>
                                 </div>
                                 <!-- END Header -->
 
@@ -137,24 +135,14 @@
                                         <form action="" method="POST">
                                             <div class="py-3">
                                                 <div class="form-group">
-                                                    <input type="number" class="form-control form-control-alt" name="accNum" placeholder="Account Number">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="password" class="form-control form-control-alt" name="password" placeholder="Password">
+                                                    <input type="number" class="form-control form-control-alt" name="otp" placeholder="Enter OTP">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <button type="submit" name="submit" class="btn btn-block btn-hero-lg btn-hero-primary">
-                                                    <i class="fa fa-fw fa-sign-in-alt mr-1"></i> Sign In
+                                                    <i class="fa fa-fw fa-sign-in-alt mr-1"></i> Proceed
                                                 </button>
-                                                <p class="mt-3 mb-0 d-lg-flex justify-content-lg-between">
-                                                    <!-- <a class="btn btn-sm btn-light d-block d-lg-inline-block mb-1" href="op_auth_reminder.html">
-                                                        <i class="fa fa-exclamation-triangle text-muted mr-1"></i> Forgot password
-                                                    </a> -->
-                                                    <a class="btn btn-sm btn-light d-block d-lg-inline-block mb-1" href="signup.php">
-                                                        <i class="fa fa-plus text-muted mr-1"></i> New Account
-                                                    </a>
-                                                </p>
+                                                
                                             </div>
                                         </form>
                                     </div>
@@ -168,9 +156,9 @@
                         <div class="hero-static col-md-6 d-none d-md-flex align-items-md-center justify-content-md-center text-md-center">
                             <div class="p-3">
                                 <p class="display-4 font-w700 text-white mb-3">
-                                Welcome to BCA Mellon Bank 
+                                VERIFY LOGIN
                                 </p>
-                                <p class="text-white">Building a better life with banking</p>
+                                <p class="text-white">An OTP was sent to your email!</p>
                                 <p class="font-size-lg font-w600 text-white-75 mb-0">
                                     Copyright &copy; <span data-toggle="year-copy"></span>
                                 </p>

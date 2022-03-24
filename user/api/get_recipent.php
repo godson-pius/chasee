@@ -13,5 +13,5 @@
             echo $name['fullname'];
         }
     } else {
-        echo "user not found";
+        echo "failed";
     }
